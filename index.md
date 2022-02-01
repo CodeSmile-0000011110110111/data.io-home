@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# data.io (for Unity)
 
-You can use the [editor on GitHub](https://github.com/sitterheim/data.io-home/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+data.io shall make it irrelevant WHERE or HOW your custom data is stored. Sync data to one or another representation as needed. Even on a "per build" or "per platform" basis. It let's you choose how you want to work with data, with which tools (Databases, Spreadsheets, C# IDE, Unity Inspector, custom ..) and how to store data (SQL, CSV, JSON, custom ..).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Coming ~Summer 2022 to the Unity Asset Store!
 
-### Markdown
+Current focus is to transform SQL (specifically: SQLite) databases by
+- generating C# code from the database schema and properly resolving relations, or
+- generating a database schema from C# code without requiring attributes, and by
+- having an in-memory representation of the data in a ScriptableObject Database (SODB)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The golden rule here is "convention over configuration" borrowed from the <a href="https://rubyonrails.org/doctrine#:~:text=such%20going%20forward.-,Convention%20over%20Configuration,in%20areas%20that%20really%20matter.">Ruby on Rails project</a>.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sitterheim/data.io-home/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Additional features:
+- Data Import/Export
+  - SQLite <=> SODB <=> CSV <=> JSON <=> C# ScriptBuilder
+  - Automatic: change or add a file to your project and the workflow ScriptableObject knows what to do with it (ie import into SQL, generate scripts, etc)
+  - CSV Reader: fully-featured, lightweight, configurable (ie delimiter, text encoding, number & currency formats, data-implied System.Type conversion, relations, ...)
+- SODB: ScriptableObject database
+  - No SQL needed, LINQ available
+  - statically typed access to your data
+  - in-memory representation of your database (<a href="https://www.youtube.com/watch?v=KUjeQDZ4P9M">watch this video</a> to learn why this is a good thing!)
+  - automatic resolution of relationships => AutorId column replaced by reference to Author class or List<Author>
+  - serializable to JSON, for devices where SQLite is problematic & where performance matters (iOS, Android, UWP, WebGL)
+  - editable in Unity Inspector GUI (in consideration: Odin Inspector support)
+- C# ScriptBuilder
+  - can be used for any script generating purpose with a simple API
+  - also generates Assembly Definition files
+- More ...
+  - Interested? Contact me! => fremdspielen (at) gmail.com
+  - I'm looking for: early adopters, real-world datasets for testing, understanding of how you work with data, with which tools, what pains you the most, etc.
