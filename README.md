@@ -1,9 +1,9 @@
 # data.io (for Unity)
 
-> North
+>> North
 You enter a dark alley. Suddenly, you find yourself immersed in wrongfully escaped delimiters, culture-specific encodings and flawed type converters.
 
-> use data.io
+\> use data.io
 Okay. You win. 
 
 
