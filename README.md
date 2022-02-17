@@ -11,6 +11,14 @@ Okay. You win.
 
 ```
 
+## Where do you want to go?
+
+- halls of comma-separated values
+- caves of sequel-de-lities
+- bases of scriptable data
+- building of generators
+
+
 
 data.io makes it irrelevant WHERE or HOW your custom (game) data is stored. Sync data to one or another representation (Database, Spreadsheet, ScriptableObject, C# code) as needed. Even on a "per build", "per platform" or "editor vs runtime" basis. It let's you choose how you want to work with data, with which tools (Databases, Spreadsheets, C# IDE, Unity Inspector, custom ..) and how to store data (SQL, CSV, JSON, custom ..) and to enable that, there's only very few conventions to follow that are best practice anyway. <a href="https://github.com/sitterheim/data.io-home/wiki">Learn more in the wiki</a>.
 
