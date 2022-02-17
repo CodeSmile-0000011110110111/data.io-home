@@ -2,9 +2,9 @@
 
 ```
 
-\> North
-You enter a dark alley. Suddenly, you find yourself immersed in wrongfully escaped delimiters, 
-culture-specific encodings and flawed type converters.
+\> north
+You head north, entering a dark alley. Suddenly, you find yourself immersed in wrongfully escaped delimiters, 
+culture-specific encodings and flawed type converters. There seems to be no end to this madness ...
 
 \> use data.io
 Okay. You win.
