@@ -15,7 +15,7 @@ I just cannot _NOT_ write code the right way ...
 - **ScriptBuilder**
   - C# script generator, only need to fill in names and method bodies
 - **Automation**
-  - Classes to DB schema *AND* DB schema or CSV to classes.
+  - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
 - **In-Memory SODB** (ScriptableObject Database)
