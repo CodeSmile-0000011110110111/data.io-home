@@ -3,7 +3,7 @@ layout: page
 title: Got data?
 ---
 ![data.io logo](/data.io-home/assets/data.io-banner-transparent.png)
-<img src="/data.io-home/assets/data.io-banner.png" alt="data.io logo" width="700"/>
+<img src="/data.io-home/assets/data.io-banner.png" alt="data.io logo" width="300"/>
 ```
 \> enter north into cs valley
 You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
