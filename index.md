@@ -46,7 +46,7 @@ I just cannot _NOT_ write code the right way ...
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
-- (No reflection) <=> (I don't mind)
+- (Reflection is evil) <=> (I don't mind)
 - (Coder) <=> (Designer)
 
 ### When? Where??
