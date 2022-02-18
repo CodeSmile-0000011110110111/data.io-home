@@ -5,13 +5,13 @@ title: Got data?
 
 # Use data&lt;io&gt; !
 
-C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
+## C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
 
-SQL. GSheets. SODB. CSV. JSON. SQLite(r). More in progress ...
+## SQL. GSheets. SODB. CSV. JSON. SQLite(r). More in progress ...
 
 <p/>
 <p/>
-Served on the side (I just can't *NOT* code things the right way):
+### Served on the side (I just can't *NOT* code things the right way):
 * ScriptBuilder => fully customizable C# script generator with type descriptions so you only need to fill in names and method bodies
 * Auto-Generate => Classes to DB schema *AND* DB schema or CSV to classes.
 * SQLBuilder => type-safe, quote-escaped SQL query builder (which will eventually understand various dialects, too)
@@ -24,7 +24,7 @@ Served on the side (I just can't *NOT* code things the right way):
 * Latest libs included for convenience. Currently that's SQLite, Google Sheets API.
 
 <p/>
-Supports any workflow: 
+### Supports any workflow: 
 * (turn Code into Data) <=> (turn Data into Code)
 * (Let me handle it) <=> (Wow, it just works)
 * (SQL Lover) <=> (No SQL, please!)
@@ -41,7 +41,7 @@ Supports any workflow:
   ...
   ...
 
-## When? Where??
+### When? Where??
 
 data.io is coming Q3/Q4 2022 to the Unity Asset Store!
 
