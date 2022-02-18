@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IndentStringBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IndentStringBuilder
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Data.IO.IndentStringBuilder">
+  
+  
+  <h1 id="Data_IO_IndentStringBuilder" data-uid="Data.IO.IndentStringBuilder" class="text-break">Class IndentStringBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Wrapper for StringBuilder that makes it easy to create indent formatted text files, like scripts.</p>
+<p>Has methods for appending string[] so it gets more comfortable to add many smaller strings, example:
+builder.AppendIndented(new [] {$&quot;{this}&quot;, &quot; appends &quot;, &quot;several&quot;, &quot; strings&quot;, &quot; at &quot;, &quot;once&quot;, dot});</p>
+<p>OpenBlock and CloseBlock add lines with curly brackets and increment/decrement indentation.</p>
+<p>You can also use the original StringBuilder methods without indentation through this wrapper.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IndentStringBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.html">Data.IO</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.Tools.dll</h6>
+  <h5 id="Data_IO_IndentStringBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class IndentStringBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder__ctor_System_Boolean_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L40">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder__ctor_" data-uid="Data.IO.IndentStringBuilder.#ctor*"></a>
+  <h4 id="Data_IO_IndentStringBuilder__ctor_System_Boolean_" data-uid="Data.IO.IndentStringBuilder.#ctor(System.Boolean)">IndentStringBuilder(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a new StringBuilder with indentation support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndentStringBuilder(bool spacesForTabs = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">spacesForTabs</span></td>
+        <td><p>set to true if you prefer 4x whitespace for each indentation level, otherwise will use Tabs '\t'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_Indentation.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.Indentation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L29">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_Indentation_" data-uid="Data.IO.IndentStringBuilder.Indentation*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_Indentation" data-uid="Data.IO.IndentStringBuilder.Indentation">Indentation</h4>
+  <div class="markdown level1 summary"><p>current indentation level in 'number of Tabs'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Indentation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_SpacesForTabs.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.SpacesForTabs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L34">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_SpacesForTabs_" data-uid="Data.IO.IndentStringBuilder.SpacesForTabs*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_SpacesForTabs" data-uid="Data.IO.IndentStringBuilder.SpacesForTabs">SpacesForTabs</h4>
+  <div class="markdown level1 summary"><p>if true, 4x whitespace will be used in place of tabs '\t'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SpacesForTabs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_Append_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.Append(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L58">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_Append_" data-uid="Data.IO.IndentStringBuilder.Append*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_Append_System_String_" data-uid="Data.IO.IndentStringBuilder.Append(System.String)">Append(String)</h4>
+  <div class="markdown level1 summary"><p>regular StringBuilder Append</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Append(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_Append_System_String___.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.Append(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L68">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_Append_" data-uid="Data.IO.IndentStringBuilder.Append*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_Append_System_String___" data-uid="Data.IO.IndentStringBuilder.Append(System.String[])">Append(String[])</h4>
+  <div class="markdown level1 summary"><p>Appends each string in the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Append(string[] texts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">texts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendIndentation.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendIndentation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L177">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendIndentation_" data-uid="Data.IO.IndentStringBuilder.AppendIndentation*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendIndentation" data-uid="Data.IO.IndentStringBuilder.AppendIndentation">AppendIndentation()</h4>
+  <div class="markdown level1 summary"><p>just appends the current Indentation, same as calling AppendIndented(&quot;&quot;)
+can be useful in cases where you know you need to indent but don't know yet what follows next,
+or if for some reason you need the same indentation in the middle of a line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendIndentation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendIndented_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendIndented(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L79">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendIndented_" data-uid="Data.IO.IndentStringBuilder.AppendIndented*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendIndented_System_String_" data-uid="Data.IO.IndentStringBuilder.AppendIndented(System.String)">AppendIndented(String)</h4>
+  <div class="markdown level1 summary"><p>appends text with leading indentation based on current Indentation value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendIndented(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendIndented_System_String___.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendIndented(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L90">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendIndented_" data-uid="Data.IO.IndentStringBuilder.AppendIndented*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendIndented_System_String___" data-uid="Data.IO.IndentStringBuilder.AppendIndented(System.String[])">AppendIndented(String[])</h4>
+  <div class="markdown level1 summary"><p>adds and indent, then appends each string in the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendIndented(string[] texts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">texts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendIndentedLine_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendIndentedLine(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L145">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendIndentedLine_" data-uid="Data.IO.IndentStringBuilder.AppendIndentedLine*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendIndentedLine_System_String_" data-uid="Data.IO.IndentStringBuilder.AppendIndentedLine(System.String)">AppendIndentedLine(String)</h4>
+  <div class="markdown level1 summary"><p>appends text with leading indentation based on current Indentation value, ends with newline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendIndentedLine(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendIndentedLine_System_String___.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendIndentedLine(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L160">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendIndentedLine_" data-uid="Data.IO.IndentStringBuilder.AppendIndentedLine*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendIndentedLine_System_String___" data-uid="Data.IO.IndentStringBuilder.AppendIndentedLine(System.String[])">AppendIndentedLine(String[])</h4>
+  <div class="markdown level1 summary"><p>Appends indentation, then appends each text and at the end appends a newline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendIndentedLine(string[] texts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">texts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendLine.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L101">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendLine_" data-uid="Data.IO.IndentStringBuilder.AppendLine*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendLine" data-uid="Data.IO.IndentStringBuilder.AppendLine">AppendLine()</h4>
+  <div class="markdown level1 summary"><p>regular StringBuilder AppendLine()</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendLine()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendLine_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendLine(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L110">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendLine_" data-uid="Data.IO.IndentStringBuilder.AppendLine*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendLine_System_String_" data-uid="Data.IO.IndentStringBuilder.AppendLine(System.String)">AppendLine(String)</h4>
+  <div class="markdown level1 summary"><p>regular StringBuilder AppendLine(&quot;&quot;)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendLine(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendLine_System_String___.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendLine(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L132">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendLine_" data-uid="Data.IO.IndentStringBuilder.AppendLine*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendLine_System_String___" data-uid="Data.IO.IndentStringBuilder.AppendLine(System.String[])">AppendLine(String[])</h4>
+  <div class="markdown level1 summary"><p>appends the texts, then adds a newline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendLine(string[] texts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">texts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendLines_System_Int32_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendLines(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L122">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendLines_" data-uid="Data.IO.IndentStringBuilder.AppendLines*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendLines_System_Int32_" data-uid="Data.IO.IndentStringBuilder.AppendLines(System.Int32)">AppendLines(Int32)</h4>
+  <div class="markdown level1 summary"><p>appends 'count' number of empty lines (without indentation)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendLines(int count = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_AppendWhiteSpace_System_Int32_.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.AppendWhiteSpace(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L206">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_AppendWhiteSpace_" data-uid="Data.IO.IndentStringBuilder.AppendWhiteSpace*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_AppendWhiteSpace_System_Int32_" data-uid="Data.IO.IndentStringBuilder.AppendWhiteSpace(System.Int32)">AppendWhiteSpace(Int32)</h4>
+  <div class="markdown level1 summary"><p>appends 'count' number of spaces</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AppendWhiteSpace(int count = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_CloseBlock.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.CloseBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L195">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_CloseBlock_" data-uid="Data.IO.IndentStringBuilder.CloseBlock*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_CloseBlock" data-uid="Data.IO.IndentStringBuilder.CloseBlock">CloseBlock()</h4>
+  <div class="markdown level1 summary"><p>decrements Indentation, then appends a closing '}'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseBlock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_IsEmpty.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L52">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_IsEmpty_" data-uid="Data.IO.IndentStringBuilder.IsEmpty*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_IsEmpty" data-uid="Data.IO.IndentStringBuilder.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>is true as long as nothing has been appended yet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_OpenBlock.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.OpenBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L185">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_OpenBlock_" data-uid="Data.IO.IndentStringBuilder.OpenBlock*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_OpenBlock" data-uid="Data.IO.IndentStringBuilder.OpenBlock">OpenBlock()</h4>
+  <div class="markdown level1 summary"><p>appends an opening '{' with the current Indentation, then increments Indentation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenBlock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder_ToString.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L46">View Source</a>
+  </span>
+  <a id="Data_IO_IndentStringBuilder_ToString_" data-uid="Data.IO.IndentStringBuilder.ToString*"></a>
+  <h4 id="Data_IO_IndentStringBuilder_ToString" data-uid="Data.IO.IndentStringBuilder.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>get the resulting string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_IndentStringBuilder.md&amp;value=---%0Auid%3A%20Data.IO.IndentStringBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/_Tools/IndentStringBuilder/IndentStringBuilder.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

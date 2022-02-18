@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>data.io (for Unity) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="data.io (for Unity) ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dataio-for-unity">data.io (for Unity)</h1>
+
+<p>data.io allows you to sync data to one or another representation (Database, Spreadsheet, ScriptableObject, C# code) as needed. Even on a &quot;per build&quot;, &quot;per platform&quot; or &quot;editor vs runtime&quot; basis. It let's you choose how you want to work with data, with which tools (Databases, Spreadsheets, C# IDE, Unity Inspector, custom ..) and how to store data (SQL, CSV, JSON, custom ..) and to enable that, there's only very few conventions to follow that are best practice anyway.</p>
+<p><a href="https://github.com/sitterheim/data.io-home/wiki">Learn more in the wiki</a>.</p>
+<p>data.io is coming Summer/Autumn 2022 to the Unity Asset Store!</p>
+<p>Current focus is to transform SQL (specifically: SQLite) databases by</p>
+<ul>
+<li>generating C# code from the database schema and properly resolving relations, or</li>
+<li>generating a database schema from C# code without requiring attributes, and by</li>
+<li>having an in-memory representation of the data in a ScriptableObject Database (SODB)</li>
+</ul>
+<p>The golden rule here is &quot;convention over configuration&quot; borrowed from the <a href="https://rubyonrails.org/doctrine#:~:text=such%20going%20forward.-,Convention%20over%20Configuration,in%20areas%20that%20really%20matter.">Ruby on Rails project</a>.</p>
+<p>Additional features:</p>
+<ul>
+<li>Data Import/Export
+<ul>
+<li>SQLite &lt;=&gt; SODB &lt;=&gt; CSV &lt;=&gt; JSON &lt;=&gt; C# ScriptBuilder</li>
+<li>Automatic: change or add a file to your project and the workflow ScriptableObject knows what to do with it (ie import into SQL, generate scripts, etc)</li>
+<li>CSV Reader: fully-featured, lightweight, configurable (ie delimiter, text encoding, number &amp; currency formats, data-implied System.Type conversion, relations, ...)</li>
+</ul>
+</li>
+<li>SODB: ScriptableObject database
+<ul>
+<li>No SQL needed, LINQ available</li>
+<li>statically typed access to your data</li>
+<li>in-memory representation of your database (<a href="https://www.youtube.com/watch?v=KUjeQDZ4P9M">watch this video</a> to learn why this is a good thing!)</li>
+<li>automatic resolution of relationships =&gt; AutorId column replaced by reference to Author class or List<author></author></li>
+<li>serializable to JSON, for devices where SQLite is problematic &amp; where performance matters (iOS, Android, UWP, WebGL)</li>
+<li>editable in Unity Inspector GUI (in consideration: Odin Inspector support)</li>
+</ul>
+</li>
+<li>C# ScriptBuilder
+<ul>
+<li>can be used for any script generating purpose with a simple API</li>
+<li>also generates Assembly Definition files</li>
+</ul>
+</li>
+<li>More ...
+<ul>
+<li>Interested? Contact me! =&gt; fremdspielen (at) gmail.com</li>
+<li>I'm looking for: early adopters, real-world datasets for testing, understanding of how you work with data, with which tools, what pains you the most, etc.</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/sitterheim/data.io/blob/main/Doc/data.io/articles/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
