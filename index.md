@@ -22,7 +22,7 @@ Need more? Let me know => fremdspielen (at) gmail.com
 <p/>
 <p/>
 <p/>
-#### Served on the side:
+### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <p/>
 - **ScriptBuilder**
@@ -44,7 +44,7 @@ I just cannot _NOT_ write code the right way ...
 - Latest libs included for convenience
   - SQLite, Google Sheets, ..
 
-#### Serves any scenario: 
+### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
