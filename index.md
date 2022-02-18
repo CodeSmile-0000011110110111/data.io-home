@@ -2,7 +2,7 @@
 layout: page
 title: Got data?
 ---
-
+![data.io logo](/data.io-home/assets/data.io-banner.png)
 ```
 \> enter north into cs valley
 You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
