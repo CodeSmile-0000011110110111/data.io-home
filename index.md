@@ -8,7 +8,7 @@ title: Got data?
 You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
 in woefully escaped delimiters, culture-unique encodings and flawed-type converters. 
 
-A gloomingly googly voice whispers: "seeeequl". You sweat and shiver as you ...
+A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 
 \> use data.io
 Okay. You win.
