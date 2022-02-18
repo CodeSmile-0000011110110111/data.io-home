@@ -2,9 +2,9 @@
 layout: page
 title: Got data?
 ---
-<font size=7px>
+<font size=6px>
 ```
-\> north<br/>
+\> <strong>north</strong><br/>
 You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
 encodings and flawed-type converters.
