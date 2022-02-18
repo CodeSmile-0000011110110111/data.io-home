@@ -15,7 +15,7 @@ Okay. You win.
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="300"/>
 #### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
 #### SQL. GSheets. SODB. CSV. JSON. SQLiter.
-Looking for something specific? Let me know => fremdspielen (at) gmail.com
+- Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 #### Served on the side:
 I just cannot _NOT_ write code the right way ...
