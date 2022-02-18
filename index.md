@@ -38,7 +38,7 @@ I just cannot _NOT_ write code the right way ...
 - Latest libs included for convenience
   - SQLite, Google Sheets, ..
 
-#### Supports any workflow: 
+#### Serves any purpose: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQL Lover) <=> (No SQL, please!)
