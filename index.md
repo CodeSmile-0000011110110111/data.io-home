@@ -5,12 +5,12 @@ title: Got data?
 
 # Use data&lt;io&gt; !
 
-## C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
+### C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
 
-## SQL. GSheets. SODB. CSV. JSON. SQLite(r). More in progress ...
+### SQL. GSheets. SODB. CSV. JSON. SQLite(r). More in progress ...
 
 <p/>
-### Served on the side:
+#### Served on the side:
 I just cannot *NOT* write code the right way ...
 <p/>
 * ScriptBuilder
@@ -33,7 +33,7 @@ I just cannot *NOT* write code the right way ...
   * => Latest libs included for convenience. Currently that's SQLite, Google Sheets API.
 
 <p/>
-### Supports any workflow: 
+#### Supports any workflow: 
 * (turn Code into Data) <=> (turn Data into Code)
 * (Let me handle it) <=> (Wow, it just works)
 * (SQL Lover) <=> (No SQL, please!)
