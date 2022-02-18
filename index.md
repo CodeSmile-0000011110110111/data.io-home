@@ -13,12 +13,11 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 Okay. You win.
 ```
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="300"/>
-### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
-In alphabetical order.
-### SQL. GSheets. SODB. CSV. JSON. SQLiter.
+#### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
+#### SQL. GSheets. SODB. CSV. JSON. SQLiter.
 Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
-### Served on the side:
+#### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <p/>
 - **ScriptBuilder**
@@ -40,14 +39,14 @@ I just cannot _NOT_ write code the right way ...
 - Latest libs included for convenience
   - SQLite, Google Sheets, ..
 
-### Serves any scenario: 
+#### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
 - (Reflection is evil) <=> (I don't mind)
 - (Coder) <=> (Designer)
 
-### When? Where??
+#### When? Where??
 
 data.io is coming Q3/Q4 2022 to the Unity Asset Store!
 
