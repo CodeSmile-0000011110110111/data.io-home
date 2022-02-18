@@ -14,6 +14,8 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 Okay. You win.
 ```
 #### C#. Clean. Correct. CSV. Docs. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Tested. Unity.
+The question is: What is data&lt;io&gt; ?
+
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 #### Served on the side:
