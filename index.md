@@ -3,19 +3,18 @@ layout: page
 title: Got data?
 ---
 <font size=6px>
-```
-\> <strong>north</strong><br/>
+```<br/>
+<strong>\> north</strong><br/>
 You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
 encodings and flawed-type converters.
 
 You sweat and shiver as you ...<br/><br/>
 
-  \> <strong>use</strong><br/>
+  <strong>\> use</strong><br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
-Okay. You win!
-```
-  </font>
+Okay. You win!<br/>
+```</font>
 ### Automated. Bidirectional. C#. Clean. Correct. CSV. Documented. Excel. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
