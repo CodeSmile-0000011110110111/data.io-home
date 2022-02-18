@@ -6,7 +6,7 @@ title: Got data?
 # Use data&lt;io&gt; !
 
 ### C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
-### SQL. GSheets. SODB. CSV. JSON. SQLite(r). More ...
+### SQL. GSheets. SODB. CSV. JSON. SQLiter. More ...
 
 <p/>
 #### Served on the side:
