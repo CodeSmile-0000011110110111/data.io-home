@@ -13,8 +13,7 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 \> use data.io
 Okay. You win.
 ```
-#### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
-#### SQL. GSheets. SODB. CSV. JSON. SQLiter.
+#### C#. Clean. Correct. CSV. Docs. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLiter. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 #### Served on the side:
