@@ -1,6 +1,6 @@
 ---
 layout: forward
-title: API Docs
+title: Manual | Scripting API
 target: https://sitterheim.github.io/data.io-home/api-docs/index.html
 permalink: /api-docs/
 ---
