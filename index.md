@@ -42,10 +42,12 @@ I just cannot _NOT_ write code the right way ...
 - Latest libs included for convenience
   - SQLite, Google Sheets, ..
 
-#### Serves any purpose: 
+#### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQL Lover) <=> (No SQL, please!)
+- (No reflection) <=> (I don't mind)
+- (Coder) <=> (Designer)
 
 ### When? Where??
 
