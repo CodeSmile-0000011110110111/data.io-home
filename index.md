@@ -15,7 +15,9 @@ Okay. You win.
 ```
 
 ### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
-### SQL. GSheets. SODB. CSV. JSON. SQLiter. ...
+In alphabetical order.
+### SQL. GSheets. SODB. CSV. JSON. SQLiter.
+Need more? Let me know => fremdspielen (at) gmail.com
 
 <p/><p/>
 #### Served on the side:
