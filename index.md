@@ -33,7 +33,7 @@ I just cannot _NOT_ write code the right way ...
   - access by type, query with LINQ, serializable to JSON
 - **No-Reflection SQLiter**
   - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
-- Fast Type/Value conversion from strings
+- Fast Type/Value conversion of strings
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
 - Build your own toolchain easily!
   - Modular code, Inspector-ready settings
