@@ -75,7 +75,7 @@
   </h1>
   <div class="markdown level0 summary"><p>Very fast string to int, long, float, double, bool conversion which also handles formatted numbers (separators, percent, currency).</p>
 <p>Optimizations aim at preventing calls to TryParse as early as possible by performing sanity checks on the string.
-These speed-ups were battle-tested with a huge CSV file of ~45,000 rows times 45 columns. It made CSV reading 3-4 times faster
+These speed-ups were battle-tested with a huge CSV file of ~45,000 rows times 45 columns (&gt;18 MB!). It made CSV reading 3-5 times faster
 compared to brute-force TryParse each type one after another.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -330,7 +330,8 @@ Use this if you find that ConvertValue.TryParse() is converting formatted number
   </table>
   <a id="Data_IO_Tools_ConvertValue_TryParse_" data-uid="Data.IO.Tools.ConvertValue.TryParse*"></a>
   <h4 id="Data_IO_Tools_ConvertValue_TryParse_System_String_System_Globalization_CultureInfo_" data-uid="Data.IO.Tools.ConvertValue.TryParse(System.String,System.Globalization.CultureInfo)">TryParse(String, CultureInfo)</h4>
-  <div class="markdown level1 summary"><p>Fast string to int, long, float, double, bool conversion.</p>
+  <div class="markdown level1 summary"><p>Fast string to int, long, float, double, bool conversion. Input value is assumed to be whitespace-trimmed. If that is not guaranteed,
+call input.Trim() before passing it into this method.</p>
 <p>Optimizations are (not necessarily in this order):
 Int/Float NumberStyles do not allow leading/trailing whitespace
 Rationale: the converter was built for CSV use-case where whitespace never occurs, or if it does,

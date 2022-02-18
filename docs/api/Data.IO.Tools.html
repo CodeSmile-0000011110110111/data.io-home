@@ -83,7 +83,7 @@
       <h4><a class="xref" href="Data.IO.Tools.ConvertValue.html">ConvertValue</a></h4>
       <section><p>Very fast string to int, long, float, double, bool conversion which also handles formatted numbers (separators, percent, currency).</p>
 <p>Optimizations aim at preventing calls to TryParse as early as possible by performing sanity checks on the string.
-These speed-ups were battle-tested with a huge CSV file of ~45,000 rows times 45 columns. It made CSV reading 3-4 times faster
+These speed-ups were battle-tested with a huge CSV file of ~45,000 rows times 45 columns (&gt;18 MB!). It made CSV reading 3-5 times faster
 compared to brute-force TryParse each type one after another.</p>
 </section>
       <h4><a class="xref" href="Data.IO.Tools.IndentStringBuilder.html">IndentStringBuilder</a></h4>

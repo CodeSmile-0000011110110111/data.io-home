@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,25 +83,38 @@
     <div>
       <span class="xref">UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()</span>
     </div>
-    <div>
-      <span class="xref">System.Collections.Generic.IEnumerable&lt;Data.IO.DB.ITable&lt;Data.IO.DB.Record&gt;&gt;.GetEnumerator()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.DB.html">Data.IO.DB</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.DB.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.Interfaces.dll</h6>
   <h5 id="Data_IO_DB_IDatabase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDatabase : ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDatabase : ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_IDatabase_Name.md&amp;value=---%0Auid%3A%20Data.IO.DB.IDatabase.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/DB Interfaces/IDatabase.cs/#L9">View Source</a>
-  </span>
+  <a id="Data_IO_DB_IDatabase_DatabaseSchema_" data-uid="Data.IO.DB.IDatabase.DatabaseSchema*"></a>
+  <h4 id="Data_IO_DB_IDatabase_DatabaseSchema" data-uid="Data.IO.DB.IDatabase.DatabaseSchema">DatabaseSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDatabaseSchema DatabaseSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Schema.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_DB_IDatabase_Name_" data-uid="Data.IO.DB.IDatabase.Name*"></a>
   <h4 id="Data_IO_DB_IDatabase_Name" data-uid="Data.IO.DB.IDatabase.Name">Name</h4>
   <div class="markdown level1 summary"></div>
@@ -125,52 +138,23 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_IDatabase_Schema.md&amp;value=---%0Auid%3A%20Data.IO.DB.IDatabase.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/DB Interfaces/IDatabase.cs/#L10">View Source</a>
-  </span>
-  <a id="Data_IO_DB_IDatabase_Schema_" data-uid="Data.IO.DB.IDatabase.Schema*"></a>
-  <h4 id="Data_IO_DB_IDatabase_Schema" data-uid="Data.IO.DB.IDatabase.Schema">Schema</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Schema Schema { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_IDatabase_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.IDatabase.Init(Data.IO.DB.IDatabaseReader%2CData.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/DB Interfaces/IDatabase.cs/#L12">View Source</a>
-  </span>
-  <a id="Data_IO_DB_IDatabase_Init_" data-uid="Data.IO.DB.IDatabase.Init*"></a>
-  <h4 id="Data_IO_DB_IDatabase_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.IDatabase.Init(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">Init(IDatabaseReader, IDatabaseWriter)</h4>
+  <a id="Data_IO_DB_IDatabase_Read_" data-uid="Data.IO.DB.IDatabase.Read*"></a>
+  <h4 id="Data_IO_DB_IDatabase_Read" data-uid="Data.IO.DB.IDatabase.Read">Read()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Init(IDatabaseReader reader, IDatabaseWriter writer)</code></pre>
+    <pre><code class="lang-csharp hljs">void Read()</code></pre>
+  </div>
+  <a id="Data_IO_DB_IDatabase_Write_" data-uid="Data.IO.DB.IDatabase.Write*"></a>
+  <h4 id="Data_IO_DB_IDatabase_Write_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.IDatabase.Write(Data.IO.DB.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Write(IDatabaseWriter writer = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,11 +166,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseReader.html">IDatabaseReader</a></td>
-        <td><span class="parametername">reader</span></td>
-        <td></td>
-      </tr>
       <tr>
         <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
@@ -194,53 +173,19 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_IDatabase_Init_Data_IO_DB_Schema_.md&amp;value=---%0Auid%3A%20Data.IO.DB.IDatabase.Init(Data.IO.DB.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/DB Interfaces/IDatabase.cs/#L13">View Source</a>
-  </span>
-  <a id="Data_IO_DB_IDatabase_Init_" data-uid="Data.IO.DB.IDatabase.Init*"></a>
-  <h4 id="Data_IO_DB_IDatabase_Init_Data_IO_DB_Schema_" data-uid="Data.IO.DB.IDatabase.Init(Data.IO.DB.Schema)">Init(Schema)</h4>
+  <a id="Data_IO_DB_IDatabase_WriteDirty_" data-uid="Data.IO.DB.IDatabase.WriteDirty*"></a>
+  <h4 id="Data_IO_DB_IDatabase_WriteDirty" data-uid="Data.IO.DB.IDatabase.WriteDirty">WriteDirty()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Init(Schema schema)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteDirty()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
-        <td><span class="parametername">schema</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_IDatabase.md&amp;value=---%0Auid%3A%20Data.IO.DB.IDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/DB Interfaces/IDatabase.cs/#L7" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -257,9 +202,9 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
             
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+          </io></div>
         </div>
       </footer>
     </div>

@@ -85,9 +85,9 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Data.IO.DB.Database.IInitializable.html">Database.IInitializable</a></div>
-    <div><span class="xref">Data.IO.DB.IDatabase</span></div>
+    <div><a class="xref" href="Data.IO.DB.Interfaces.IDatabase.html">IDatabase</a></div>
     <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
-    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -210,6 +210,29 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Data_IO_DB_Database_DatabaseSchema_" data-uid="Data.IO.DB.Database.DatabaseSchema*"></a>
+  <h4 id="Data_IO_DB_Database_DatabaseSchema" data-uid="Data.IO.DB.Database.DatabaseSchema">DatabaseSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDatabaseSchema DatabaseSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_DB_Database_Item_" data-uid="Data.IO.DB.Database.Item*"></a>
   <h4 id="Data_IO_DB_Database_Item_System_String_" data-uid="Data.IO.DB.Database.Item(System.String)">Item[String]</h4>
   <div class="markdown level1 summary"><p>Gets a table by name. Returns null if the table couldn't be found.</p>
@@ -246,7 +269,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;</td>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -292,30 +315,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_DB_Database_Schema_" data-uid="Data.IO.DB.Database.Schema*"></a>
-  <h4 id="Data_IO_DB_Database_Schema" data-uid="Data.IO.DB.Database.Schema">Schema</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISchema Schema { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Data.IO.DB.ISchema</span></td>
+        <td><a class="xref" href="Data.IO.DB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -338,7 +338,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -346,7 +346,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
-  <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">CreateInstance(IDatabaseReader, IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_Reader_Interfaces_IDatabaseReader_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.Reader.Interfaces.IDatabaseReader,Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">CreateInstance(IDatabaseReader, IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -364,12 +364,12 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
+        <td><a class="xref" href="Data.IO.DB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -391,12 +391,12 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
-  <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_Schema_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.Schema)">CreateInstance(Schema)</h4>
+  <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_Schema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.Schema.Interfaces.IDatabaseSchema)">CreateInstance(IDatabaseSchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Database CreateInstance(Schema schema)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Database CreateInstance(IDatabaseSchema schema)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -409,7 +409,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>
@@ -471,7 +471,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
-  <h4 id="Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance``1(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">CreateInstance&lt;TDatabase&gt;(IDatabaseReader, IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_Reader_Interfaces_IDatabaseReader_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance``1(Data.IO.DB.Reader.Interfaces.IDatabaseReader,Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">CreateInstance&lt;TDatabase&gt;(IDatabaseReader, IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -490,12 +490,12 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
+        <td><a class="xref" href="Data.IO.DB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -532,12 +532,12 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
-  <h4 id="Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_Schema_" data-uid="Data.IO.DB.Database.CreateInstance``1(Data.IO.DB.Schema)">CreateInstance&lt;TDatabase&gt;(Schema)</h4>
+  <h4 id="Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_Schema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.DB.Database.CreateInstance``1(Data.IO.DB.Schema.Interfaces.IDatabaseSchema)">CreateInstance&lt;TDatabase&gt;(IDatabaseSchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(Schema schema)
+    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseSchema schema)
     where TDatabase : ScriptableObject, IDatabase, Database.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -551,7 +551,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>
@@ -644,7 +644,7 @@ public class Database : ScriptableObject, Database.IInitializable, IDatabase, IS
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_CreateTable_" data-uid="Data.IO.DB.Database.CreateTable*"></a>
-  <h4 id="Data_IO_DB_Database_CreateTable__1_Data_IO_DB_TableInfo_" data-uid="Data.IO.DB.Database.CreateTable``1(Data.IO.DB.TableInfo)">CreateTable&lt;TTable&gt;(TableInfo)</h4>
+  <h4 id="Data_IO_DB_Database_CreateTable__1_Data_IO_DB_Schema_TableInfo_" data-uid="Data.IO.DB.Database.CreateTable``1(Data.IO.DB.Schema.TableInfo)">CreateTable&lt;TTable&gt;(TableInfo)</h4>
   <div class="markdown level1 summary"><p>Creates a table and adds it to the schema.
 Table must not already exist in schema.</p>
 </div>
@@ -665,7 +665,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.TableInfo.html">TableInfo</a></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.TableInfo.html">TableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
         <td></td>
       </tr>
@@ -702,7 +702,7 @@ Table must not already exist in schema.</p>
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_CreateTableFor_" data-uid="Data.IO.DB.Database.CreateTableFor*"></a>
-  <h4 id="Data_IO_DB_Database_CreateTableFor__1_Data_IO_DB_TableInfo_" data-uid="Data.IO.DB.Database.CreateTableFor``1(Data.IO.DB.TableInfo)">CreateTableFor&lt;TRecord&gt;(TableInfo)</h4>
+  <h4 id="Data_IO_DB_Database_CreateTableFor__1_Data_IO_DB_Schema_TableInfo_" data-uid="Data.IO.DB.Database.CreateTableFor``1(Data.IO.DB.Schema.TableInfo)">CreateTableFor&lt;TRecord&gt;(TableInfo)</h4>
   <div class="markdown level1 summary"><p>Creates a table for specific record type and adds it to the schema.
 Table must not already exist in schema.</p>
 </div>
@@ -723,7 +723,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.TableInfo.html">TableInfo</a></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.TableInfo.html">TableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
         <td></td>
       </tr>
@@ -739,7 +739,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITable</span>&lt;TRecord&gt;</td>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -850,7 +850,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -934,7 +934,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITable</span>&lt;TRecord&gt;</td>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1031,7 +1031,7 @@ Table must not already exist in schema.</p>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">UnityEngine.Object.ToString()</span></div>
   <a id="Data_IO_DB_Database_Write_" data-uid="Data.IO.DB.Database.Write*"></a>
-  <h4 id="Data_IO_DB_Database_Write_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Write(Data.IO.DB.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Database_Write_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Write(Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1049,7 +1049,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -1066,7 +1066,7 @@ Table must not already exist in schema.</p>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <a id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init*"></a>
-  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">Database.IInitializable.Init(IDatabaseReader, IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_Reader_Interfaces_IDatabaseReader_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.Reader.Interfaces.IDatabaseReader,Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">Database.IInitializable.Init(IDatabaseReader, IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1084,24 +1084,24 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
+        <td><a class="xref" href="Data.IO.DB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init*"></a>
-  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_ISchema_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.ISchema)">Database.IInitializable.Init(ISchema)</h4>
+  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_Schema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.Schema.Interfaces.IDatabaseSchema)">Database.IInitializable.Init(IDatabaseSchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Database.IInitializable.Init(ISchema schema)</code></pre>
+    <pre><code class="lang-csharp hljs">void Database.IInitializable.Init(IDatabaseSchema schema)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1114,7 +1114,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ISchema</span></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>
@@ -1148,7 +1148,7 @@ Table must not already exist in schema.</p>
       <a class="xref" href="Data.IO.DB.Database.IInitializable.html">Database.IInitializable</a>
   </div>
   <div>
-      <span class="xref">Data.IO.DB.IDatabase</span>
+      <a class="xref" href="Data.IO.DB.Interfaces.IDatabase.html">IDatabase</a>
   </div>
   <div>
       <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>

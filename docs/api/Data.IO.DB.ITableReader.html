@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -78,27 +78,17 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Data.IO.DB.ISchemaReader.html#Data_IO_DB_ISchemaReader_GetDatabaseName">ISchemaReader.GetDatabaseName()</a>
-    </div>
-    <div>
       <a class="xref" href="Data.IO.DB.ISchemaReader.html#Data_IO_DB_ISchemaReader_ReadSchema">ISchemaReader.ReadSchema()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.DB.html">Data.IO.DB</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.DB.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.Interfaces.dll</h6>
   <h5 id="Data_IO_DB_ITableReader_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ITableReader : ISchemaReader</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_ITableReader_ReadAllTuples_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.ITableReader.ReadAllTuples(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/IO Interfaces/ITableReader.cs/#L10">View Source</a>
-  </span>
   <a id="Data_IO_DB_ITableReader_ReadAllTuples_" data-uid="Data.IO.DB.ITableReader.ReadAllTuples*"></a>
   <h4 id="Data_IO_DB_ITableReader_ReadAllTuples_System_String_" data-uid="Data.IO.DB.ITableReader.ReadAllTuples(System.String)">ReadAllTuples(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -139,21 +129,101 @@
       </tr>
     </tbody>
   </table>
+  <a id="Data_IO_DB_ITableReader_ReadTuple_" data-uid="Data.IO.DB.ITableReader.ReadTuple*"></a>
+  <h4 id="Data_IO_DB_ITableReader_ReadTuple_System_String_Data_IO_DB_Schema_IPrimaryKey_" data-uid="Data.IO.DB.ITableReader.ReadTuple(System.String,Data.IO.DB.Schema.IPrimaryKey)">ReadTuple(String, IPrimaryKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;object&gt; ReadTuple(string tableName, IPrimaryKey pk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Schema.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_DB_ITableReader_ReadTuples_" data-uid="Data.IO.DB.ITableReader.ReadTuples*"></a>
+  <h4 id="Data_IO_DB_ITableReader_ReadTuples_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_Schema_IPrimaryKey__" data-uid="Data.IO.DB.ITableReader.ReadTuples(System.String,System.Collections.Generic.IEnumerable{Data.IO.DB.Schema.IPrimaryKey})">ReadTuples(String, IEnumerable&lt;IPrimaryKey&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;IList&lt;object&gt;&gt; ReadTuples(string tableName, IEnumerable&lt;IPrimaryKey&gt; pk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.Schema.IPrimaryKey.html">IPrimaryKey</a>&gt;</td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_ITableReader.md&amp;value=---%0Auid%3A%20Data.IO.DB.ITableReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/IO Interfaces/ITableReader.cs/#L6" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -170,9 +240,9 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
             
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+          </io></div>
         </div>
       </footer>
     </div>

@@ -84,8 +84,8 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Data.IO.DB.TableBase.IInitializable.html">TableBase.IInitializable</a></div>
-    <div><span class="xref">Data.IO.DB.ITable</span>&lt;TRecord&gt;</div>
-    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Data.IO.DB.IRecord</span>&gt;</div>
+    <div><a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.Interfaces.IRecord.html">IRecord</a>&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -151,7 +151,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITableInfo</span></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.ITableInfo.html">ITableInfo</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -182,7 +182,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_DB_Table_1_AddRecord_" data-uid="Data.IO.DB.Table`1.AddRecord*"></a>
-  <h4 id="Data_IO_DB_Table_1_AddRecord_Data_IO_DB_IRecord_" data-uid="Data.IO.DB.Table`1.AddRecord(Data.IO.DB.IRecord)">AddRecord(IRecord)</h4>
+  <h4 id="Data_IO_DB_Table_1_AddRecord_Data_IO_DB_Interfaces_IRecord_" data-uid="Data.IO.DB.Table`1.AddRecord(Data.IO.DB.Interfaces.IRecord)">AddRecord(IRecord)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -200,7 +200,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IRecord</span></td>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IRecord.html">IRecord</a></td>
         <td><span class="parametername">record</span></td>
         <td></td>
       </tr>
@@ -232,7 +232,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </tbody>
   </table>
   <a id="Data_IO_DB_Table_1_Get_" data-uid="Data.IO.DB.Table`1.Get*"></a>
-  <h4 id="Data_IO_DB_Table_1_Get__1_Data_IO_DB_IPrimaryKey_" data-uid="Data.IO.DB.Table`1.Get``1(Data.IO.DB.IPrimaryKey)">Get&lt;TAnyRecord&gt;(IPrimaryKey)</h4>
+  <h4 id="Data_IO_DB_Table_1_Get__1_Data_IO_DB_Schema_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Table`1.Get``1(Data.IO.DB.Schema.Interfaces.IPrimaryKey)">Get&lt;TAnyRecord&gt;(IPrimaryKey)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,7 +251,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IPrimaryKey</span></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
         <td><span class="parametername">pk</span></td>
         <td></td>
       </tr>
@@ -457,7 +457,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">Data.IO.DB.IRecord</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Data.IO.DB.Interfaces.IRecord.html">IRecord</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -486,7 +486,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </tbody>
   </table>
   <a id="Data_IO_DB_Table_1_Init_" data-uid="Data.IO.DB.Table`1.Init*"></a>
-  <h4 id="Data_IO_DB_Table_1_Init_Data_IO_DB_ITableInfo_" data-uid="Data.IO.DB.Table`1.Init(Data.IO.DB.ITableInfo)">Init(ITableInfo)</h4>
+  <h4 id="Data_IO_DB_Table_1_Init_Data_IO_DB_Schema_Interfaces_ITableInfo_" data-uid="Data.IO.DB.Table`1.Init(Data.IO.DB.Schema.Interfaces.ITableInfo)">Init(ITableInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -504,16 +504,16 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITableInfo</span></td>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.ITableInfo.html">ITableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Data.IO.DB.TableBase.html#Data_IO_DB_TableBase_Init_Data_IO_DB_ITableInfo_">TableBase.Init(ITableInfo)</a></div>
+  <div><a class="xref" href="Data.IO.DB.TableBase.html#Data_IO_DB_TableBase_Init_Data_IO_DB_Schema_Interfaces_ITableInfo_">TableBase.Init(ITableInfo)</a></div>
   <a id="Data_IO_DB_Table_1_Read_" data-uid="Data.IO.DB.Table`1.Read*"></a>
-  <h4 id="Data_IO_DB_Table_1_Read_Data_IO_DB_ITableReader_" data-uid="Data.IO.DB.Table`1.Read(Data.IO.DB.ITableReader)">Read(ITableReader)</h4>
+  <h4 id="Data_IO_DB_Table_1_Read_Data_IO_DB_Reader_Interfaces_ITableReader_" data-uid="Data.IO.DB.Table`1.Read(Data.IO.DB.Reader.Interfaces.ITableReader)">Read(ITableReader)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -531,54 +531,14 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.ITableReader</span></td>
+        <td><a class="xref" href="Data.IO.DB.Reader.Interfaces.ITableReader.html">ITableReader</a></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_DB_Table_1_RemoveRecord_" data-uid="Data.IO.DB.Table`1.RemoveRecord*"></a>
-  <h4 id="Data_IO_DB_Table_1_RemoveRecord_Data_IO_DB_IPrimaryKey_" data-uid="Data.IO.DB.Table`1.RemoveRecord(Data.IO.DB.IPrimaryKey)">RemoveRecord(IPrimaryKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IRecord RemoveRecord(IPrimaryKey pk)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Data.IO.DB.IPrimaryKey</span></td>
-        <td><span class="parametername">pk</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Data.IO.DB.IRecord</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_DB_Table_1_RemoveRecord_" data-uid="Data.IO.DB.Table`1.RemoveRecord*"></a>
-  <h4 id="Data_IO_DB_Table_1_RemoveRecord_Data_IO_DB_IRecord_" data-uid="Data.IO.DB.Table`1.RemoveRecord(Data.IO.DB.IRecord)">RemoveRecord(IRecord)</h4>
+  <h4 id="Data_IO_DB_Table_1_RemoveRecord_Data_IO_DB_Interfaces_IRecord_" data-uid="Data.IO.DB.Table`1.RemoveRecord(Data.IO.DB.Interfaces.IRecord)">RemoveRecord(IRecord)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -596,8 +556,48 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IRecord</span></td>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IRecord.html">IRecord</a></td>
         <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_DB_Table_1_RemoveRecord_" data-uid="Data.IO.DB.Table`1.RemoveRecord*"></a>
+  <h4 id="Data_IO_DB_Table_1_RemoveRecord_Data_IO_DB_Schema_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Table`1.RemoveRecord(Data.IO.DB.Schema.Interfaces.IPrimaryKey)">RemoveRecord(IPrimaryKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRecord RemoveRecord(IPrimaryKey pk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IRecord.html">IRecord</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -628,7 +628,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
   <a id="Data_IO_DB_Table_1_Write_" data-uid="Data.IO.DB.Table`1.Write*"></a>
-  <h4 id="Data_IO_DB_Table_1_Write_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Table`1.Write(Data.IO.DB.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Table_1_Write_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Table`1.Write(Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -646,14 +646,14 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_DB_Table_1_WriteDirty_" data-uid="Data.IO.DB.Table`1.WriteDirty*"></a>
-  <h4 id="Data_IO_DB_Table_1_WriteDirty_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Table`1.WriteDirty(Data.IO.DB.IDatabaseWriter)">WriteDirty(IDatabaseWriter)</h4>
+  <h4 id="Data_IO_DB_Table_1_WriteDirty_Data_IO_DB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.DB.Table`1.WriteDirty(Data.IO.DB.Writer.Interfaces.IDatabaseWriter)">WriteDirty(IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -671,7 +671,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -707,7 +707,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       <a class="xref" href="Data.IO.DB.TableBase.IInitializable.html">TableBase.IInitializable</a>
   </div>
   <div>
-      <span class="xref">Data.IO.DB.ITable&lt;TRecord&gt;</span>
+      <a class="xref" href="Data.IO.DB.Interfaces.ITable-1.html">ITable&lt;TRecord&gt;</a>
   </div>
   <div>
       <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
