@@ -15,7 +15,7 @@ You sweat and shiver as you ...<br/><br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
 Okay. You win!&nbsp;
   ```</font>
-### Automated. Bidirectional. C#. Clean. Correct. <a href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
+### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 ### Served on the side:
@@ -31,7 +31,7 @@ I just cannot _NOT_ write code the right way ...
   - strongly-typed accessible, LINQ queryable, JSON serializable
 - **Reflection-less SQLite`r´**
   - `IList<IList<object>> rows = SQLiter.Query("SELECT * FROM MyTable");`
-- **<a href="docs/api/Data.IO.Script.Builder.html">ScriptBuilder</a>**
+- **<a target="_blank" href="docs/api/Data.IO.Script.Builder.html">ScriptBuilder</a>**
   - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
