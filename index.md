@@ -9,7 +9,7 @@ in woefully escaped delimiters, culture-unique encodings and flawed-type convert
 
 A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 
-\> use data.io
+\> use data<io>
 Okay. You win.
 ```
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="350"/>
