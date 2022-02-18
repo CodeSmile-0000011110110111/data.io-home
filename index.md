@@ -2,7 +2,7 @@
 layout: page
 title: Got data?
 ---
-![data.io logo](/data.io-home/assets/data.io-banner.png)
+![data.io logo](/data.io-home/assets/data.io-banner-transparent.png)
 <img src="/data.io-home/assets/data.io-banner.png" alt="data.io logo" width="700"/>
 ```
 \> enter north into cs valley
