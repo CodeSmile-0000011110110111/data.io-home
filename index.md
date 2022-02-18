@@ -50,7 +50,7 @@ I just cannot _NOT_ write code the right way ...
 
 ### When? Where??
 
-data.io is coming Q3/Q4 2022 to the Unity Asset Store!
+data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
 - Interested? Contact me! => fremdspielen (at) gmail.com
 - I'm looking for: early adopters / beta testers, real-world datasets for testing, understanding your workflow and pain points, ideas for more data-centric tools, love and admiration.
