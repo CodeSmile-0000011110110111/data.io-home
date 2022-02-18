@@ -6,9 +6,11 @@ title: Got data?
 \> enter north into cs valley
 You head north, unexpectedly entering a dark alley due to human-machine miscommunication.
 Suddenly, you find yourself immersed in woefully escaped delimiters, culture-unique
-encodings and flawed-type converters. 
+encodings and flawed-type converters. A goggely voice gloomingly whispers: 
 
-A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
+"Seequl. Seeeeequl!"
+
+You sweat and shiver as you ...
 
 \> use data<io>
 Okay. You win.
