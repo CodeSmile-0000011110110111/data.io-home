@@ -11,7 +11,7 @@ encodings and flawed-type converters.
 
 You sweat and shiver as you ...
 
-\> use data&lt;io&gt;
+  \> use <strong>data&lt;io&gt;</strong>
 Okay. You win.
 ```
   </font>
