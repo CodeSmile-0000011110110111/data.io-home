@@ -13,29 +13,29 @@ title: Got data?
 #### Served on the side:
 I just cannot *NOT* write code the right way ...
 <p/>
-* ScriptBuilder
+- ScriptBuilder
   * => fully customizable C# script generator with type descriptions so you only need to fill in names and method bodies
-* Auto-Generate
+- Auto-Generate
   * => Classes to DB schema *AND* DB schema or CSV to classes.
-* SQLBuilder
+- SQLBuilder
   * => type-safe, quote-escaped SQL query builder (which will eventually understand various dialects, too)
-* Memory-Cached ScriptableObject Database (SODB)
+- Memory-Cached ScriptableObject Database (SODB)
   * => serializable to JSON if needed
-* No-Reflection SQLite
+- No-Reflection SQLite
   * => ´IList<IList<object>> rowsWithValues = SQLite*r*Command.Query("Select * FROM MyTable");´
-* Fast Type/Value conversion from strings
+- Fast Type/Value conversion from strings
   * => support for culture-specific number formats and any text encoding, with clever checks to avoid unnecessary exception-heavy TryParse
-* Build your own toolchain easily!
+- Build your own toolchain easily!
   * => Custom Editor tools fully supported through modular code. Inspector-ready settings objects can be fed into individual tools.
-* Full source code included!
+- Full source code included!
   * => Nothing is purposefully hidden like so many other assets! Includes JetBrains Code annotations.
-* Documented use of external code/libs and their licenses.
+- Documented use of external code/libs and their licenses.
   * => Latest libs included for convenience. Currently that's SQLite, Google Sheets API.
 
 #### Supports any workflow: 
-* (turn Code into Data) <=> (turn Data into Code)
-* (Let me handle it) <=> (Wow, it just works)
-* (SQL Lover) <=> (No SQL, please!)
+- (turn Code into Data) <=> (turn Data into Code)
+- (Let me handle it) <=> (Wow, it just works)
+- (SQL Lover) <=> (No SQL, please!)
 
   ...
   ...
