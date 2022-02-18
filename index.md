@@ -12,15 +12,15 @@ title: Got data?
 #### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <p/>
-- *ScriptBuilder*
+- **ScriptBuilder**
   - C# script generator, only need to fill in names and method bodies
-- *Auto-Generate*
+- **Automation**
   - Classes to DB schema *AND* DB schema or CSV to classes.
-- *SQLBuilder*
+- **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
-- *Memory-Cached SODB* (ScriptableObject Database)
-  - fully serializes to JSON when needed
-- *No-Reflection SQLite*
+- **In-Memory SODB** (ScriptableObject Database)
+  - access by type, query with LINQ, serializable to JSON
+- **No-Reflection SQLite**
   - `IList<IList<object>> rows = SQLite*r*Command.Query("SELECT * FROM MyTable");`
 - Fast Type/Value conversion from strings
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
