@@ -12,7 +12,7 @@ culture-unique encodings and flawed-type converters. A glooming voice whispers: 
 Okay. You win.
 ```
 
-### C#. Clean. Correct. Documented. Fast. Flexible. Modular. Tested. Unity.
+### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
 ### SQL. GSheets. SODB. CSV. JSON. SQLiter. More ...
 
 <p/><p/>
