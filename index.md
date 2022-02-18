@@ -17,7 +17,7 @@ Okay. You win.
 In alphabetical order.
 
 ### SQL. GSheets. SODB. CSV. JSON. SQLiter.
-Need more? Let me know => fremdspielen (at) gmail.com
+Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
