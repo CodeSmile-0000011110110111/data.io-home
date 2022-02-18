@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About data&lt;io&gt;
+title: Got data? Use data<io>!
 ---
 
-# data&lt;io&gt;
+# What is data&lt;io&gt; ?
 
-Clean. Correct. Fast. Flexible. Modular.
+C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
 
-SQL. CSV. JSON. SODB. Script. And more ...
+SQL. CSV. JSON. SODB. Script. Soon more ...
 
 
 ## (below is first draft)
