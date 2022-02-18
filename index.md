@@ -23,20 +23,18 @@ I just cannot _NOT_ write code the right way ...
 <p/>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
-- **ScriptBuilder**
-  - C# script generator, only need to fill in names and method bodies
-- **SQLBuilder**
-  - type-safe, quote-escaped SQL query builder
+- **BYOT: Bring your own toolchain!**
+  - Modular code, Inspector-ready settings classes, common interfaces
+- **Complete source code included!**
+  - Interface-driven, documented API with JetBrains Code annotations
 - **In-Memory SODB** (ScriptableObject Database)
   - strongly-typed accessible, LINQ queryable, JSON serializable
 - **Reflection-less SQLite`r´**
   - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
-- **BYOT: Bring your own toolchain!**
-  - Modular code, Inspector-ready settings classes, common interfaces
-- **Full source code included**
-  - Interface-driven, documented API with JetBrains Code annotations
-- **Latest libs included**
-  - SQLite, Google Sheets, ..
+- **ScriptBuilder**
+  - C# script generator, only need to fill in names and method bodies
+- **SQLBuilder**
+  - type-safe, quote-escaped SQL query builder
 
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
