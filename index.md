@@ -2,6 +2,7 @@
 layout: page
 title: Got data?
 ---
+<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="300"/>
 ```
 \> enter north into cs valley
 You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
@@ -12,7 +13,6 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 \> use data.io
 Okay. You win.
 ```
-<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="300"/>
 #### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
 #### SQL. GSheets. SODB. CSV. JSON. SQLiter.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
