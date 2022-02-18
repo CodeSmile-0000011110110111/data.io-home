@@ -2,7 +2,7 @@
 layout: page
 title: Got data?
 ---
-<font size=6px>
+<font size=7px>
 ```
 \> north
 You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
