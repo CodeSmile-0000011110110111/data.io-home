@@ -4,9 +4,9 @@ title: Got data?
 ---
 ```
 \> enter north into cs valley
-You head north, unexpectedly entering a dark alley due to syntax error near '('.
-Suddenly, you find yourself immersed in woefully escaped delimiters, culture-unique
-encodings and flawed-type converters.
+You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
+you find yourself immersed in woefully escaped delimiters, culture-unique encodings and 
+flawed-type converters.
 
 You sweat and shiver as you ...
 
