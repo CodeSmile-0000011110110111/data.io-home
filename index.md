@@ -20,7 +20,7 @@ I just cannot _NOT_ write code the right way ...
   - type-safe, quote-escaped SQL query builder
 - **In-Memory SODB** (ScriptableObject Database)
   - access by type, query with LINQ, serializable to JSON
-- **No-Reflection SQLite_r_**
+- **No-Reflection SQLiter**
   - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
 - Fast Type/Value conversion from strings
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
