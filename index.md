@@ -3,7 +3,14 @@ layout: page
 title: Got data?
 ---
 
-# Use data&lt;io&gt; !
+```
+\> enter north into cs valley
+You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed in woefully escaped delimiters, 
+culture-unique encodings and flawed-type converters. A glooming voice whispers: "seeeequl". You sweat and shiver as you ..
+
+\> use data.io
+Okay. You win.
+```
 
 ### C#. Clean. Correct. Documented. Fast. Flexible. Modular. Tested. Unity.
 ### SQL. GSheets. SODB. CSV. JSON. SQLiter. More ...
