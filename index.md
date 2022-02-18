@@ -15,7 +15,7 @@ You sweat and shiver as you ...<br/><br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
 Okay. You win!&nbsp;
   ```</font>
-### Automated. Bidirectional. C#. Clean. Correct. CSV. Documented. Excel. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
+### Automated. Bidirectional. C#. Clean. Correct. CSV. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 ### Served on the side:
@@ -28,8 +28,8 @@ I just cannot _NOT_ write code the right way ...
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
 - **In-Memory SODB** (ScriptableObject Database)
-  - access by type, query with LINQ, serializable to JSON
-- **No-Reflection SQLiter**
+  - strongly-typed accessible, LINQ queryable, JSON serializable
+- **Reflection-less SQLite`r´**
   - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
 - Fast Type/Value conversion of strings
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
