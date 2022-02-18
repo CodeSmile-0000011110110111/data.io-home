@@ -21,10 +21,10 @@ Okay. You win!&nbsp;
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <p/>
-- **ScriptBuilder**
-  - C# script generator, only need to fill in names and method bodies
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
+- **ScriptBuilder**
+  - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
 - **In-Memory SODB** (ScriptableObject Database)
