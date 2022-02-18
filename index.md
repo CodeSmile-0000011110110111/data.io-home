@@ -8,7 +8,7 @@ You head north, unexpectedly entering a dark alley due to syntax error near '('.
 Suddenly, you find yourself immersed in woefully escaped delimiters, culture-unique
 encodings and flawed-type converters. A goggely voice gloomingly whispers: 
 
-"Seee. Seeeeequl!"
+"See.. Seee.. Seeeequl!"
 
 You sweat and shiver as you ...
 
