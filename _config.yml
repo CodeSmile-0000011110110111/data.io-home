@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+remote_theme: jekyll/minima
 lsi: false
 safe: true
 incremental: false
