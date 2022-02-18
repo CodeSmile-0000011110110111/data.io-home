@@ -2,7 +2,7 @@
 layout: page
 title: Got data?
 ---
-<font size=8px>
+<font size=6px>
 ```
 \> north
 You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
@@ -12,9 +12,7 @@ encodings and flawed-type converters.
 You sweat and shiver as you ...
 
   \> use
-```
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
-```
 Okay. You win.
 ```
   </font>
