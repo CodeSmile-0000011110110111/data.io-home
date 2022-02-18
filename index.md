@@ -45,7 +45,7 @@ I just cannot _NOT_ write code the right way ...
 #### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
-- (SQL Lover) <=> (No SQL, please!)
+- (SQLover) <=> (No SQL!)
 - (No reflection) <=> (I don't mind)
 - (Coder) <=> (Designer)
 
