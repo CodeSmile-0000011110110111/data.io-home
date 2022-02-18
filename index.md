@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Got data? Use data<io>!
+title: Got data?
 ---
 
-# What is data&lt;io&gt; ?
+# Use data&lt;io&gt; !
 
 C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
 
