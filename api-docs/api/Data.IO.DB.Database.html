@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -84,9 +84,10 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DB.IDatabase.html">IDatabase</a></div>
+    <div><a class="xref" href="Data.IO.DB.Database.IInitializable.html">Database.IInitializable</a></div>
+    <div><span class="xref">Data.IO.DB.IDatabase</span></div>
     <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
-    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -205,39 +206,8 @@
   <h5 id="Data_IO_DB_Database_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class Database : ScriptableObject, IDatabase, ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
+public class Database : ScriptableObject, Database.IInitializable, IDatabase, ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_PrimaryKeyColumnName.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.PrimaryKeyColumnName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L13">View Source</a>
-  </span>
-  <h4 id="Data_IO_DB_Database_PrimaryKeyColumnName" data-uid="Data.IO.DB.Database.PrimaryKeyColumnName">PrimaryKeyColumnName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string PrimaryKeyColumnName = &quot;Id&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -245,15 +215,16 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Item_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L21">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L16">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Item_" data-uid="Data.IO.DB.Database.Item*"></a>
   <h4 id="Data_IO_DB_Database_Item_System_String_" data-uid="Data.IO.DB.Database.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a table by name. Returns null if the table couldn't be found.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITable&lt;Record&gt; this[string tableName] { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITable&lt;Record&gt; this[string tableName] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,7 +253,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;</td>
+        <td><span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -292,7 +263,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Name.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L15">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L10">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Name_" data-uid="Data.IO.DB.Database.Name*"></a>
   <h4 id="Data_IO_DB_Database_Name" data-uid="Data.IO.DB.Database.Name">Name</h4>
@@ -319,40 +290,10 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_NameSpace.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.NameSpace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L16">View Source</a>
-  </span>
-  <a id="Data_IO_DB_Database_NameSpace_" data-uid="Data.IO.DB.Database.NameSpace*"></a>
-  <h4 id="Data_IO_DB_Database_NameSpace" data-uid="Data.IO.DB.Database.NameSpace">NameSpace</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string NameSpace { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Reader.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Reader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L18">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L9">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Reader_" data-uid="Data.IO.DB.Database.Reader*"></a>
   <h4 id="Data_IO_DB_Database_Reader" data-uid="Data.IO.DB.Database.Reader">Reader</h4>
@@ -372,7 +313,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -382,7 +323,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Schema.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L17">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L11">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Schema_" data-uid="Data.IO.DB.Database.Schema*"></a>
   <h4 id="Data_IO_DB_Database_Schema" data-uid="Data.IO.DB.Database.Schema">Schema</h4>
@@ -390,7 +331,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Schema Schema { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ISchema Schema { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -402,7 +343,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
+        <td><span class="xref">Data.IO.DB.ISchema</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -412,7 +353,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Writer.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Writer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L19">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L10">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Writer_" data-uid="Data.IO.DB.Database.Writer*"></a>
   <h4 id="Data_IO_DB_Database_Writer" data-uid="Data.IO.DB.Database.Writer">Writer</h4>
@@ -432,7 +373,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -444,7 +385,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateInstance_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateInstance(Data.IO.DB.IDatabaseReader%2CData.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L13">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L12">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
   <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">CreateInstance(IDatabaseReader, IDatabaseWriter)</h4>
@@ -465,12 +406,12 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -496,7 +437,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateInstance_Data_IO_DB_Schema_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateInstance(Data.IO.DB.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L11">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L10">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
   <h4 id="Data_IO_DB_Database_CreateInstance_Data_IO_DB_Schema_" data-uid="Data.IO.DB.Database.CreateInstance(Data.IO.DB.Schema)">CreateInstance(Schema)</h4>
@@ -543,7 +484,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateInstance_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateInstance(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L10">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L9">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
   <h4 id="Data_IO_DB_Database_CreateInstance_System_String_" data-uid="Data.IO.DB.Database.CreateInstance(System.String)">CreateInstance(String)</h4>
@@ -590,7 +531,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateInstance%60%601(Data.IO.DB.IDatabaseReader%2CData.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L34">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L35">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
   <h4 id="Data_IO_DB_Database_CreateInstance__1_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.CreateInstance``1(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">CreateInstance&lt;TDatabase&gt;(IDatabaseReader, IDatabaseWriter)</h4>
@@ -599,7 +540,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseReader reader, IDatabaseWriter writer = null)
-    where TDatabase : ScriptableObject, IDatabase, new()</code></pre>
+    where TDatabase : ScriptableObject, IDatabase, Database.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -612,12 +553,12 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -667,7 +608,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(Schema schema)
-    where TDatabase : ScriptableObject, IDatabase, new()</code></pre>
+    where TDatabase : ScriptableObject, IDatabase, Database.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -721,7 +662,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateInstance__1_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateInstance%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L16">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L15">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateInstance_" data-uid="Data.IO.DB.Database.CreateInstance*"></a>
   <h4 id="Data_IO_DB_Database_CreateInstance__1_System_String_" data-uid="Data.IO.DB.Database.CreateInstance``1(System.String)">CreateInstance&lt;TDatabase&gt;(String)</h4>
@@ -730,7 +671,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(string name)
-    where TDatabase : ScriptableObject, IDatabase, new()</code></pre>
+    where TDatabase : ScriptableObject, IDatabase, Database.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -784,11 +725,13 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateTable__1_Data_IO_DB_TableInfo_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateTable%60%601(Data.IO.DB.TableInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L44">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L41">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateTable_" data-uid="Data.IO.DB.Database.CreateTable*"></a>
   <h4 id="Data_IO_DB_Database_CreateTable__1_Data_IO_DB_TableInfo_" data-uid="Data.IO.DB.Database.CreateTable``1(Data.IO.DB.TableInfo)">CreateTable&lt;TTable&gt;(TableInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a table and adds it to the schema.
+Table must not already exist in schema.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -847,15 +790,17 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_CreateTableFor__1_Data_IO_DB_TableInfo_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.CreateTableFor%60%601(Data.IO.DB.TableInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L35">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L25">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_CreateTableFor_" data-uid="Data.IO.DB.Database.CreateTableFor*"></a>
   <h4 id="Data_IO_DB_Database_CreateTableFor__1_Data_IO_DB_TableInfo_" data-uid="Data.IO.DB.Database.CreateTableFor``1(Data.IO.DB.TableInfo)">CreateTableFor&lt;TRecord&gt;(TableInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a table for specific record type and adds it to the schema.
+Table must not already exist in schema.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Table&lt;TRecord&gt; CreateTableFor&lt;TRecord&gt;(TableInfo tableInfo)
+    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; CreateTableFor&lt;TRecord&gt;(TableInfo tableInfo)
     where TRecord : Record, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -885,7 +830,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Table-1.html">Table</a>&lt;TRecord&gt;</td>
+        <td><span class="xref">Data.IO.DB.ITable</span>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -907,10 +852,104 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_DropTable_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.DropTable(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L85">View Source</a>
+  </span>
+  <a id="Data_IO_DB_Database_DropTable_" data-uid="Data.IO.DB.Database.DropTable*"></a>
+  <h4 id="Data_IO_DB_Database_DropTable_System_String_" data-uid="Data.IO.DB.Database.DropTable(System.String)">DropTable(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTable(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_DropTable__1.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.DropTable%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L86">View Source</a>
+  </span>
+  <a id="Data_IO_DB_Database_DropTable_" data-uid="Data.IO.DB.Database.DropTable*"></a>
+  <h4 id="Data_IO_DB_Database_DropTable__1" data-uid="Data.IO.DB.Database.DropTable``1">DropTable&lt;TTable&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTable&lt;TTable&gt;()
+    where TTable : TableBase</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_DropTableFor__1.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.DropTableFor%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L87">View Source</a>
+  </span>
+  <a id="Data_IO_DB_Database_DropTableFor_" data-uid="Data.IO.DB.Database.DropTableFor*"></a>
+  <h4 id="Data_IO_DB_Database_DropTableFor__1" data-uid="Data.IO.DB.Database.DropTableFor``1">DropTableFor&lt;TRecord&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTableFor&lt;TRecord&gt;()
+    where TRecord : Record, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_GetEnumerator.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L104">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L97">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_GetEnumerator_" data-uid="Data.IO.DB.Database.GetEnumerator*"></a>
   <h4 id="Data_IO_DB_Database_GetEnumerator" data-uid="Data.IO.DB.Database.GetEnumerator">GetEnumerator()</h4>
@@ -930,7 +969,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Data.IO.DB.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<span class="xref">Data.IO.DB.ITable</span>&lt;<a class="xref" href="Data.IO.DB.Record.html">Record</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -940,11 +979,12 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_GetTable__1.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.GetTable%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L66">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L74">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_GetTable_" data-uid="Data.IO.DB.Database.GetTable*"></a>
   <h4 id="Data_IO_DB_Database_GetTable__1" data-uid="Data.IO.DB.Database.GetTable``1">GetTable&lt;TTable&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the specified table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -981,21 +1021,41 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_GetTableFor__1.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.GetTableFor%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L53">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L57">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_GetTableFor_" data-uid="Data.IO.DB.Database.GetTableFor*"></a>
   <h4 id="Data_IO_DB_Database_GetTableFor__1" data-uid="Data.IO.DB.Database.GetTableFor``1">GetTableFor&lt;TRecord&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the table that owns specified types of records.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; GetTableFor&lt;TRecord&gt;()
-    where TRecord : Record, new()</code></pre>
+    where TRecord : class, IRecord, new()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1007,7 +1067,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
+        <td><span class="xref">Data.IO.DB.ITable</span>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1027,71 +1087,21 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Init(Data.IO.DB.IDatabaseReader%2CData.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L72">View Source</a>
-  </span>
-  <a id="Data_IO_DB_Database_Init_" data-uid="Data.IO.DB.Database.Init*"></a>
-  <h4 id="Data_IO_DB_Database_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Init(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">Init(IDatabaseReader, IDatabaseWriter)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(IDatabaseReader reader, IDatabaseWriter writer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseReader.html">IDatabaseReader</a></td>
-        <td><span class="parametername">reader</span></td>
+        <td><span class="xref">System.ArgumentException</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
-        <td><span class="parametername">writer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Init_Data_IO_DB_Schema_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Init(Data.IO.DB.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L64">View Source</a>
-  </span>
-  <a id="Data_IO_DB_Database_Init_" data-uid="Data.IO.DB.Database.Init*"></a>
-  <h4 id="Data_IO_DB_Database_Init_Data_IO_DB_Schema_" data-uid="Data.IO.DB.Database.Init(Data.IO.DB.Schema)">Init(Schema)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(Schema schema)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.html">Schema</a></td>
-        <td><span class="parametername">schema</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1101,7 +1111,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.OnAfterDeserialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L109">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L40">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_OnAfterDeserialize_" data-uid="Data.IO.DB.Database.OnAfterDeserialize*"></a>
   <h4 id="Data_IO_DB_Database_OnAfterDeserialize" data-uid="Data.IO.DB.Database.OnAfterDeserialize">OnAfterDeserialize()</h4>
@@ -1116,7 +1126,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.OnBeforeSerialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L107">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L38">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_OnBeforeSerialize_" data-uid="Data.IO.DB.Database.OnBeforeSerialize*"></a>
   <h4 id="Data_IO_DB_Database_OnBeforeSerialize" data-uid="Data.IO.DB.Database.OnBeforeSerialize">OnBeforeSerialize()</h4>
@@ -1131,7 +1141,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_OnInit.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.OnInit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.CreateInstance.cs/#L42">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Init.cs/#L36">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_OnInit_" data-uid="Data.IO.DB.Database.OnInit*"></a>
   <h4 id="Data_IO_DB_Database_OnInit" data-uid="Data.IO.DB.Database.OnInit">OnInit()</h4>
@@ -1146,7 +1156,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Read.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Read%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L79">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L26">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Read_" data-uid="Data.IO.DB.Database.Read*"></a>
   <h4 id="Data_IO_DB_Database_Read" data-uid="Data.IO.DB.Database.Read">Read()</h4>
@@ -1161,7 +1171,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_ToString.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L91">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L13">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_ToString_" data-uid="Data.IO.DB.Database.ToString*"></a>
   <h4 id="Data_IO_DB_Database_ToString" data-uid="Data.IO.DB.Database.ToString">ToString()</h4>
@@ -1193,7 +1203,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Write_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Write(Data.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L88">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L35">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_Write_" data-uid="Data.IO.DB.Database.Write*"></a>
   <h4 id="Data_IO_DB_Database_Write_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Write(Data.IO.DB.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
@@ -1214,7 +1224,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
@@ -1225,7 +1235,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_WriteDirty.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.WriteDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L89">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.ReadWrite.cs/#L36">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_WriteDirty_" data-uid="Data.IO.DB.Database.WriteDirty*"></a>
   <h4 id="Data_IO_DB_Database_WriteDirty" data-uid="Data.IO.DB.Database.WriteDirty">WriteDirty()</h4>
@@ -1239,10 +1249,79 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Data%23IO%23DB%23Database%23IInitializable%23Init(Data.IO.DB.IDatabaseReader%2CData.IO.DB.IDatabaseWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Init.cs/#L89">View Source</a>
+  </span>
+  <a id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init*"></a>
+  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_IDatabaseReader_Data_IO_DB_IDatabaseWriter_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.IDatabaseReader,Data.IO.DB.IDatabaseWriter)">Database.IInitializable.Init(IDatabaseReader, IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Database.IInitializable.Init(IDatabaseReader reader, IDatabaseWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Data.IO.DB.IDatabaseReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Data.IO.DB.IDatabaseWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_ISchema_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.Data%23IO%23DB%23Database%23IInitializable%23Init(Data.IO.DB.ISchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Init.cs/#L88">View Source</a>
+  </span>
+  <a id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init*"></a>
+  <h4 id="Data_IO_DB_Database_Data_IO_DB_Database_IInitializable_Init_Data_IO_DB_ISchema_" data-uid="Data.IO.DB.Database.Data#IO#DB#Database#IInitializable#Init(Data.IO.DB.ISchema)">Database.IInitializable.Init(ISchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Database.IInitializable.Init(ISchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Data.IO.DB.ISchema</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L105">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.Tables.cs/#L98">View Source</a>
   </span>
   <a id="Data_IO_DB_Database_System_Collections_IEnumerable_GetEnumerator_" data-uid="Data.IO.DB.Database.System#Collections#IEnumerable#GetEnumerator*"></a>
   <h4 id="Data_IO_DB_Database_System_Collections_IEnumerable_GetEnumerator" data-uid="Data.IO.DB.Database.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
@@ -1269,7 +1348,10 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DB.IDatabase.html">IDatabase</a>
+      <a class="xref" href="Data.IO.DB.Database.IInitializable.html">Database.IInitializable</a>
+  </div>
+  <div>
+      <span class="xref">Data.IO.DB.IDatabase</span>
   </div>
   <div>
       <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
@@ -1291,7 +1373,7 @@ public class Database : ScriptableObject, IDatabase, ISerializationCallbackRecei
                     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Database.md&amp;value=---%0Auid%3A%20Data.IO.DB.Database%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Database.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

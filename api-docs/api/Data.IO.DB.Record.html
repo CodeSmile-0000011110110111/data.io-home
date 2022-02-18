@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -85,7 +85,7 @@ in the derived class - or use the GenericRecord class that works with any table.
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DB.IRecord.html">IRecord</a></div>
+    <div><span class="xref">Data.IO.DB.IRecord</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -195,7 +195,7 @@ protected bool _isDirty</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual PrimaryKey Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IPrimaryKey Id { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +207,7 @@ protected bool _isDirty</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.PrimaryKey.html">PrimaryKey</a></td>
+        <td><span class="xref">Data.IO.DB.IPrimaryKey</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -249,7 +249,7 @@ protected bool _isDirty</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Record_GetValues.md&amp;value=---%0Auid%3A%20Data.IO.DB.Record.GetValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L41">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L32">View Source</a>
   </span>
   <a id="Data_IO_DB_Record_GetValues_" data-uid="Data.IO.DB.Record.GetValues*"></a>
   <h4 id="Data_IO_DB_Record_GetValues" data-uid="Data.IO.DB.Record.GetValues">GetValues()</h4>
@@ -276,42 +276,10 @@ protected bool _isDirty</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Record_SetPrimaryKey_Data_IO_DB_PrimaryKey_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Record.SetPrimaryKey(Data.IO.DB.PrimaryKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L20">View Source</a>
-  </span>
-  <a id="Data_IO_DB_Record_SetPrimaryKey_" data-uid="Data.IO.DB.Record.SetPrimaryKey*"></a>
-  <h4 id="Data_IO_DB_Record_SetPrimaryKey_Data_IO_DB_PrimaryKey_" data-uid="Data.IO.DB.Record.SetPrimaryKey(Data.IO.DB.PrimaryKey)">SetPrimaryKey(PrimaryKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetPrimaryKey(PrimaryKey pk)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.PrimaryKey.html">PrimaryKey</a></td>
-        <td><span class="parametername">pk</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Record_SetPrimaryKey_System_Object_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Record.SetPrimaryKey(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L25">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L19">View Source</a>
   </span>
   <a id="Data_IO_DB_Record_SetPrimaryKey_" data-uid="Data.IO.DB.Record.SetPrimaryKey*"></a>
   <h4 id="Data_IO_DB_Record_SetPrimaryKey_System_Object_" data-uid="Data.IO.DB.Record.SetPrimaryKey(System.Object)">SetPrimaryKey(Object)</h4>
@@ -343,7 +311,7 @@ protected bool _isDirty</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Record_SetValues_System_Collections_Generic_IList_System_Object__.md&amp;value=---%0Auid%3A%20Data.IO.DB.Record.SetValues(System.Collections.Generic.IList%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L38">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Record.cs/#L29">View Source</a>
   </span>
   <a id="Data_IO_DB_Record_SetValues_" data-uid="Data.IO.DB.Record.SetValues*"></a>
   <h4 id="Data_IO_DB_Record_SetValues_System_Collections_Generic_IList_System_Object__" data-uid="Data.IO.DB.Record.SetValues(System.Collections.Generic.IList{System.Object})">SetValues(IList&lt;Object&gt;)</h4>
@@ -391,7 +359,7 @@ NOTE: do not call the base class implementation, it will throw NotImplementedExc
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DB.IRecord.html">IRecord</a>
+      <span class="xref">Data.IO.DB.IRecord</span>
   </div>
 </article>
           </div>

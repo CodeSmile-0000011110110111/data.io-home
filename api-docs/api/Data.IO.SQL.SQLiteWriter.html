@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -82,9 +82,9 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a></div>
-    <div><a class="xref" href="Data.IO.DB.ITableWriter.html">ITableWriter</a></div>
-    <div><a class="xref" href="Data.IO.DB.ISchemaWriter.html">ISchemaWriter</a></div>
+    <div><span class="xref">Data.IO.DB.IDatabaseWriter</span></div>
+    <div><span class="xref">Data.IO.DB.ITableWriter</span></div>
+    <div><span class="xref">Data.IO.DB.ISchemaWriter</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -123,7 +123,7 @@
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter__ctor_Data_IO_SQL_SQLiteSettings_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.%23ctor(Data.IO.SQL.SQLiteSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L14">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L15">View Source</a>
   </span>
   <a id="Data_IO_SQL_SQLiteWriter__ctor_" data-uid="Data.IO.SQL.SQLiteWriter.#ctor*"></a>
   <h4 id="Data_IO_SQL_SQLiteWriter__ctor_Data_IO_SQL_SQLiteSettings_" data-uid="Data.IO.SQL.SQLiteWriter.#ctor(Data.IO.SQL.SQLiteSettings)">SQLiteWriter(SQLiteSettings)</h4>
@@ -155,7 +155,7 @@
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter__ctor_System_String_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L22">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L23">View Source</a>
   </span>
   <a id="Data_IO_SQL_SQLiteWriter__ctor_" data-uid="Data.IO.SQL.SQLiteWriter.#ctor*"></a>
   <h4 id="Data_IO_SQL_SQLiteWriter__ctor_System_String_" data-uid="Data.IO.SQL.SQLiteWriter.#ctor(System.String)">SQLiteWriter(String)</h4>
@@ -186,10 +186,57 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_BeginWriteDatabase_Data_IO_DB_IDatabase_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.BeginWriteDatabase(Data.IO.DB.IDatabase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L64">View Source</a>
+  </span>
+  <a id="Data_IO_SQL_SQLiteWriter_BeginWriteDatabase_" data-uid="Data.IO.SQL.SQLiteWriter.BeginWriteDatabase*"></a>
+  <h4 id="Data_IO_SQL_SQLiteWriter_BeginWriteDatabase_Data_IO_DB_IDatabase_" data-uid="Data.IO.SQL.SQLiteWriter.BeginWriteDatabase(Data.IO.DB.IDatabase)">BeginWriteDatabase(IDatabase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginWriteDatabase(IDatabase database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Data.IO.DB.IDatabase</span></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_EndWriteDatabase.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.EndWriteDatabase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L65">View Source</a>
+  </span>
+  <a id="Data_IO_SQL_SQLiteWriter_EndWriteDatabase_" data-uid="Data.IO.SQL.SQLiteWriter.EndWriteDatabase*"></a>
+  <h4 id="Data_IO_SQL_SQLiteWriter_EndWriteDatabase" data-uid="Data.IO.SQL.SQLiteWriter.EndWriteDatabase">EndWriteDatabase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndWriteDatabase()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_Write_Data_IO_DB_IDatabase_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.Write(Data.IO.DB.IDatabase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L30">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L31">View Source</a>
   </span>
   <a id="Data_IO_SQL_SQLiteWriter_Write_" data-uid="Data.IO.SQL.SQLiteWriter.Write*"></a>
   <h4 id="Data_IO_SQL_SQLiteWriter_Write_Data_IO_DB_IDatabase_" data-uid="Data.IO.SQL.SQLiteWriter.Write(Data.IO.DB.IDatabase)">Write(IDatabase)</h4>
@@ -210,7 +257,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabase.html">IDatabase</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabase</span></td>
         <td><span class="parametername">database</span></td>
         <td></td>
       </tr>
@@ -221,7 +268,7 @@
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_Write_Data_IO_SQL_SQLiteSettings_Data_IO_DB_IDatabase_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.Write(Data.IO.SQL.SQLiteSettings%2CData.IO.DB.IDatabase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L12">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L13">View Source</a>
   </span>
   <a id="Data_IO_SQL_SQLiteWriter_Write_" data-uid="Data.IO.SQL.SQLiteWriter.Write*"></a>
   <h4 id="Data_IO_SQL_SQLiteWriter_Write_Data_IO_SQL_SQLiteSettings_Data_IO_DB_IDatabase_" data-uid="Data.IO.SQL.SQLiteWriter.Write(Data.IO.SQL.SQLiteSettings,Data.IO.DB.IDatabase)">Write(SQLiteSettings, IDatabase)</h4>
@@ -247,21 +294,127 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.IDatabase.html">IDatabase</a></td>
+        <td><span class="xref">Data.IO.DB.IDatabase</span></td>
         <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_WriteSchema_Data_IO_DB_ISchema_.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.WriteSchema(Data.IO.DB.ISchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L61">View Source</a>
+  </span>
+  <a id="Data_IO_SQL_SQLiteWriter_WriteSchema_" data-uid="Data.IO.SQL.SQLiteWriter.WriteSchema*"></a>
+  <h4 id="Data_IO_SQL_SQLiteWriter_WriteSchema_Data_IO_DB_ISchema_" data-uid="Data.IO.SQL.SQLiteWriter.WriteSchema(Data.IO.DB.ISchema)">WriteSchema(ISchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteSchema(ISchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Data.IO.DB.ISchema</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_WriteTuple_System_String_System_Collections_Generic_IReadOnlyList_System_Object__.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.WriteTuple(System.String%2CSystem.Collections.Generic.IReadOnlyList%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L62">View Source</a>
+  </span>
+  <a id="Data_IO_SQL_SQLiteWriter_WriteTuple_" data-uid="Data.IO.SQL.SQLiteWriter.WriteTuple*"></a>
+  <h4 id="Data_IO_SQL_SQLiteWriter_WriteTuple_System_String_System_Collections_Generic_IReadOnlyList_System_Object__" data-uid="Data.IO.SQL.SQLiteWriter.WriteTuple(System.String,System.Collections.Generic.IReadOnlyList{System.Object})">WriteTuple(String, IReadOnlyList&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteTuple(string tableName, IReadOnlyList&lt;object&gt; tuple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">tuple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter_WriteTuples_System_String_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList_System_Object___.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter.WriteTuples(System.String%2CSystem.Collections.Generic.IReadOnlyList%7BSystem.Collections.Generic.IReadOnlyList%7BSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L63">View Source</a>
+  </span>
+  <a id="Data_IO_SQL_SQLiteWriter_WriteTuples_" data-uid="Data.IO.SQL.SQLiteWriter.WriteTuples*"></a>
+  <h4 id="Data_IO_SQL_SQLiteWriter_WriteTuples_System_String_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList_System_Object___" data-uid="Data.IO.SQL.SQLiteWriter.WriteTuples(System.String,System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{System.Object}})">WriteTuples(String, IReadOnlyList&lt;IReadOnlyList&lt;Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteTuples(string tableName, IReadOnlyList&lt;IReadOnlyList&lt;object&gt;&gt; tuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">tuples</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DB.IDatabaseWriter.html">IDatabaseWriter</a>
+      <span class="xref">Data.IO.DB.IDatabaseWriter</span>
   </div>
   <div>
-      <a class="xref" href="Data.IO.DB.ITableWriter.html">ITableWriter</a>
+      <span class="xref">Data.IO.DB.ITableWriter</span>
   </div>
   <div>
-      <a class="xref" href="Data.IO.DB.ISchemaWriter.html">ISchemaWriter</a>
+      <span class="xref">Data.IO.DB.ISchemaWriter</span>
   </div>
 </article>
           </div>
@@ -274,7 +427,7 @@
                     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_SQL_SQLiteWriter.md&amp;value=---%0Auid%3A%20Data.IO.SQL.SQLiteWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQL/SQLite/SQLiteWriter.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

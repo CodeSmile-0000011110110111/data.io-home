@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -80,6 +80,10 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Schema</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Data.IO.DB.ISchema</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -106,24 +110,24 @@
   <h5 id="Data_IO_DB_Schema_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class Schema</code></pre>
+public sealed class Schema : ISchema</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_TableInfo__.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.%23ctor(System.String%2CSystem.Collections.Generic.IEnumerable%7BData.IO.DB.TableInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_ITableInfo__.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.%23ctor(System.String%2CSystem.Collections.Generic.IEnumerable%7BData.IO.DB.ITableInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L17">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L15">View Source</a>
   </span>
   <a id="Data_IO_DB_Schema__ctor_" data-uid="Data.IO.DB.Schema.#ctor*"></a>
-  <h4 id="Data_IO_DB_Schema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_TableInfo__" data-uid="Data.IO.DB.Schema.#ctor(System.String,System.Collections.Generic.IEnumerable{Data.IO.DB.TableInfo})">Schema(String, IEnumerable&lt;TableInfo&gt;)</h4>
+  <h4 id="Data_IO_DB_Schema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_ITableInfo__" data-uid="Data.IO.DB.Schema.#ctor(System.String,System.Collections.Generic.IEnumerable{Data.IO.DB.ITableInfo})">Schema(String, IEnumerable&lt;ITableInfo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Schema(string databaseName, IEnumerable&lt;TableInfo&gt; tableInfos = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Schema(string name, IEnumerable&lt;ITableInfo&gt; tableInfos = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,11 +141,11 @@ public sealed class Schema</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">databaseName</span></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.TableInfo.html">TableInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Data.IO.DB.ITableInfo</span>&gt;</td>
         <td><span class="parametername">tableInfos</span></td>
         <td></td>
       </tr>
@@ -151,18 +155,18 @@ public sealed class Schema</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_DatabaseName.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.DatabaseName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_Name.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L12">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L24">View Source</a>
   </span>
-  <a id="Data_IO_DB_Schema_DatabaseName_" data-uid="Data.IO.DB.Schema.DatabaseName*"></a>
-  <h4 id="Data_IO_DB_Schema_DatabaseName" data-uid="Data.IO.DB.Schema.DatabaseName">DatabaseName</h4>
+  <a id="Data_IO_DB_Schema_Name_" data-uid="Data.IO.DB.Schema.Name*"></a>
+  <h4 id="Data_IO_DB_Schema_Name" data-uid="Data.IO.DB.Schema.Name">Name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DatabaseName { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,7 +188,7 @@ public sealed class Schema</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_TableInfos.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.TableInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L13">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L25">View Source</a>
   </span>
   <a id="Data_IO_DB_Schema_TableInfos_" data-uid="Data.IO.DB.Schema.TableInfos*"></a>
   <h4 id="Data_IO_DB_Schema_TableInfos" data-uid="Data.IO.DB.Schema.TableInfos">TableInfos</h4>
@@ -192,7 +196,7 @@ public sealed class Schema</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, TableInfo&gt; TableInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, ITableInfo&gt; TableInfos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,7 +208,7 @@ public sealed class Schema</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Data.IO.DB.TableInfo.html">TableInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Data.IO.DB.ITableInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -213,18 +217,18 @@ public sealed class Schema</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_AddTable_Data_IO_DB_TableInfo_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.AddTable(Data.IO.DB.TableInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_AddTable_Data_IO_DB_ITableInfo_.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.AddTable(Data.IO.DB.ITableInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L26">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L27">View Source</a>
   </span>
   <a id="Data_IO_DB_Schema_AddTable_" data-uid="Data.IO.DB.Schema.AddTable*"></a>
-  <h4 id="Data_IO_DB_Schema_AddTable_Data_IO_DB_TableInfo_" data-uid="Data.IO.DB.Schema.AddTable(Data.IO.DB.TableInfo)">AddTable(TableInfo)</h4>
+  <h4 id="Data_IO_DB_Schema_AddTable_Data_IO_DB_ITableInfo_" data-uid="Data.IO.DB.Schema.AddTable(Data.IO.DB.ITableInfo)">AddTable(ITableInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddTable(TableInfo tableInfo)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddTable(ITableInfo tableInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,7 +241,7 @@ public sealed class Schema</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.TableInfo.html">TableInfo</a></td>
+        <td><span class="xref">Data.IO.DB.ITableInfo</span></td>
         <td><span class="parametername">tableInfo</span></td>
         <td></td>
       </tr>
@@ -248,7 +252,7 @@ public sealed class Schema</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_Schema_ToString.md&amp;value=---%0Auid%3A%20Data.IO.DB.Schema.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L38">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/Schema.cs/#L39">View Source</a>
   </span>
   <a id="Data_IO_DB_Schema_ToString_" data-uid="Data.IO.DB.Schema.ToString*"></a>
   <h4 id="Data_IO_DB_Schema_ToString" data-uid="Data.IO.DB.Schema.ToString">ToString()</h4>
@@ -275,6 +279,10 @@ public sealed class Schema</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Data.IO.DB.ISchema</span>
+  </div>
 </article>
           </div>
           

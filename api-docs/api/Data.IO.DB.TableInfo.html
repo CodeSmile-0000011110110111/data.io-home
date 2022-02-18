@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -80,6 +80,10 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TableInfo</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Data.IO.DB.ITableInfo</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -106,24 +110,24 @@
   <h5 id="Data_IO_DB_TableInfo_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class TableInfo</code></pre>
+public sealed class TableInfo : ITableInfo</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_ColumnInfo__System_Collections_Generic_IList_Data_IO_DB_RelationInfo__.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.%23ctor(System.String%2CSystem.Collections.Generic.IList%7BData.IO.DB.ColumnInfo%7D%2CSystem.Collections.Generic.IList%7BData.IO.DB.RelationInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_IColumnInfo__System_Collections_Generic_IList_Data_IO_DB_IRelationInfo__.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.%23ctor(System.String%2CSystem.Collections.Generic.IList%7BData.IO.DB.IColumnInfo%7D%2CSystem.Collections.Generic.IList%7BData.IO.DB.IRelationInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L54">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L23">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo__ctor_" data-uid="Data.IO.DB.TableInfo.#ctor*"></a>
-  <h4 id="Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_ColumnInfo__System_Collections_Generic_IList_Data_IO_DB_RelationInfo__" data-uid="Data.IO.DB.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DB.ColumnInfo},System.Collections.Generic.IList{Data.IO.DB.RelationInfo})">TableInfo(String, IList&lt;ColumnInfo&gt;, IList&lt;RelationInfo&gt;)</h4>
+  <h4 id="Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_IColumnInfo__System_Collections_Generic_IList_Data_IO_DB_IRelationInfo__" data-uid="Data.IO.DB.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DB.IColumnInfo},System.Collections.Generic.IList{Data.IO.DB.IRelationInfo})">TableInfo(String, IList&lt;IColumnInfo&gt;, IList&lt;IRelationInfo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;ColumnInfo&gt; columnInfos, IList&lt;RelationInfo&gt; relationInfos)</code></pre>
+    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;IColumnInfo&gt; columnInfos, IList&lt;IRelationInfo&gt; relationInfos)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,12 +145,12 @@ public sealed class TableInfo</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DB.ColumnInfo.html">ColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">Data.IO.DB.IColumnInfo</span>&gt;</td>
         <td><span class="parametername">columnInfos</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DB.RelationInfo.html">RelationInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">Data.IO.DB.IRelationInfo</span>&gt;</td>
         <td><span class="parametername">relationInfos</span></td>
         <td></td>
       </tr>
@@ -154,18 +158,18 @@ public sealed class TableInfo</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_ColumnInfo__System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.%23ctor(System.String%2CSystem.Collections.Generic.IList%7BData.IO.DB.ColumnInfo%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_IColumnInfo__System_String_.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.%23ctor(System.String%2CSystem.Collections.Generic.IList%7BData.IO.DB.IColumnInfo%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L51">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L19">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo__ctor_" data-uid="Data.IO.DB.TableInfo.#ctor*"></a>
-  <h4 id="Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_ColumnInfo__System_String_" data-uid="Data.IO.DB.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DB.ColumnInfo},System.String)">TableInfo(String, IList&lt;ColumnInfo&gt;, String)</h4>
+  <h4 id="Data_IO_DB_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DB_IColumnInfo__System_String_" data-uid="Data.IO.DB.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DB.IColumnInfo},System.String)">TableInfo(String, IList&lt;IColumnInfo&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;ColumnInfo&gt; columnInfos, string sqlCreateCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;IColumnInfo&gt; columnInfos, string sqlCreateCommand)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +187,7 @@ public sealed class TableInfo</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DB.ColumnInfo.html">ColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">Data.IO.DB.IColumnInfo</span>&gt;</td>
         <td><span class="parametername">columnInfos</span></td>
         <td></td>
       </tr>
@@ -201,7 +205,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_ColumnInfos.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.ColumnInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L26">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L64">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_ColumnInfos_" data-uid="Data.IO.DB.TableInfo.ColumnInfos*"></a>
   <h4 id="Data_IO_DB_TableInfo_ColumnInfos" data-uid="Data.IO.DB.TableInfo.ColumnInfos">ColumnInfos</h4>
@@ -209,7 +213,7 @@ public sealed class TableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ColumnInfo&gt; ColumnInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IColumnInfo&gt; ColumnInfos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +225,7 @@ public sealed class TableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DB.ColumnInfo.html">ColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">Data.IO.DB.IColumnInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -231,7 +235,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_IsJunctionTable.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.IsJunctionTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L28">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L66">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_IsJunctionTable_" data-uid="Data.IO.DB.TableInfo.IsJunctionTable*"></a>
   <h4 id="Data_IO_DB_TableInfo_IsJunctionTable" data-uid="Data.IO.DB.TableInfo.IsJunctionTable">IsJunctionTable</h4>
@@ -261,7 +265,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_Name.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L15">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L53">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_Name_" data-uid="Data.IO.DB.TableInfo.Name*"></a>
   <h4 id="Data_IO_DB_TableInfo_Name" data-uid="Data.IO.DB.TableInfo.Name">Name</h4>
@@ -291,7 +295,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_PrimaryKeyColumn.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.PrimaryKeyColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L47">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L85">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_PrimaryKeyColumn_" data-uid="Data.IO.DB.TableInfo.PrimaryKeyColumn*"></a>
   <h4 id="Data_IO_DB_TableInfo_PrimaryKeyColumn" data-uid="Data.IO.DB.TableInfo.PrimaryKeyColumn">PrimaryKeyColumn</h4>
@@ -299,7 +303,7 @@ public sealed class TableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ColumnInfo PrimaryKeyColumn { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IColumnInfo PrimaryKeyColumn { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -311,7 +315,7 @@ public sealed class TableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.ColumnInfo.html">ColumnInfo</a></td>
+        <td><span class="xref">Data.IO.DB.IColumnInfo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -321,7 +325,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_PrimaryKeyCount.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.PrimaryKeyCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L29">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L67">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_PrimaryKeyCount_" data-uid="Data.IO.DB.TableInfo.PrimaryKeyCount*"></a>
   <h4 id="Data_IO_DB_TableInfo_PrimaryKeyCount" data-uid="Data.IO.DB.TableInfo.PrimaryKeyCount">PrimaryKeyCount</h4>
@@ -351,7 +355,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_PrimaryKeyIndex.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.PrimaryKeyIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L30">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L68">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_PrimaryKeyIndex_" data-uid="Data.IO.DB.TableInfo.PrimaryKeyIndex*"></a>
   <h4 id="Data_IO_DB_TableInfo_PrimaryKeyIndex" data-uid="Data.IO.DB.TableInfo.PrimaryKeyIndex">PrimaryKeyIndex</h4>
@@ -381,7 +385,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_RelationInfos.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.RelationInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L27">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L65">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_RelationInfos_" data-uid="Data.IO.DB.TableInfo.RelationInfos*"></a>
   <h4 id="Data_IO_DB_TableInfo_RelationInfos" data-uid="Data.IO.DB.TableInfo.RelationInfos">RelationInfos</h4>
@@ -389,7 +393,7 @@ public sealed class TableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RelationInfo&gt; RelationInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IRelationInfo&gt; RelationInfos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -401,7 +405,7 @@ public sealed class TableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DB.RelationInfo.html">RelationInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">Data.IO.DB.IRelationInfo</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -413,7 +417,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_ToCreateString.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.ToCreateString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L120">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L122">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_ToCreateString_" data-uid="Data.IO.DB.TableInfo.ToCreateString*"></a>
   <h4 id="Data_IO_DB_TableInfo_ToCreateString" data-uid="Data.IO.DB.TableInfo.ToCreateString">ToCreateString()</h4>
@@ -443,7 +447,7 @@ public sealed class TableInfo</code></pre>
     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo_ToString.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L85">View Source</a>
+    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L87">View Source</a>
   </span>
   <a id="Data_IO_DB_TableInfo_ToString_" data-uid="Data.IO.DB.TableInfo.ToString*"></a>
   <h4 id="Data_IO_DB_TableInfo_ToString" data-uid="Data.IO.DB.TableInfo.ToString">ToString()</h4>
@@ -470,6 +474,10 @@ public sealed class TableInfo</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Data.IO.DB.ITableInfo</span>
+  </div>
 </article>
           </div>
           
@@ -481,7 +489,7 @@ public sealed class TableInfo</code></pre>
                     <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=Data_IO_DB_TableInfo.md&amp;value=---%0Auid%3A%20Data.IO.DB.TableInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/DB/Schema/TableInfo.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

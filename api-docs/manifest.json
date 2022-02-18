@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVReader.html",
-          "hash": "AX3DkxXUNnoN+wn+6IBrm/hMOh3G+DttvLBUgWJMktU="
+          "hash": "woIQR08J1WdQ4k8OyW4v2mK4AsO8JDY5v/wdP1vVeYM="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVReaderSettings.html",
-          "hash": "dnmyvf3ly8UHPUAdruXudKlALUCOCGxtBTjf0d9TblI="
+          "hash": "stq7+Av1+oUiLe0i4EDLOwCFOWV7JSB5MtLHFxzlYok="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVSettings.html",
-          "hash": "WATLZ64I3M2bfQqvfy4z6/9j2d+clURn8k+V7/Oc8sM="
+          "hash": "wLjHe4EYYq3jNRfls+SL7cCpRANLoj4NFODFLnaDO7A="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVTableReader-1.html",
-          "hash": "cTnvriPdWunT2zatz0fqHec75BkVJRrYl03Xi4w4rSs="
+          "hash": "1AHMB5aN5Yc/sA7PdceCiz9PknVkyrn4NRmcWlQ3UHc="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVWriter.html",
-          "hash": "rjhFVeQqaxoQqRt8CJPf0gvJ4XWWi7RvAfGkT5pMKI0="
+          "hash": "lhNz6tKeVQG44dDHx1sJHKNvpeMVR7TBhlxpbKUe4yc="
         }
       },
       "is_incremental": true,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.CSVWriterSettings.html",
-          "hash": "NGfNFExoyUicnapcx1cYA9ctACLN/RIVrtIT6QHNumE="
+          "hash": "zRfO2f59KFgDL05cw0KQ0pdvZP8Qrhn1cp5bmKtVBuo="
         }
       },
       "is_incremental": true,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.CSV.html",
-          "hash": "cOAbbjwsUPEYFyPooYtLLL+54lI22xTHp9qjJ5i+/bA="
+          "hash": "axz8+VR7HqqYogSJ0D/8TqQRy+0xV49X4GKx8/SQmvw="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Constants.html",
-          "hash": "mPVC5NUGaGmUutAZ9fgRtSxKUA4kmVyHFxZv+aFXbEE="
+          "hash": "o0sxvG4ShEX+BmvEm58uotBQjSWThz5+g1eQ1K/xm2M="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.ColumnInfo.html",
-          "hash": "G43umVC+DFYQsWlIOysQFBI3pen/WOBbkDekwj6zt+c="
+          "hash": "RZYX0NYl2i/lFfpM+PBVuZ5xHsp5mXJr/JAUMfD+HS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.IO.DB.Database.IInitializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.IO.DB.Database.IInitializable.html",
+          "hash": "sO8od3I58fu4UP3zwaUtY+hrXr7cMVq/O8M3g4wx4MY="
         }
       },
       "is_incremental": true,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.Database.html",
-          "hash": "/iSSGmVAgeYci2Z3Cr20peDBuZ+uhN3+hTwUN/9kSbo="
+          "hash": "lpfNfQhg5x5+SaA7ALjIlQSrKr9II7TLy3qq0DXdQMk="
         }
       },
       "is_incremental": true,
@@ -129,127 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.GenericRecord.html",
-          "hash": "xadkp9fwV1O1B8DRkh6LU4KYryqRmCe3f5Tv69EbwXY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.IDatabase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.IDatabase.html",
-          "hash": "2FU7Uw8hv4P26/wkRrieKMV55YfLBk+KLb+u+33C8Vo="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.IDatabaseReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.IDatabaseReader.html",
-          "hash": "rcj5pz2ZKDPIXaRZaakF//cHTTiRiq63KoZQFk6Ks7c="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.IDatabaseWriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.IDatabaseWriter.html",
-          "hash": "TcUH2nH8z1JqnjBAVo8RjCMDI1mmjyqrlZh+cOs3d0E="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.IRecord.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.IRecord.html",
-          "hash": "9oC3vzWNC1Ap0cxPvTt1crBQK+aSPoM5xmDZNjjq+uY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ISchemaReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ISchemaReader.html",
-          "hash": "n32k1+3mGD6g5onlyoy3ybKY9K1wBkNcXGgthEA94wY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ISchemaWriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ISchemaWriter.html",
-          "hash": "vIvlF4erX1uA1bxbi2BNPlaCBoxw8VxFL7Kw76doU1A="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ITable-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ITable-1.html",
-          "hash": "wAup7i9zU+71/gEdRuRkN+RGKRAnAhZamkN7sclm7fk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ITableReader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ITableReader.html",
-          "hash": "hfwlIbtOKlwAGL8aOPxX3uW89SV0394M0hfUOsX3OAk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ITableWriter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ITableWriter.html",
-          "hash": "9N7YZTj9c+D/H3bWCEpN0uyA2nTerWHMzxygnB+ONu8="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DB.ITupleRecord.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DB.ITupleRecord.html",
-          "hash": "7FjP5MHtCAIWKO7XukuUxgirwHt2UxmqdvEyxNF6I2U="
+          "hash": "gayWboXCvI7oFN6BmYWmiAySdh33RHCNH7qJG2PYMgk="
         }
       },
       "is_incremental": true,
@@ -261,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.PrimaryKey.html",
-          "hash": "dg7J2iujf4JlU0a37INhfP5Fg70oGM9bT1U38lG+c3k="
+          "hash": "V42ZuZ5irN2zIcBDa5yLNi+yXIqkgrBK+Z3BGtIrbaI="
         }
       },
       "is_incremental": true,
@@ -273,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.Record.html",
-          "hash": "PDu0aDRaTTvFFknrB2J+fdCabbVolSxZNQzeKCVccX4="
+          "hash": "pHPl+dDfJ8/9meMG8FlH6SqVFO50rWNQ04+JukItxwE="
         }
       },
       "is_incremental": true,
@@ -285,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.RelationInfo.html",
-          "hash": "gN+E7qlKwVleJSJQMKfWdoxY7I/pcfx6xyTAxAc+hyg="
+          "hash": "1oA9VJ7ukgD/pZRPkX7rVj78qgcgmHUPbdJ1x6+F+/I="
         }
       },
       "is_incremental": true,
@@ -297,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.Schema.html",
-          "hash": "ucn4gcA7ClKpqUORbYbZUngDIdcwDLGn0o5cTdZpHak="
+          "hash": "b86j/tZvyDE0U0K6+SBi/povtey8IOxzhNfoN7ioB/g="
         }
       },
       "is_incremental": true,
@@ -309,7 +201,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.Table-1.html",
-          "hash": "oL3hJCD8tY9SRZY2RuaX/YvGTJRQqG4/O+6PmNUnkYk="
+          "hash": "hy29ZAJVyLxJmeC4aBiez+K6VgMfZDaF00D8v53FcWI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.IO.DB.TableBase.IInitializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.IO.DB.TableBase.IInitializable.html",
+          "hash": "OzifcXqiV4Q0NkiecprFGB4c0DiIYHaCHMTGUACr2zY="
         }
       },
       "is_incremental": true,
@@ -321,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.TableBase.html",
-          "hash": "cwrSwE/wWgKf44RDXCDRZCS+DHccfnv4yF98s3L7wyI="
+          "hash": "VYQWxADUftOHBV2DnueK3bpvDRMDXK6wi+wIMJHoUAk="
         }
       },
       "is_incremental": true,
@@ -333,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.TableInfo.html",
-          "hash": "AFpdD3wR3sPtKccmTFSDax+HyRUrmgIPrbGQ6KDBLx0="
+          "hash": "VGAs7Q63VN4lHWOFnxZS3v9vywYYg+1+iU1PWtAmOaI="
         }
       },
       "is_incremental": true,
@@ -345,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.TypeFinder.html",
-          "hash": "GB6hO2WQydo2g0jA3yipkfzvU+erm0GomLv1dufTIsk="
+          "hash": "TXiOBeF6ThNFIdTDGyazRRFWsavNlNyXZSkL+LttXZM="
         }
       },
       "is_incremental": true,
@@ -357,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DB.html",
-          "hash": "dJuP75MFwsidqYIASvwHDEBSQ/DoZu3iGdRG/VTpUtE="
+          "hash": "p8b+STJVbXF62d/v5TrxJ5bqoLfdFEjtlNtmBVQBoIo="
         }
       },
       "is_incremental": true,
@@ -369,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.DataWorkflow.html",
-          "hash": "MY+rrO4XVFBlDW2giyNhHSrXBH90xEfM2H2hn/oU4sY="
+          "hash": "sdb5PLcm7f7I/ejcm+mPQP3R0MzOgr00eWxCHSZF0OQ="
         }
       },
       "is_incremental": true,
@@ -381,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.Extensions.AssetDatabaseExtensions.html",
-          "hash": "WJsJT8ewv5CzSOCkwi6QqRYxPDnhtxQcJi8x61ygj1E="
+          "hash": "UzDjQNF6GS2K+lzw3sSQ+cr+/PQB7zHwSffzxKftikI="
         }
       },
       "is_incremental": true,
@@ -393,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.Extensions.html",
-          "hash": "1OxtSJ/mUI6B3Okis2Ag9+HfkjaF4VUpiTp62SyTRw4="
+          "hash": "q4Yzor8zRku64JkfmRq7fJ8g6EBrEfejOkTxlNZBAO0="
         }
       },
       "is_incremental": true,
@@ -405,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.ImportEvent.html",
-          "hash": "q54GxmWaKrRJX3zqXkOq2iL1Clt+JhxPa18CPXkfLU4="
+          "hash": "ZVWlSMYLrXFxaIW8qtmZ3kgS8GW58Bx4f8W7UuTBL0g="
         }
       },
       "is_incremental": true,
@@ -417,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.InputSource.html",
-          "hash": "GwmZw/p1/JZu7mbcbpBk6qwTNlhXNrCIZ3TUtti0dGU="
+          "hash": "jvBd4Cgl+Q0MID+PRKhBQVpN+tnsEt3innRzTBT2vYo="
         }
       },
       "is_incremental": true,
@@ -429,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.OutputDestination.html",
-          "hash": "4l+GUgy77GBleHLCAud+qC5PCOGh/h3O/EAslAPAMIs="
+          "hash": "Ew2tIfq2rVE7RdlLlRRqM2qLl55NmIPa4TsbZ/B1CZA="
         }
       },
       "is_incremental": true,
@@ -441,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.ReadOnlyFieldDrawer.html",
-          "hash": "lflRm18LQIlkXDS1r0DfPmEWJFWZMfH0ZxRdZVrzZpI="
+          "hash": "NtYXKVNkqMoy8p5PdcH++BzmwTPpsUdF+sB6tjidxzI="
         }
       },
       "is_incremental": true,
@@ -453,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Editor.html",
-          "hash": "MruSt9Q8FeMJrK9rQh9j0npzyMU5zFgjVNdgg/b/TVA="
+          "hash": "Y4Ra5OCwzEwf8Z+9/8sRM5U1Pu98peEM1ENV37qQ/bE="
         }
       },
       "is_incremental": true,
@@ -465,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.EnumNameAttribute.html",
-          "hash": "TZscM8my/10D1eibRxpuq3D8oe2/u5YD3nppeIoWuZg="
+          "hash": "Wzd61OrdUdYoV3uV00lvM7H9z/Up16/H82eE1xa1SGU="
         }
       },
       "is_incremental": true,
@@ -477,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Extensions.EnumExtensions.html",
-          "hash": "98q+2XYIemWfu0YmBlCZJV4YLthrviv+8exYU/SuMDI="
+          "hash": "nYQ2+ehF6Jb05C283f+CjcKjjXn0JvQZJhdYIGVPDuU="
         }
       },
       "is_incremental": true,
@@ -489,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Extensions.StringExtensions.html",
-          "hash": "5228/G7CUqT9Bgye1Wc5r4gHC0MYUNVe+IP62Trb76I="
+          "hash": "zaxV+ttL1jMXEcZ5kaR1q9H5YwoSOGmsbbxjg45myz4="
         }
       },
       "is_incremental": true,
@@ -501,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Extensions.html",
-          "hash": "Du0SNpHFCf5Soo79IK2giFS2ZPJMV+tQhUruYabHhiw="
+          "hash": "v9yoFk/cLvSLOAQydXvCQuQRmNLUlAX3zueT7yWPzns="
         }
       },
       "is_incremental": true,
@@ -513,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.JSON.JsonHelper.html",
-          "hash": "LamAKzs7YIhoDof6Sd+g8ymdHdU73ZIppkfO1ZYpBg0="
+          "hash": "5X6GXjbuYC5K7oetWmtEloVvclVCYO9Lr1RPaw+vET4="
         }
       },
       "is_incremental": true,
@@ -525,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.JSON.html",
-          "hash": "a2mEdtolKwEgPW8ofqZg9vwcyb5eOIWihqcIU2k8Ktk="
+          "hash": "+yyFmsUHvSBirw+dmf38Pog6IayUXpctEFKi2R8fwdY="
         }
       },
       "is_incremental": true,
@@ -537,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.ReadOnlyFieldAttribute.html",
-          "hash": "FySrULwJWZ5FhDIiP4rnILcoKeB2yyEvmWgFv3j8lgQ="
+          "hash": "MJfqAceUURsEXDigXLA2/Vhzl/oQxWoOchmCRytqpko="
         }
       },
       "is_incremental": true,
@@ -549,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.ColumnDefinition.html",
-          "hash": "crzvVaN2RXRpScKapKsQxpNt0oj+ncF8MTlKLrZCjZc="
+          "hash": "OAOOB9f1BxsUvNjjbP/NYXH8m8jyrRvVQ124cpfSe3Q="
         }
       },
       "is_incremental": true,
@@ -561,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.ConstraintDefinition.html",
-          "hash": "QvUinawBnBiV7LOwiy1sLOgit6a9b8gOSwQOa5eV/4Q="
+          "hash": "NripZ8I1HLyX5A+7fygFvpr71qyWDR+CJAM8igL8IW0="
         }
       },
       "is_incremental": true,
@@ -573,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLBuilder.html",
-          "hash": "cTc//3TxuCTs9oVmP8oUwLl36RMCiU9rN46UEN96+co="
+          "hash": "RgyiLe+SSuaMV6qTo0N0/sHq/Vrwj+P5lh+59h8ArrI="
         }
       },
       "is_incremental": true,
@@ -585,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLiteReader.html",
-          "hash": "Ng4qmtACxwmWS0IFseKJ6dNuRfr3zJAWDWN7k+NCaXQ="
+          "hash": "3qdYuV6GuFJsu+lJ837wNvyS98l+oqrdimAKBvWpS+8="
         }
       },
       "is_incremental": true,
@@ -597,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLiteSettings.html",
-          "hash": "ZWOP5ZV81To0r2k3H9D7WsJRLQjt+mirmnYLHpINGwE="
+          "hash": "Kz9aGhAkqfr9Qff7v43DLVU0XY0iIpAg+Hlc6Ha4r+U="
         }
       },
       "is_incremental": true,
@@ -609,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLiteWriter.html",
-          "hash": "dHOv3INZSCsK5hEKZ1+mEqCoUw/DOv5+aET3PxAJD/0="
+          "hash": "Dynx3eRTt86oar9JWao9+lqHXEjy3/zJfdghTT3qQZo="
         }
       },
       "is_incremental": true,
@@ -621,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.TableDefinition.html",
-          "hash": "/rurKnSxjIbeZEGVktn+GrPl4ekeAc2p39Bwsny6e5E="
+          "hash": "/TD5B8o6K5AKS9t66MHYT7Jo9DL6U321UN5//4dfoTw="
         }
       },
       "is_incremental": true,
@@ -633,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.html",
-          "hash": "A660NZyvOT1CF2JNrKjP7aI4ifim00Tq8u1mCxaEoIk="
+          "hash": "zq5n01Rtmvv84pcscmUTdxet9l+QD7PNujw7ilBbBO0="
         }
       },
       "is_incremental": true,
@@ -645,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.Access.html",
-          "hash": "ggFXw8pu+YJAN7n+616mZSRam1CIIAVUM+RzM876xqY="
+          "hash": "e1eeKVteryl/goXL0uHwOzGj+EwiyhzUCI+xxoCYIDs="
         }
       },
       "is_incremental": true,
@@ -657,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.Class.html",
-          "hash": "aVE0UzK07vYYRTWnD9A6/fC7XL6uQ7xVql/IZQGZTLI="
+          "hash": "WzToGUQRTGtn5YpeBw0RKZJRMIhlztTgvm6DTnCZVkA="
         }
       },
       "is_incremental": true,
@@ -669,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ConstructorDefinition.html",
-          "hash": "moXgkUfZHXQZ7YM3x3GmUGplHkYaLC5jNYk6N9Hyces="
+          "hash": "CvOLe0ZpC86IfhUiFgNo7nG6m2TRfb4fgjgHsVarl4k="
         }
       },
       "is_incremental": true,
@@ -681,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.FieldDefinition.html",
-          "hash": "+qV+ec6rQHgKtVTqgsJT1+DNISX1dx3h6R1aEEFJD+o="
+          "hash": "UTYPDECHSCjEYfRmCgZ8qjscXU8XhWiazgha6icW7tU="
         }
       },
       "is_incremental": true,
@@ -693,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.IndexerDefinition.html",
-          "hash": "0B+kWkuwz95I2T7Jkyw9Bwgh/bEsXKNP3trxU9P8fXo="
+          "hash": "OTw5K7JMkBWnp+ToWCHf4C90liGEJfbvwM186rJSMqk="
         }
       },
       "is_incremental": true,
@@ -705,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.Method.html",
-          "hash": "5wPpSGtOJ31DE2tqKoyDqhJcKBsBGrXY42EuHAhW+gk="
+          "hash": "1J2rZ11inWuAhzDv/hS8juocGZJGNZtTGA50k0WXpvY="
         }
       },
       "is_incremental": true,
@@ -717,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.MethodDefinition.html",
-          "hash": "JdlEA72iufmMsbIrXJkn8fh9Lf1HCkgsEJRgGhpDjeM="
+          "hash": "sBD6rpraHjAHV9Dlt/ez5Hm6ORWlcfcezQ6gVqMlP68="
         }
       },
       "is_incremental": true,
@@ -729,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ParameterDefinition.html",
-          "hash": "OML8YkJ2+ESj4pHLwt2VUadvFaM90dIWvhFBwKmt5fs="
+          "hash": "idIyHnijLuzKwte5YBppsirUv5pc22Uz+T829zroAIA="
         }
       },
       "is_incremental": true,
@@ -741,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.PropertyDefinition.html",
-          "hash": "LVBbeD7DTcY5wHIFfR9rALazK0g6j+LX+itU7e14NWg="
+          "hash": "cuqAfg1kCs4fHS3bx3xSwS9Csb2x9Q+Nud694r24rcY="
         }
       },
       "is_incremental": true,
@@ -753,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptBuilder.html",
-          "hash": "1cYQrsAzizLMAZUp1gIvgPrvjklfUc6r13LUrE66+H0="
+          "hash": "BmMeiQcw1ZY09Q0LsAr2ysAJwPxf+YCNM0rE42SBUGY="
         }
       },
       "is_incremental": true,
@@ -765,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptReader.html",
-          "hash": "Qp3AjYv3/+zRPnvCdAEb2EVtiMS6hdnCHXrOQE1SIOc="
+          "hash": "vYgcvx44CMdgkzdo0VZYuKkeXkba5tsoKsuyBS5EZ8c="
         }
       },
       "is_incremental": true,
@@ -777,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptReaderSettings.html",
-          "hash": "7RiVtrKOI6QO1mlSPX6CrUFsjcEshiPSjXQw9xFHISY="
+          "hash": "54JlL+6CeRuCd2LkwS71AyxuZTZzSXahWU3/h9dFqeY="
         }
       },
       "is_incremental": true,
@@ -789,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptWriter.html",
-          "hash": "ee5CweOG8ylEj1J0XnCfOxJJ85VxDj3HgYAt6OMkEdg="
+          "hash": "Oi/75m0ZBeVooarEYst4hrmHRXdk5sHaiRqsxNQA1n4="
         }
       },
       "is_incremental": true,
@@ -801,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptWriterSettings.html",
-          "hash": "uB3pb8TOVldzHQQE8jxmfCIpLyqkFz9HwylvunmAN6Q="
+          "hash": "De2fJdHnndhasI78rSRZamuR4AjsURYIWWSazenLSAA="
         }
       },
       "is_incremental": true,
@@ -813,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.ScriptableObjectWriter.html",
-          "hash": "REH/i6Rw0tNlf+7pimWlLHp5b8H/KBqoL6oi0JyHAYM="
+          "hash": "eiQK9v9ax6bv8xM5/wEAtNrzO5uxoAOn4KqPo+i40CQ="
         }
       },
       "is_incremental": true,
@@ -825,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.TypeDefinition.html",
-          "hash": "btUP+yPQMsBj27Uan5R0PEz0lQbfekgwX9MpbIB2J2o="
+          "hash": "pknRL5pJjEgsJjIUPBNMqlXV5cTX84Iy492F86dyAMo="
         }
       },
       "is_incremental": true,
@@ -837,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Script.html",
-          "hash": "pb+8v3o+8AS+JRylfN+bXvIhp/adIU5cItQvW3C/c/8="
+          "hash": "mykbyI7UYNfH+cGlWlFmRNQLWxhbjZeDwHeyfH+nkpM="
         }
       },
       "is_incremental": true,
@@ -849,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.ConvertType.html",
-          "hash": "qNKY84zZR2UE10X8VXHit3MyTCdPGTuFUtEK1Xk+ITk="
+          "hash": "+BKGFNB1ahu/MvRzTxWlujgxG/Ueo1brc83suMLs7YE="
         }
       },
       "is_incremental": true,
@@ -861,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.ConvertValue.html",
-          "hash": "Czidd1f+ZLTimeiIJXxfwPOMtzzVze4KGdF8f+jj+OE="
+          "hash": "vBhzutThlXiOLcGvqBOHOsn+L4XGrGBFW0YpiVmkT1M="
         }
       },
       "is_incremental": true,
@@ -873,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.IndentStringBuilder.html",
-          "hash": "B9RjfRaAwrkz56EHpi+oGBvNeYO2s9je4W5n+o4keqI="
+          "hash": "h+WsGeKCpDhZCqEO6S3O64vKp8QylAMfN9GLLYe3I1I="
         }
       },
       "is_incremental": true,
@@ -885,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.PathRoot.html",
-          "hash": "NZJT2jq4cDlsJFdcB6AOrYaOd/z7boPy4/9u//ZcncE="
+          "hash": "6AaHTXLjY11q43kxYivg0MqZT1Tq40aHZpdf3x+dTzU="
         }
       },
       "is_incremental": true,
@@ -897,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.UnityPath.html",
-          "hash": "tdokr3gCWqIAS3ZMIN4JYCO/QpStuxPBRpBwNJV1DxY="
+          "hash": "PJI/mDK7+NOXXIuc4fn4XyJSKv9GTkSvIVT5e3M5OpE="
         }
       },
       "is_incremental": true,
@@ -909,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Tools.html",
-          "hash": "P7Xx+vAY45fF55xURTozXYYRXzpeUsMhBewys+9E40w="
+          "hash": "7NC/MvjaF8gYIfCVguMQ5yWc812ldjD/tqKlyEHXfdM="
         }
       },
       "is_incremental": true,
@@ -921,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.html",
-          "hash": "0YQ4SEc8067xqcfcrLiAexF6AasdABnEeRzaGjBcsbY="
+          "hash": "yhXtWQocgbHJDaiQt/0oR1eBw2ag1loQ/3sKeiDK/mw="
         }
       },
       "is_incremental": true,
@@ -936,7 +840,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "Km1QOBZgmpunJNzXcQTm4OLUvrDhSgMnY1gcbvAZvBc="
+          "hash": "RiJByCNiJiXk4ffugYxE8CxuCXiqM7KHj8s7RtsPfCQ="
         }
       },
       "is_incremental": true,
@@ -948,7 +852,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xUNSt/iwFFM6/txRAZPCWO5opExZD6/GVr7u1quJnR4="
+          "hash": "yknIDSBqaxFruLxleIek292MZlkzrRB1u1qHoKMKuV8="
         }
       },
       "is_incremental": false,
@@ -960,7 +864,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/README.html",
-          "hash": "1iR/GlAuvXXWBLdA+VRB4lNxKvQI+RXZ10il+pNRyFY="
+          "hash": "TDIQLgEQvubU6F5dBFOfcfVadBlaUe7VqidACQ/jAr4="
         }
       },
       "is_incremental": true,
@@ -979,12 +883,92 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner-25.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner-25.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner-25m.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner-25m.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner-50.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner-50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner-transparent-50.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner-transparent-50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner-transparent.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner-transparent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-banner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/data.io-smile-10-inverted.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/data.io-smile-10-inverted.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "iWyZbuMv8/oMiqGcQCV1IgSvffP+kIjfiA+Bs781HCU="
+          "hash": "COQqxoCVqR8iokeyed9AQIavSe24N22xDidIsXXXXxY="
         }
       },
       "is_incremental": true,
@@ -996,7 +980,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Be9iqTbT11q/W5JnPjNcl7Wnb+O36tEvhEq4T1iMkDs="
+          "hash": "vyG2kZOdFa3+8hbHKMI0ygW8bmkff3xVmw7wm9uqZI0="
         }
       },
       "is_incremental": false,
@@ -1021,8 +1005,15 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 77,
-          "skipped_file_count": 77
+          "total_file_count": 69,
+          "skipped_file_count": 69
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
