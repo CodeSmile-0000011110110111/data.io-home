@@ -21,7 +21,7 @@ I just cannot _NOT_ write code the right way ...
 - *Memory-Cached SODB* (ScriptableObject Database)
   - fully serializes to JSON when needed
 - *No-Reflection SQLite*
-  - ´´´IList<IList<object>> rowsWithValues = SQLite*r*Command.Query("Select * FROM MyTable");´´´
+  - `IList<IList<object>> rowsWithValues = SQLite*r*Command.Query("Select * FROM MyTable");`
 - Fast Type/Value conversion from strings
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
 - Build your own toolchain easily!
