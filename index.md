@@ -11,7 +11,7 @@ encodings and flawed-type converters.
 
 You sweat and shiver as you ...
 
-  \> use
+  \> <strong>use</strong>
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
 Okay. You win.
 ```
