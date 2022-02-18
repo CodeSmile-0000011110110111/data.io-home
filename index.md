@@ -37,7 +37,7 @@ I just cannot _NOT_ write code the right way ...
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
 - Build your own toolchain easily!
   - Modular code, Inspector-ready settings
-- Full source code included, fully documented!
+- Full source code included, fully documented, interface-driven
   - Nothing purposefully hidden, with JetBrains Code annotations
 - Latest libs included for convenience
   - SQLite, Google Sheets, ..
