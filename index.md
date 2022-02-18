@@ -31,7 +31,7 @@ I just cannot _NOT_ write code the right way ...
   - strongly-typed accessible, LINQ queryable, JSON serializable
 - **Reflection-less SQLite`r´**
   - `IList<IList<object>> rows = SQLiter.Query("SELECT * FROM MyTable");`
-- **<a target="_blank" href="docs/api/Data.IO.Script.Builder.html">ScriptBuilder</a>**
+- **<a target="_blank" href="docs/api/Data.IO.Script.Builder.ScriptBuilder.html">ScriptBuilder</a>**
   - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
