@@ -14,23 +14,23 @@ title: Got data?
 I just cannot _NOT_ write code the right way ...
 <p/>
 - ScriptBuilder
-  - fully customizable C# script generator with type descriptions so you only need to fill in names and method bodies
+  - C# script generator, only need to fill in names and method bodies
 - Auto-Generate
   - Classes to DB schema *AND* DB schema or CSV to classes.
 - SQLBuilder
-  - type-safe, quote-escaped SQL query builder (which will eventually understand various dialects, too)
+  - type-safe, quote-escaped SQL query builder
 - Memory-Cached ScriptableObject Database (SODB)
   - serializable to JSON if needed
 - No-Reflection SQLite
   - ´´´IList<IList<object>> rowsWithValues = SQLite*r*Command.Query("Select * FROM MyTable");´´´
 - Fast Type/Value conversion from strings
-  - support for culture-specific number formats and any text encoding, with clever checks to avoid unnecessary exception-heavy TryParse
+  - culture-specific number formats, text encodings, avoids unnecessary TryParse
 - Build your own toolchain easily!
-  - Custom Editor tools fully supported through modular code. Inspector-ready settings objects can be fed into individual tools.
+  - Modular code, Inspector-ready settings
 - Full source code included!
-  - Nothing is purposefully hidden like so many other assets! Includes JetBrains Code annotations.
-- Documented use of external code/libs and their licenses.
-  - Latest libs included for convenience. Currently that's SQLite, Google Sheets API.
+  - Nothing purposefully hidden! With JetBrains Code annotations
+- Documented use of external code/libs and their licenses
+  - Latest libs included for convenience: SQLite, Google Sheets
 
 #### Supports any workflow: 
 - (turn Code into Data) <=> (turn Data into Code)
