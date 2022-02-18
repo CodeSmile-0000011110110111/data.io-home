@@ -2,6 +2,7 @@
 layout: page
 title: Got data?
 ---
+<font size=8px>
 ```
 \> north
 You head north, unexpectedly entering a dark alley due to syntax error near '('. Suddenly,
@@ -10,9 +11,10 @@ encodings and flawed-type converters.
 
 You sweat and shiver as you ...
 
-\> use data<io>
+  \> use <strong>data&lt;io&gt;</strong>
 Okay. You win.
 ```
+  </font>
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
 ### Automated. Bidirectional. C#. Clean. Correct. CSV. Documented. Excel. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
