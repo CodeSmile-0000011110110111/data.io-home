@@ -12,7 +12,7 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 \> use data.io
 Okay. You win.
 ```
-<img src="/data.io-home/assets/data.io-banner-transparent-50.png" alt="data.io logo" width="300"/>
+<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="300"/>
 ### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
 In alphabetical order.
 
