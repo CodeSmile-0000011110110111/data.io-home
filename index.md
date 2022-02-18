@@ -2,7 +2,6 @@
 layout: page
 title: Got data?
 ---
-<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="350"/>
 ```
 \> enter north into cs valley
 You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
@@ -13,9 +12,8 @@ A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
 \> use data.io
 Okay. You win.
 ```
+<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="350"/>
 #### C#. Clean. Correct. CSV. Docs. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Tested. Unity.
-The question is: What is data&lt;io&gt; ?
-
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 #### Served on the side:
