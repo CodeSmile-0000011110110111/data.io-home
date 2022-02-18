@@ -31,13 +31,11 @@ I just cannot _NOT_ write code the right way ...
   - strongly-typed accessible, LINQ queryable, JSON serializable
 - **Reflection-less SQLite`r´**
   - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
-- Fast Type/Value conversion of strings
-  - culture-specific number formats, text encodings, avoids unnecessary TryParse
-- Build your own toolchain easily!
-  - Modular code, Inspector-ready settings
-- Full source code included, fully documented, interface-driven
-  - Nothing purposefully hidden, with JetBrains Code annotations
-- Latest libs included for convenience
+- **BYOT: Bring your own toolchain!**
+  - Modular code, Inspector-ready settings classes, common interfaces
+- **Full source code included**
+  - Interface-driven, documented API with JetBrains Code annotations
+- **Latest libs included**
   - SQLite, Google Sheets, ..
 
 ### Serves any scenario: 
