@@ -5,7 +5,7 @@ title: Got data?
 
 # Use data&lt;io&gt; !
 
-### C#. Clean. Correct. Fast. Flexible. Modular. Tested. Unity.
+### C#. Clean. Correct. Documented. Fast. Flexible. Modular. Tested. Unity.
 ### SQL. GSheets. SODB. CSV. JSON. SQLiter. More ...
 
 <p/><p/>
@@ -26,10 +26,10 @@ I just cannot _NOT_ write code the right way ...
   - culture-specific number formats, text encodings, avoids unnecessary TryParse
 - Build your own toolchain easily!
   - Modular code, Inspector-ready settings
-- Full source code included!
-  - Nothing purposefully hidden! With JetBrains Code annotations
-- Documented use of external code/libs and their licenses
-  - Latest libs included for convenience: SQLite, Google Sheets
+- Full source code included, fully documented!
+  - Nothing purposefully hidden, with JetBrains Code annotations
+- Latest libs included for convenience
+  - SQLite, Google Sheets, ..
 
 #### Supports any workflow: 
 - (turn Code into Data) <=> (turn Data into Code)
