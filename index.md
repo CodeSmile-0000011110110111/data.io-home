@@ -16,7 +16,7 @@ You sweat and shiver as you ...
 Okay. You win.
 ```
 <img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="444"/>
-#### C#. Clean. Correct. CSV. Documented. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Tested. Unity.
+#### Automated. C#. Clean. Correct. CSV. Documented. GSheets. JSON. Fast. Flexible. Modular. SODB. SQL. SQLite. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
 #### Served on the side:
