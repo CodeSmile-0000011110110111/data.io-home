@@ -5,6 +5,11 @@ title: About data&lt;io&gt;
 
 # data&lt;io&gt;
 
+Clean. Correct. Fast. Flexible. Modular.
+
+SQL. CSV. JSON. SODB. Script. And more ...
+
+
 data.io makes it irrelevant WHERE or HOW your custom (game) data is stored. Sync data to one or another representation (Database, Spreadsheet, ScriptableObject, C# code) as needed. Even on a "per build", "per platform" or "editor vs runtime" basis. It let's you choose how you want to work with data, with which tools (Databases, Spreadsheets, C# IDE, Unity Inspector, custom ..) and how to store data (SQL, CSV, JSON, custom ..) and to enable that, there's only very few conventions to follow that are best practice anyway. 
 
 <a href="https://github.com/sitterheim/data.io-home/wiki">Learn more in the wiki</a>.
