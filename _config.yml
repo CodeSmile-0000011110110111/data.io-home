@@ -1,4 +1,4 @@
-remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
+remote_theme: jekyll/minima
 lsi: false
 safe: true
 incremental: false
