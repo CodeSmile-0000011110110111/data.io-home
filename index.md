@@ -2,15 +2,15 @@
 layout: page
 title: Got data?
 ---
-<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace" size="4px">
-<strong>\> north</strong><br/>
+<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace" size="8px">
+<strong>\> north</strong><br/><p style="font-family:Consolas, Monaco, 'Andale Mono', monospace" size="4px">
   You head north, unexpectedly entering a dark alley due to <i>syntax error at or near ";"</i>. Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
 encodings and flawed-type converters.<br/>
 <br/>
 You sweat and shiver as you ...<br/>
-<br/>
-  <strong>\> use</strong><br/>
+<br/><p style="font-family:Consolas, Monaco, 'Andale Mono', monospace" size="8px">
+  <strong>\> use</strong><br/><p style="font-family:Consolas, Monaco, 'Andale Mono', monospace" size="4px">
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/>
 <br/>Okay. You win!</p>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
