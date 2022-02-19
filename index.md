@@ -7,9 +7,9 @@ title: Got data?
   You head north, unexpectedly entering a dark alley due to <i>syntax error at or near ";"</i>. Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
 encodings and flawed-type converters.
-
-You sweat and shiver as you ...<br/><br/>
-
+<p/>
+You sweat and shiver as you ...
+<p/>
   <strong>\> use</strong><br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/>
 Okay. You win!</p>
