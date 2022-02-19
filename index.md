@@ -2,8 +2,7 @@
 layout: page
 title: Got data?
 ---
-<font size=6px>
-```<br/>
+<font size=6px><br/>
 <strong>\> north</strong><br/>
 You head north, unexpectedly entering a dark alley due to syntax error at or near ";". Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
@@ -13,8 +12,7 @@ You sweat and shiver as you ...<br/><br/>
 
   <strong>\> use</strong><br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/>
-Okay. You win!&nbsp;
-  ```</font>
+Okay. You win!&nbsp;</font>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
