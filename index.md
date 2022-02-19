@@ -12,7 +12,7 @@ encodings and flawed-type converters.
 You sweat and shiver as you ...<br/><br/>
 
   <strong>\> use</strong><br/>
-<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
+<img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/>
 Okay. You win!&nbsp;
   ```</font>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
