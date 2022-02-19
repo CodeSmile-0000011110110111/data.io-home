@@ -2,53 +2,50 @@
 layout: page
 title: Got data?
 ---
-<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="350"/>
-```
-\> enter north into cs valley
-You head north, unexpectedly entering a dark alley. Suddenly, you find yourself immersed
-in woefully escaped delimiters, culture-unique encodings and flawed-type converters. 
+<font size=6px>
+```<br/>
+<strong>\> north</strong><br/>
+You head north, unexpectedly entering a dark alley due to syntax error at or near ";". Suddenly,
+you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
+encodings and flawed-type converters.
 
-A goggely voice gloomingly whispers: "seeeequl". You sweat and shiver as you ...
+You sweat and shiver as you ...<br/><br/>
 
-\> use data.io
-Okay. You win.
-```
-#### C#. Clean. Correct. Docs. Fast. Flexible. Modular. Tested. Unity.
-#### SQL. GSheets. SODB. CSV. JSON. SQLiter.
+  <strong>\> use</strong><br/>
+<img src="/data.io-home/assets/data.io-banner-transparent-50-cropped.png" alt="data.io logo" width="800"/>
+Okay. You win!&nbsp;
+  ```</font>
+### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
 - Looking for something specific? Let me know => fremdspielen (at) gmail.com
 
-#### Served on the side:
+### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <p/>
-- **ScriptBuilder**
-  - C# script generator, only need to fill in names and method bodies
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
+- **BYOT: Bring your own toolchain!**
+  - Modular code, Inspector-ready settings classes, common interfaces
+- **Complete source code included!**
+  - Interface-driven, documented API with JetBrains Code annotations
+- **In-Memory SODB** (ScriptableObject Database)
+  - strongly-typed accessible, LINQ queryable, JSON serializable
+- **Reflection-less SQLite`r´**
+  - `IList<IList<object>> rows = SQLiter.Query("SELECT * FROM MyTable");`
+- **<a target="_blank" href="docs/api/Data.IO.Script.Builder.ScriptBuilder.html">ScriptBuilder</a>**
+  - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
-- **In-Memory SODB** (ScriptableObject Database)
-  - access by type, query with LINQ, serializable to JSON
-- **No-Reflection SQLiter**
-  - `IList<IList<object>> rows = SQLiterCommand.Query("SELECT * FROM MyTable");`
-- Fast Type/Value conversion of strings
-  - culture-specific number formats, text encodings, avoids unnecessary TryParse
-- Build your own toolchain easily!
-  - Modular code, Inspector-ready settings
-- Full source code included, fully documented, interface-driven
-  - Nothing purposefully hidden, with JetBrains Code annotations
-- Latest libs included for convenience
-  - SQLite, Google Sheets, ..
 
-#### Serves any scenario: 
+### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
-- (Reflection is evil) <=> (I don't mind)
+- (Reflection is evil!) <=> (Wut?)
 - (Coder) <=> (Designer)
 
-#### When? Where??
+### When? Where??
 
-data.io is coming Q3/Q4 2022 to the Unity Asset Store!
+data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
 - Interested? Contact me! => fremdspielen (at) gmail.com
 - I'm looking for: early adopters / beta testers, real-world datasets for testing, understanding your workflow and pain points, ideas for more data-centric tools, love and admiration.
