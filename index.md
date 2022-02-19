@@ -10,7 +10,7 @@ You sweat and shiver as you ...</p>
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/><br/><br/>
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:10px">Okay. You win!</p>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
-- Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>! => fremdspielen (at) gmail.com
+- Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
@@ -41,5 +41,5 @@ I just cannot _NOT_ write code the right way ...
 
 data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
-- Interested? Contact me! => fremdspielen (at) gmail.com
+- Interested?  <a href="mailto:fremdspielen@gmail.com">Contact me</a>!
 - I'm looking for: early adopters / beta testers, real-world datasets for testing, understanding your workflow and pain points, ideas for more data-centric tools, love and admiration.
