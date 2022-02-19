@@ -2,7 +2,7 @@
 layout: page
 title: Got data?
 ---
-<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace"><font size=6px>
+<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace"><font size=5px>
 <strong>\> north</strong><br/>
   You head north, unexpectedly entering a dark alley due to <i>syntax error at or near ";"</i>. Suddenly,
 you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique 
