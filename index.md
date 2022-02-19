@@ -14,7 +14,7 @@ You sweat and shiver as you ...<br/>
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="800"/>
 <br/>Okay. You win!</p>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
-- Looking for something specific? Let me know => fremdspielen (at) gmail.com
+- Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>! => fremdspielen (at) gmail.com
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
