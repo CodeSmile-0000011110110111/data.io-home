@@ -15,7 +15,6 @@ You sweat and shiver as you use ...</p>
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...<br/>
 <pre>if (!CannotNotWriteCodeRight == false) {</pre>
-<br/>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
 - **BYOT: Bring your own toolchain!**
