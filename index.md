@@ -35,7 +35,7 @@ I just cannot _NOT_ write code the right way ...
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
 - (Reflection is evil!) <=> (Wut?)
-- (Coder) <=> (Designer)
+- (Programmer) <=> (Designer)
 
 ### When? Where??
 
