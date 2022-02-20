@@ -14,8 +14,8 @@ You sweat and shiver as you use ...</p>
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...<br/>
-´´´if (!CannotNotWriteCodeRight == false) {´´´
-<p/>
+<pre>if (!CannotNotWriteCodeRight == false) {</pre>
+<br/>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
 - **BYOT: Bring your own toolchain!**
@@ -30,7 +30,8 @@ I just cannot _NOT_ write code the right way ...<br/>
   - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
-´´´}´´´
+<br/>
+<pre>}</pre>
 
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
