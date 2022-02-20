@@ -10,9 +10,8 @@ You sweat and shiver as you use ...</p>
 <a href="https://sitterheim.github.io/data.io-home/docs/">
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="725"/>
 </a><br/><br/>
-<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
 ### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity>=2019.4.
-- Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
+<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
@@ -45,5 +44,6 @@ I just cannot _NOT_ write code the right way ...
 
 data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
-- Interested?  <a href="mailto:fremdspielen@gmail.com">Contact me</a>!
+- Interested? <a href="mailto:fremdspielen@gmail.com">Contact me</a>!
+- Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
 - I'm looking for: early adopters / beta testers, real-world datasets for testing, understanding your workflow and pain points, ideas for more data-centric tools, love and admiration.
