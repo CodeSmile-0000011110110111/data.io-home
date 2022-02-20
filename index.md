@@ -14,7 +14,7 @@ You sweat and shiver as you use ...</p>
 
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...<br/>
-Ie I wouldn't write: ´´´if (IsNotDisabled == false) ..´´´
+´´´if (!CannotNotWriteCodeRight == false) {´´´
 <p/>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
@@ -30,6 +30,7 @@ Ie I wouldn't write: ´´´if (IsNotDisabled == false) ..´´´
   - C# script generator, only need to fill in names and method bodies
 - **SQLBuilder**
   - type-safe, quote-escaped SQL query builder
+´´´}´´´
 
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
