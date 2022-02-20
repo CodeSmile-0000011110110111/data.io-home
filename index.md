@@ -11,7 +11,7 @@ You sweat and shiver as you use ...</p>
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="725"/>
 </a><br/><br/>
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
-### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity.
+### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. GSheets. JSON. Fast. Flexible. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity >=2019.4.
 - Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
 
 ### Served on the side:
