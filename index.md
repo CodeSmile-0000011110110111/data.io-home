@@ -13,7 +13,8 @@ You sweat and shiver as you use ...</p>
 - Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
 
 ### Served on the side:
-I just cannot _NOT_ write code the right way ...
+I just cannot _NOT_ write code the right way ...<br/>
+Ie I wouldn't write: ´´´if (IsNotDisabled == false) ..´´´
 <p/>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
