@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -105,15 +105,153 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SQLite.html">SQLite</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.SQLite.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.SQL.SQLite.dll</h6>
   <h5 id="SQLite_SQLite3_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class SQLite3</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <a id="SQLite_SQLite3_BackupFinish_" data-uid="SQLite.SQLite3.BackupFinish*"></a>
+  <h4 id="SQLite_SQLite3_BackupFinish_System_IntPtr_" data-uid="SQLite.SQLite3.BackupFinish(System.IntPtr)">BackupFinish(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result BackupFinish(IntPtr backup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">backup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLite3.Result.html">SQLite3.Result</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLite3_BackupInit_" data-uid="SQLite.SQLite3.BackupInit*"></a>
+  <h4 id="SQLite_SQLite3_BackupInit_System_IntPtr_System_String_System_IntPtr_System_String_" data-uid="SQLite.SQLite3.BackupInit(System.IntPtr,System.String,System.IntPtr,System.String)">BackupInit(IntPtr, String, IntPtr, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr BackupInit(IntPtr destDb, string destName, IntPtr sourceDb, string sourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">destDb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">sourceDb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLite3_BackupStep_" data-uid="SQLite.SQLite3.BackupStep*"></a>
+  <h4 id="SQLite_SQLite3_BackupStep_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.BackupStep(System.IntPtr,System.Int32)">BackupStep(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result BackupStep(IntPtr backup, int numPages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">backup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLite3.Result.html">SQLite3.Result</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SQLite_SQLite3_BindBlob_" data-uid="SQLite.SQLite3.BindBlob*"></a>
   <h4 id="SQLite_SQLite3_BindBlob_System_IntPtr_System_Int32_System_Byte___System_Int32_System_IntPtr_" data-uid="SQLite.SQLite3.BindBlob(System.IntPtr,System.Int32,System.Byte[],System.Int32,System.IntPtr)">BindBlob(IntPtr, Int32, Byte[], Int32, IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -174,8 +312,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindDouble_" data-uid="SQLite.SQLite3.BindDouble*"></a>
   <h4 id="SQLite_SQLite3_BindDouble_System_IntPtr_System_Int32_System_Double_" data-uid="SQLite.SQLite3.BindDouble(System.IntPtr,System.Int32,System.Double)">BindDouble(IntPtr, Int32, Double)</h4>
   <div class="markdown level1 summary"></div>
@@ -226,8 +362,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindInt_" data-uid="SQLite.SQLite3.BindInt*"></a>
   <h4 id="SQLite_SQLite3_BindInt_System_IntPtr_System_Int32_System_Int32_" data-uid="SQLite.SQLite3.BindInt(System.IntPtr,System.Int32,System.Int32)">BindInt(IntPtr, Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -278,8 +412,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindInt64_" data-uid="SQLite.SQLite3.BindInt64*"></a>
   <h4 id="SQLite_SQLite3_BindInt64_System_IntPtr_System_Int32_System_Int64_" data-uid="SQLite.SQLite3.BindInt64(System.IntPtr,System.Int32,System.Int64)">BindInt64(IntPtr, Int32, Int64)</h4>
   <div class="markdown level1 summary"></div>
@@ -330,8 +462,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindNull_" data-uid="SQLite.SQLite3.BindNull*"></a>
   <h4 id="SQLite_SQLite3_BindNull_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.BindNull(System.IntPtr,System.Int32)">BindNull(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -377,8 +507,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindParameterIndex_" data-uid="SQLite.SQLite3.BindParameterIndex*"></a>
   <h4 id="SQLite_SQLite3_BindParameterIndex_System_IntPtr_System_String_" data-uid="SQLite.SQLite3.BindParameterIndex(System.IntPtr,System.String)">BindParameterIndex(IntPtr, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -424,8 +552,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BindText_" data-uid="SQLite.SQLite3.BindText*"></a>
   <h4 id="SQLite_SQLite3_BindText_System_IntPtr_System_Int32_System_String_System_Int32_System_IntPtr_" data-uid="SQLite.SQLite3.BindText(System.IntPtr,System.Int32,System.String,System.Int32,System.IntPtr)">BindText(IntPtr, Int32, String, Int32, IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -486,8 +612,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_BusyTimeout_" data-uid="SQLite.SQLite3.BusyTimeout*"></a>
   <h4 id="SQLite_SQLite3_BusyTimeout_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.BusyTimeout(System.IntPtr,System.Int32)">BusyTimeout(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -533,8 +657,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Changes_" data-uid="SQLite.SQLite3.Changes*"></a>
   <h4 id="SQLite_SQLite3_Changes_System_IntPtr_" data-uid="SQLite.SQLite3.Changes(System.IntPtr)">Changes(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -575,8 +697,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Close_" data-uid="SQLite.SQLite3.Close*"></a>
   <h4 id="SQLite_SQLite3_Close_System_IntPtr_" data-uid="SQLite.SQLite3.Close(System.IntPtr)">Close(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -617,8 +737,46 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="SQLite_SQLite3_Close2_" data-uid="SQLite.SQLite3.Close2*"></a>
+  <h4 id="SQLite_SQLite3_Close2_System_IntPtr_" data-uid="SQLite.SQLite3.Close2(System.IntPtr)">Close2(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result Close2(IntPtr db)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">db</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLite3.Result.html">SQLite3.Result</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SQLite_SQLite3_ColumnBlob_" data-uid="SQLite.SQLite3.ColumnBlob*"></a>
   <h4 id="SQLite_SQLite3_ColumnBlob_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnBlob(System.IntPtr,System.Int32)">ColumnBlob(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -664,13 +822,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3_ColumnByteArray_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SQLite.SQLite3.ColumnByteArray(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L3164">View Source</a>
-  </span>
   <a id="SQLite_SQLite3_ColumnByteArray_" data-uid="SQLite.SQLite3.ColumnByteArray*"></a>
   <h4 id="SQLite_SQLite3_ColumnByteArray_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnByteArray(System.IntPtr,System.Int32)">ColumnByteArray(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -716,8 +867,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnBytes_" data-uid="SQLite.SQLite3.ColumnBytes*"></a>
   <h4 id="SQLite_SQLite3_ColumnBytes_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnBytes(System.IntPtr,System.Int32)">ColumnBytes(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -763,8 +912,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnCount_" data-uid="SQLite.SQLite3.ColumnCount*"></a>
   <h4 id="SQLite_SQLite3_ColumnCount_System_IntPtr_" data-uid="SQLite.SQLite3.ColumnCount(System.IntPtr)">ColumnCount(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -805,8 +952,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnDouble_" data-uid="SQLite.SQLite3.ColumnDouble*"></a>
   <h4 id="SQLite_SQLite3_ColumnDouble_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnDouble(System.IntPtr,System.Int32)">ColumnDouble(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -852,8 +997,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnInt_" data-uid="SQLite.SQLite3.ColumnInt*"></a>
   <h4 id="SQLite_SQLite3_ColumnInt_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnInt(System.IntPtr,System.Int32)">ColumnInt(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -899,8 +1042,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnInt64_" data-uid="SQLite.SQLite3.ColumnInt64*"></a>
   <h4 id="SQLite_SQLite3_ColumnInt64_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnInt64(System.IntPtr,System.Int32)">ColumnInt64(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -946,8 +1087,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnName_" data-uid="SQLite.SQLite3.ColumnName*"></a>
   <h4 id="SQLite_SQLite3_ColumnName_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnName(System.IntPtr,System.Int32)">ColumnName(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -993,13 +1132,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3_ColumnName16_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SQLite.SQLite3.ColumnName16(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L3130">View Source</a>
-  </span>
   <a id="SQLite_SQLite3_ColumnName16_" data-uid="SQLite.SQLite3.ColumnName16*"></a>
   <h4 id="SQLite_SQLite3_ColumnName16_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnName16(System.IntPtr,System.Int32)">ColumnName16(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1045,13 +1177,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3_ColumnString_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SQLite.SQLite3.ColumnString(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L3159">View Source</a>
-  </span>
   <a id="SQLite_SQLite3_ColumnString_" data-uid="SQLite.SQLite3.ColumnString*"></a>
   <h4 id="SQLite_SQLite3_ColumnString_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnString(System.IntPtr,System.Int32)">ColumnString(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1097,8 +1222,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnText_" data-uid="SQLite.SQLite3.ColumnText*"></a>
   <h4 id="SQLite_SQLite3_ColumnText_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnText(System.IntPtr,System.Int32)">ColumnText(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1144,8 +1267,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnText16_" data-uid="SQLite.SQLite3.ColumnText16*"></a>
   <h4 id="SQLite_SQLite3_ColumnText16_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnText16(System.IntPtr,System.Int32)">ColumnText16(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1191,8 +1312,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ColumnType_" data-uid="SQLite.SQLite3.ColumnType*"></a>
   <h4 id="SQLite_SQLite3_ColumnType_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.ColumnType(System.IntPtr,System.Int32)">ColumnType(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1238,8 +1357,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Config_" data-uid="SQLite.SQLite3.Config*"></a>
   <h4 id="SQLite_SQLite3_Config_SQLite_SQLite3_ConfigOption_" data-uid="SQLite.SQLite3.Config(SQLite.SQLite3.ConfigOption)">Config(SQLite3.ConfigOption)</h4>
   <div class="markdown level1 summary"></div>
@@ -1280,8 +1397,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_EnableLoadExtension_" data-uid="SQLite.SQLite3.EnableLoadExtension*"></a>
   <h4 id="SQLite_SQLite3_EnableLoadExtension_System_IntPtr_System_Int32_" data-uid="SQLite.SQLite3.EnableLoadExtension(System.IntPtr,System.Int32)">EnableLoadExtension(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -1327,8 +1442,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Errmsg_" data-uid="SQLite.SQLite3.Errmsg*"></a>
   <h4 id="SQLite_SQLite3_Errmsg_System_IntPtr_" data-uid="SQLite.SQLite3.Errmsg(System.IntPtr)">Errmsg(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1369,8 +1482,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_ExtendedErrCode_" data-uid="SQLite.SQLite3.ExtendedErrCode*"></a>
   <h4 id="SQLite_SQLite3_ExtendedErrCode_System_IntPtr_" data-uid="SQLite.SQLite3.ExtendedErrCode(System.IntPtr)">ExtendedErrCode(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1411,8 +1522,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Finalize_" data-uid="SQLite.SQLite3.Finalize*"></a>
   <h4 id="SQLite_SQLite3_Finalize_System_IntPtr_" data-uid="SQLite.SQLite3.Finalize(System.IntPtr)">Finalize(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1453,13 +1562,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3_GetErrmsg_System_IntPtr_.md&amp;value=---%0Auid%3A%20SQLite.SQLite3.GetErrmsg(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L3096">View Source</a>
-  </span>
   <a id="SQLite_SQLite3_GetErrmsg_" data-uid="SQLite.SQLite3.GetErrmsg*"></a>
   <h4 id="SQLite_SQLite3_GetErrmsg_System_IntPtr_" data-uid="SQLite.SQLite3.GetErrmsg(System.IntPtr)">GetErrmsg(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1500,8 +1602,46 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <a id="SQLite_SQLite3_GetResult_" data-uid="SQLite.SQLite3.GetResult*"></a>
+  <h4 id="SQLite_SQLite3_GetResult_System_IntPtr_" data-uid="SQLite.SQLite3.GetResult(System.IntPtr)">GetResult(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result GetResult(IntPtr db)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">db</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLite3.Result.html">SQLite3.Result</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SQLite_SQLite3_Initialize_" data-uid="SQLite.SQLite3.Initialize*"></a>
   <h4 id="SQLite_SQLite3_Initialize" data-uid="SQLite.SQLite3.Initialize">Initialize()</h4>
   <div class="markdown level1 summary"></div>
@@ -1525,8 +1665,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_LastInsertRowid_" data-uid="SQLite.SQLite3.LastInsertRowid*"></a>
   <h4 id="SQLite_SQLite3_LastInsertRowid_System_IntPtr_" data-uid="SQLite.SQLite3.LastInsertRowid(System.IntPtr)">LastInsertRowid(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1567,8 +1705,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_LibVersionNumber_" data-uid="SQLite.SQLite3.LibVersionNumber*"></a>
   <h4 id="SQLite_SQLite3_LibVersionNumber" data-uid="SQLite.SQLite3.LibVersionNumber">LibVersionNumber()</h4>
   <div class="markdown level1 summary"></div>
@@ -1592,15 +1728,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Open_" data-uid="SQLite.SQLite3.Open*"></a>
-  <h4 id="SQLite_SQLite3_Open_System_Byte___System_IntPtr__System_Int32_System_IntPtr_" data-uid="SQLite.SQLite3.Open(System.Byte[],System.IntPtr@,System.Int32,System.IntPtr)">Open(Byte[], out IntPtr, Int32, IntPtr)</h4>
+  <h4 id="SQLite_SQLite3_Open_System_Byte___System_IntPtr__System_Int32_System_String_" data-uid="SQLite.SQLite3.Open(System.Byte[],System.IntPtr@,System.Int32,System.String)">Open(Byte[], out IntPtr, Int32, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result Open(byte[] filename, out IntPtr db, int flags, IntPtr zvfs)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result Open(byte[] filename, out IntPtr db, int flags, string zvfs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1628,7 +1762,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">zvfs</span></td>
         <td></td>
       </tr>
@@ -1649,8 +1783,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Open_" data-uid="SQLite.SQLite3.Open*"></a>
   <h4 id="SQLite_SQLite3_Open_System_String_System_IntPtr__" data-uid="SQLite.SQLite3.Open(System.String,System.IntPtr@)">Open(String, out IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1696,15 +1828,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Open_" data-uid="SQLite.SQLite3.Open*"></a>
-  <h4 id="SQLite_SQLite3_Open_System_String_System_IntPtr__System_Int32_System_IntPtr_" data-uid="SQLite.SQLite3.Open(System.String,System.IntPtr@,System.Int32,System.IntPtr)">Open(String, out IntPtr, Int32, IntPtr)</h4>
+  <h4 id="SQLite_SQLite3_Open_System_String_System_IntPtr__System_Int32_System_String_" data-uid="SQLite.SQLite3.Open(System.String,System.IntPtr@,System.Int32,System.String)">Open(String, out IntPtr, Int32, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result Open(string filename, out IntPtr db, int flags, IntPtr zvfs)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern SQLite3.Result Open(string filename, out IntPtr db, int flags, string zvfs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1732,7 +1862,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">zvfs</span></td>
         <td></td>
       </tr>
@@ -1753,8 +1883,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Open16_" data-uid="SQLite.SQLite3.Open16*"></a>
   <h4 id="SQLite_SQLite3_Open16_System_String_System_IntPtr__" data-uid="SQLite.SQLite3.Open16(System.String,System.IntPtr@)">Open16(String, out IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1800,13 +1928,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3_Prepare2_System_IntPtr_System_String_.md&amp;value=---%0Auid%3A%20SQLite.SQLite3.Prepare2(System.IntPtr%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L3066">View Source</a>
-  </span>
   <a id="SQLite_SQLite3_Prepare2_" data-uid="SQLite.SQLite3.Prepare2*"></a>
   <h4 id="SQLite_SQLite3_Prepare2_System_IntPtr_System_String_" data-uid="SQLite.SQLite3.Prepare2(System.IntPtr,System.String)">Prepare2(IntPtr, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -1852,8 +1973,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Prepare2_" data-uid="SQLite.SQLite3.Prepare2*"></a>
   <h4 id="SQLite_SQLite3_Prepare2_System_IntPtr_System_String_System_Int32_System_IntPtr__System_IntPtr_" data-uid="SQLite.SQLite3.Prepare2(System.IntPtr,System.String,System.Int32,System.IntPtr@,System.IntPtr)">Prepare2(IntPtr, String, Int32, out IntPtr, IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1914,8 +2033,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Reset_" data-uid="SQLite.SQLite3.Reset*"></a>
   <h4 id="SQLite_SQLite3_Reset_System_IntPtr_" data-uid="SQLite.SQLite3.Reset(System.IntPtr)">Reset(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -1956,8 +2073,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_SetDirectory_" data-uid="SQLite.SQLite3.SetDirectory*"></a>
   <h4 id="SQLite_SQLite3_SetDirectory_System_UInt32_System_String_" data-uid="SQLite.SQLite3.SetDirectory(System.UInt32,System.String)">SetDirectory(UInt32, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -2003,8 +2118,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Shutdown_" data-uid="SQLite.SQLite3.Shutdown*"></a>
   <h4 id="SQLite_SQLite3_Shutdown" data-uid="SQLite.SQLite3.Shutdown">Shutdown()</h4>
   <div class="markdown level1 summary"></div>
@@ -2028,8 +2141,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
   <a id="SQLite_SQLite3_Step_" data-uid="SQLite.SQLite3.Step*"></a>
   <h4 id="SQLite_SQLite3_Step_System_IntPtr_" data-uid="SQLite.SQLite3.Step(System.IntPtr)">Step(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
@@ -2070,21 +2181,34 @@
       </tr>
     </tbody>
   </table>
+  <a id="SQLite_SQLite3_Threadsafe_" data-uid="SQLite.SQLite3.Threadsafe*"></a>
+  <h4 id="SQLite_SQLite3_Threadsafe" data-uid="SQLite.SQLite3.Threadsafe">Threadsafe()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int Threadsafe()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLite3.md&amp;value=---%0Auid%3A%20SQLite.SQLite3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2927" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -2101,9 +2225,9 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
             
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+          </io></div>
         </div>
       </footer>
     </div>

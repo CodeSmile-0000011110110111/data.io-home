@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncTableQuery&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsyncTableQuery&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SQLite.AsyncTableQuery`1">
+  
+  
+  <h1 id="SQLite_AsyncTableQuery_1" data-uid="SQLite.AsyncTableQuery`1" class="text-break">Class AsyncTableQuery&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Query to an asynchronous database connection.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AsyncTableQuery&lt;T&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SQLite.html">SQLite</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.SQL.SQLite.dll</h6>
+  <h5 id="SQLite_AsyncTableQuery_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsyncTableQuery&lt;T&gt;
+    where T : new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="SQLite_AsyncTableQuery_1__ctor_" data-uid="SQLite.AsyncTableQuery`1.#ctor*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1__ctor_SQLite_TableQuery__0__" data-uid="SQLite.AsyncTableQuery`1.#ctor(SQLite.TableQuery{`0})">AsyncTableQuery(TableQuery&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new async query that uses given the synchronous query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery(TableQuery&lt;T&gt; innerQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableQuery-1.html">TableQuery</a>&lt;T&gt;</td>
+        <td><span class="parametername">innerQuery</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="SQLite_AsyncTableQuery_1_CountAsync_" data-uid="SQLite.AsyncTableQuery`1.CountAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_CountAsync" data-uid="SQLite.AsyncTableQuery`1.CountAsync">CountAsync()</h4>
+  <div class="markdown level1 summary"><p>Execute SELECT COUNT(*) on the query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CountAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_CountAsync_" data-uid="SQLite.AsyncTableQuery`1.CountAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_CountAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="SQLite.AsyncTableQuery`1.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">CountAsync(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Execute SELECT COUNT(*) on the query with an additional WHERE clause.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CountAsync(Expression&lt;Func&lt;T, bool&gt;&gt; predExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_DeleteAsync_" data-uid="SQLite.AsyncTableQuery`1.DeleteAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_DeleteAsync" data-uid="SQLite.AsyncTableQuery`1.DeleteAsync">DeleteAsync()</h4>
+  <div class="markdown level1 summary"><p>Delete all the rows that match this query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_DeleteAsync_" data-uid="SQLite.AsyncTableQuery`1.DeleteAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_DeleteAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="SQLite.AsyncTableQuery`1.DeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">DeleteAsync(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Delete all the rows that match this query and the given predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAsync(Expression&lt;Func&lt;T, bool&gt;&gt; predExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_ElementAtAsync_" data-uid="SQLite.AsyncTableQuery`1.ElementAtAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_ElementAtAsync_System_Int32_" data-uid="SQLite.AsyncTableQuery`1.ElementAtAsync(System.Int32)">ElementAtAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the element at a given index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; ElementAtAsync(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_FirstAsync_" data-uid="SQLite.AsyncTableQuery`1.FirstAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_FirstAsync" data-uid="SQLite.AsyncTableQuery`1.FirstAsync">FirstAsync()</h4>
+  <div class="markdown level1 summary"><p>Returns the first element of this query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FirstAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_FirstAsync_" data-uid="SQLite.AsyncTableQuery`1.FirstAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_FirstAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="SQLite.AsyncTableQuery`1.FirstAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">FirstAsync(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the first element of this query that matches the predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FirstAsync(Expression&lt;Func&lt;T, bool&gt;&gt; predExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_FirstOrDefaultAsync_" data-uid="SQLite.AsyncTableQuery`1.FirstOrDefaultAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_FirstOrDefaultAsync" data-uid="SQLite.AsyncTableQuery`1.FirstOrDefaultAsync">FirstOrDefaultAsync()</h4>
+  <div class="markdown level1 summary"><p>Returns the first element of this query, or null if no element is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FirstOrDefaultAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_FirstOrDefaultAsync_" data-uid="SQLite.AsyncTableQuery`1.FirstOrDefaultAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_FirstOrDefaultAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="SQLite.AsyncTableQuery`1.FirstOrDefaultAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">FirstOrDefaultAsync(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the first element of this query that matches the predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FirstOrDefaultAsync(Expression&lt;Func&lt;T, bool&gt;&gt; predExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_OrderBy_" data-uid="SQLite.AsyncTableQuery`1.OrderBy*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="SQLite.AsyncTableQuery`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">OrderBy&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Order the query results according to a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; OrderBy&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt; orderExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, U&gt;&gt;</td>
+        <td><span class="parametername">orderExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_OrderByDescending_" data-uid="SQLite.AsyncTableQuery`1.OrderByDescending*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_OrderByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="SQLite.AsyncTableQuery`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">OrderByDescending&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Order the query results according to a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; OrderByDescending&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt; orderExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, U&gt;&gt;</td>
+        <td><span class="parametername">orderExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_Skip_" data-uid="SQLite.AsyncTableQuery`1.Skip*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_Skip_System_Int32_" data-uid="SQLite.AsyncTableQuery`1.Skip(System.Int32)">Skip(Int32)</h4>
+  <div class="markdown level1 summary"><p>Skips a given number of elements from the query and then yields the remainder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; Skip(int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_Take_" data-uid="SQLite.AsyncTableQuery`1.Take*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_Take_System_Int32_" data-uid="SQLite.AsyncTableQuery`1.Take(System.Int32)">Take(Int32)</h4>
+  <div class="markdown level1 summary"><p>Yields a given number of elements from the query and then skips the remainder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; Take(int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_ThenBy_" data-uid="SQLite.AsyncTableQuery`1.ThenBy*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_ThenBy__1_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="SQLite.AsyncTableQuery`1.ThenBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">ThenBy&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Order the query results according to a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; ThenBy&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt; orderExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, U&gt;&gt;</td>
+        <td><span class="parametername">orderExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_ThenByDescending_" data-uid="SQLite.AsyncTableQuery`1.ThenByDescending*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_ThenByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="SQLite.AsyncTableQuery`1.ThenByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">ThenByDescending&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Order the query results according to a key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; ThenByDescending&lt;U&gt;(Expression&lt;Func&lt;T, U&gt;&gt; orderExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, U&gt;&gt;</td>
+        <td><span class="parametername">orderExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_ToArrayAsync_" data-uid="SQLite.AsyncTableQuery`1.ToArrayAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_ToArrayAsync" data-uid="SQLite.AsyncTableQuery`1.ToArrayAsync">ToArrayAsync()</h4>
+  <div class="markdown level1 summary"><p>Queries the database and returns the results as an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T[]&gt; ToArrayAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_ToListAsync_" data-uid="SQLite.AsyncTableQuery`1.ToListAsync*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_ToListAsync" data-uid="SQLite.AsyncTableQuery`1.ToListAsync">ToListAsync()</h4>
+  <div class="markdown level1 summary"><p>Queries the database and returns the results as a List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;T&gt;&gt; ToListAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_AsyncTableQuery_1_Where_" data-uid="SQLite.AsyncTableQuery`1.Where*"></a>
+  <h4 id="SQLite_AsyncTableQuery_1_Where_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="SQLite.AsyncTableQuery`1.Where(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">Where(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Filters the query based on a predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; Where(Expression&lt;Func&lt;T, bool&gt;&gt; predExpr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predExpr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
+            
+          </io></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

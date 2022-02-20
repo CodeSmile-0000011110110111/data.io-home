@@ -20,6 +20,30 @@ body {
 }
 
 
+
+.sidetoc>.toc {
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+	padding-bottom: 104px;
+}
+.sidetoc {
+    background-color: #ccf5f5;
+    border: none;
+    color: #ccf5f5;
+    padding-right: 8px;
+    height: 100%;
+	padding-bottom: 104px;
+
+  width: 320px;
+}
+
+.article.grid-right {
+  margin-left: 350px;
+}
+
+
 /* HEADINGS */
 
 h1 {
@@ -191,25 +215,7 @@ ul.nav.level2>li.active.in>a.active {
     border-right: none;
 }
 
-.sidetoc>.toc {
-    background-color: #fff;
-    overflow-x: hidden;
-    height: 100%;
-}
 
-.sidetoc {
-    background-color: #ccf5f5;
-    border: none;
-    color: #ccf5f5;
-    padding-right: 8px;
-    height: 100%;
-
-  width: 280px;
-}
-
-.article.grid-right {
-  margin-left: 300px;
-}
 
 /* ALERTS */
 

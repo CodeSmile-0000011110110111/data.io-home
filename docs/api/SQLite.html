@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -77,6 +77,9 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery&lt;T&gt;</a></h4>
+      <section><p>Query to an asynchronous database connection.</p>
+</section>
       <h4><a class="xref" href="SQLite.AutoIncrementAttribute.html">AutoIncrementAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.BaseTableQuery.html">BaseTableQuery</a></h4>
@@ -84,8 +87,13 @@
       <h4><a class="xref" href="SQLite.BaseTableQuery.Ordering.html">BaseTableQuery.Ordering</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.CollationAttribute.html">CollationAttribute</a></h4>
-      <section></section>
+      <section><p>Select the collating sequence to use on a column.
+&quot;BINARY&quot;, &quot;NOCASE&quot;, and &quot;RTRIM&quot; are supported.
+&quot;BINARY&quot; is the default.</p>
+</section>
       <h4><a class="xref" href="SQLite.ColumnAttribute.html">ColumnAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.IgnoreAttribute.html">IgnoreAttribute</a></h4>
       <section></section>
@@ -93,27 +101,45 @@
       <section></section>
       <h4><a class="xref" href="SQLite.MaxLengthAttribute.html">MaxLengthAttribute</a></h4>
       <section></section>
+      <h4><a class="xref" href="SQLite.NotifyTableChangedEventArgs.html">NotifyTableChangedEventArgs</a></h4>
+      <section></section>
       <h4><a class="xref" href="SQLite.NotNullAttribute.html">NotNullAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.NotNullConstraintViolationException.html">NotNullConstraintViolationException</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.Orm.html">Orm</a></h4>
       <section></section>
-      <h4><a class="xref" href="SQLite.PreparedSqlLiteInsertCommand.html">PreparedSqlLiteInsertCommand</a></h4>
-      <section><p>Since the insert never changed, we only need to prepare once.</p>
-</section>
+      <h4><a class="xref" href="SQLite.PreserveAttribute.html">PreserveAttribute</a></h4>
+      <section></section>
       <h4><a class="xref" href="SQLite.PrimaryKeyAttribute.html">PrimaryKeyAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.SQLite3.html">SQLite3</a></h4>
       <section></section>
+      <h4><a class="xref" href="SQLite.SQLiteAsyncConnection.html">SQLiteAsyncConnection</a></h4>
+      <section><p>A pooled asynchronous connection to a SQLite database.</p>
+</section>
       <h4><a class="xref" href="SQLite.SQLiteCommand.html">SQLiteCommand</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.SQLiteConnection.html">SQLiteConnection</a></h4>
-      <section><p>Represents an open connection to a SQLite database.</p>
+      <section><p>An open connection to a SQLite database.</p>
 </section>
       <h4><a class="xref" href="SQLite.SQLiteConnection.ColumnInfo.html">SQLiteConnection.ColumnInfo</a></h4>
       <section></section>
+      <h4><a class="xref" href="SQLite.SQLiteConnectionString.html">SQLiteConnectionString</a></h4>
+      <section><p>Represents a parsed connection string.</p>
+</section>
+      <h4><a class="xref" href="SQLite.SQLiteConnectionWithLock.html">SQLiteConnectionWithLock</a></h4>
+      <section><p>This is a normal connection except it contains a Lock method that
+can be used to serialize access to the database
+in lieu of using the sqlite's FullMutex support.</p>
+</section>
       <h4><a class="xref" href="SQLite.SQLiteException.html">SQLiteException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="SQLite.SQLiter.html">SQLiter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="SQLite.SQLiterCommand.html">SQLiterCommand</a></h4>
+      <section></section>
+      <h4><a class="xref" href="SQLite.StoreAsTextAttribute.html">StoreAsTextAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.TableAttribute.html">TableAttribute</a></h4>
       <section></section>
@@ -129,6 +155,10 @@
   </h3>
       <h4><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></h4>
       <section></section>
+      <h4><a class="xref" href="SQLite.CreateTableResult.html">CreateTableResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="SQLite.NotifyTableChangedAction.html">NotifyTableChangedAction</a></h4>
+      <section></section>
       <h4><a class="xref" href="SQLite.SQLite3.ColType.html">SQLite3.ColType</a></h4>
       <section></section>
       <h4><a class="xref" href="SQLite.SQLite3.ConfigOption.html">SQLite3.ConfigOption</a></h4>
@@ -139,21 +169,11 @@
       <section></section>
       <h4><a class="xref" href="SQLite.SQLiteOpenFlags.html">SQLiteOpenFlags</a></h4>
       <section></section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="SQLite.SQLiteConnection.TimeExecutionHandler.html">SQLiteConnection.TimeExecutionHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="SQLite.SQLiteConnection.TraceHandler.html">SQLiteConnection.TraceHandler</a></h4>
-      <section></section>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -170,9 +190,9 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
             
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+          </io></div>
         </div>
       </footer>
     </div>

@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SQLiteWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SQLiteWriter
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter">
+  
+  
+  <h1 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter" class="text-break">Class SQLiteWriter
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SQLiteWriter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></div>
+    <div><a class="xref" href="Data.IO.DB.Writer.Interfaces.ITableWriter.html">ITableWriter</a></div>
+    <div><a class="xref" href="Data.IO.DB.Writer.Interfaces.ISchemaWriter.html">ISchemaWriter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SQL.SQLite.Writer.html">Data.IO.SQL.SQLite.Writer</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.SQL.SQLite.dll</h6>
+  <h5 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SQLiteWriter : IDatabaseWriter, ITableWriter, ISchemaWriter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter__ctor_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.#ctor*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter__ctor_Data_IO_SQL_SQLiteSettings_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.#ctor(Data.IO.SQL.SQLiteSettings)">SQLiteWriter(SQLiteSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteWriter(SQLiteSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SQL.SQLiteSettings.html">SQLiteSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter__ctor_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.#ctor*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter__ctor_System_String_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.#ctor(System.String)">SQLiteWriter(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteWriter([PathReference] string dbFilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dbFilePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_BeginWriteDatabase_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.BeginWriteDatabase*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_BeginWriteDatabase_Data_IO_DB_Interfaces_IDatabase_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.BeginWriteDatabase(Data.IO.DB.Interfaces.IDatabase)">BeginWriteDatabase(IDatabase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginWriteDatabase(IDatabase database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IDatabase.html">IDatabase</a></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_EndWriteDatabase_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.EndWriteDatabase*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_EndWriteDatabase" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.EndWriteDatabase">EndWriteDatabase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndWriteDatabase()</code></pre>
+  </div>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_Write_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.Write*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_Write_Data_IO_DB_Interfaces_IDatabase_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.Write(Data.IO.DB.Interfaces.IDatabase)">Write(IDatabase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IDatabase database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IDatabase.html">IDatabase</a></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_Write_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.Write*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_Write_Data_IO_SQL_SQLiteSettings_Data_IO_DB_Interfaces_IDatabase_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.Write(Data.IO.SQL.SQLiteSettings,Data.IO.DB.Interfaces.IDatabase)">Write(SQLiteSettings, IDatabase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(SQLiteSettings settings, IDatabase database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SQL.SQLiteSettings.html">SQLiteSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Interfaces.IDatabase.html">IDatabase</a></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteSchema_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteSchema*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteSchema_Data_IO_DB_Schema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteSchema(Data.IO.DB.Schema.Interfaces.IDatabaseSchema)">WriteSchema(IDatabaseSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteSchema(IDatabaseSchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteTuple_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteTuple*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteTuple_System_String_System_Collections_Generic_IReadOnlyList_System_Object__" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteTuple(System.String,System.Collections.Generic.IReadOnlyList{System.Object})">WriteTuple(String, IReadOnlyList&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteTuple(string tableName, IReadOnlyList&lt;object&gt; tuple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">tuple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteTuples_" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteTuples*"></a>
+  <h4 id="Data_IO_SQL_SQLite_Writer_SQLiteWriter_WriteTuples_System_String_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList_System_Object___" data-uid="Data.IO.SQL.SQLite.Writer.SQLiteWriter.WriteTuples(System.String,System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{System.Object}})">WriteTuples(String, IReadOnlyList&lt;IReadOnlyList&lt;Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteTuples(string tableName, IReadOnlyList&lt;IReadOnlyList&lt;object&gt;&gt; tuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">tuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Data.IO.DB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a>
+  </div>
+  <div>
+      <a class="xref" href="Data.IO.DB.Writer.Interfaces.ITableWriter.html">ITableWriter</a>
+  </div>
+  <div>
+      <a class="xref" href="Data.IO.DB.Writer.Interfaces.ISchemaWriter.html">ISchemaWriter</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
+            
+          </io></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

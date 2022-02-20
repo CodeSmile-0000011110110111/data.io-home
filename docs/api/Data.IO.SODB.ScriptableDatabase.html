@@ -1,0 +1,1194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScriptableDatabase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScriptableDatabase
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Data.IO.SODB.ScriptableDatabase">
+  
+  
+  <h1 id="Data_IO_SODB_ScriptableDatabase" data-uid="Data.IO.SODB.ScriptableDatabase" class="text-break">Class ScriptableDatabase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">ScriptableDatabase</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Data.IO.SODB.ScriptableDatabase.IInitializable.html">ScriptableDatabase.IInitializable</a></div>
+    <div><a class="xref" href="Data.IO.SODB.Interfaces.IDatabase.html">IDatabase</a></div>
+    <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.SODB.Record.html">Record</a>&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SODB.html">Data.IO.SODB</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.SODB.dll</h6>
+  <h5 id="Data_IO_SODB_ScriptableDatabase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitializable, IDatabase, ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Data_IO_SODB_ScriptableDatabase_DatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.DatabaseSchema*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_DatabaseSchema" data-uid="Data.IO.SODB.ScriptableDatabase.DatabaseSchema">DatabaseSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDatabaseSchema DatabaseSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Item_" data-uid="Data.IO.SODB.ScriptableDatabase.Item*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Item_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Gets a table by name. Returns null if the table couldn't be found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableBase this[string tableName] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html">TableBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Name_" data-uid="Data.IO.SODB.ScriptableDatabase.Name*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Name" data-uid="Data.IO.SODB.ScriptableDatabase.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Reader_" data-uid="Data.IO.SODB.ScriptableDatabase.Reader*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Reader" data-uid="Data.IO.SODB.ScriptableDatabase.Reader">Reader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDatabaseReader Reader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Writer_" data-uid="Data.IO.SODB.ScriptableDatabase.Writer*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Writer" data-uid="Data.IO.SODB.ScriptableDatabase.Writer">Writer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDatabaseWriter Writer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">CreateInstance(IDatabaseSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptableDatabase CreateInstance(IDatabaseSchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.ScriptableDatabase.html">ScriptableDatabase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance_Data_IO_SODB_Reader_Interfaces_IDatabaseReader_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance(Data.IO.SODB.Reader.Interfaces.IDatabaseReader,Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)">CreateInstance(IDatabaseReader, IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptableDatabase CreateInstance(IDatabaseReader reader, IDatabaseWriter writer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.ScriptableDatabase.html">ScriptableDatabase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance(System.String)">CreateInstance(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptableDatabase CreateInstance(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.ScriptableDatabase.html">ScriptableDatabase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance__1_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance``1(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">CreateInstance&lt;TDatabase&gt;(IDatabaseSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseSchema schema)
+    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance__1_Data_IO_SODB_Reader_Interfaces_IDatabaseReader_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance``1(Data.IO.SODB.Reader.Interfaces.IDatabaseReader,Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)">CreateInstance&lt;TDatabase&gt;(IDatabaseReader, IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseReader reader, IDatabaseWriter writer = null)
+    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance__1_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance``1(System.String)">CreateInstance&lt;TDatabase&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(string name)
+    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDatabase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateTable_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateTable*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateTable__1_Data_IO_DBSchema_TableInfo_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateTable``1(Data.IO.DBSchema.TableInfo)">CreateTable&lt;TTable&gt;(TableInfo)</h4>
+  <div class="markdown level1 summary"><p>Creates a table and adds it to the schema.
+Table must not already exist in schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TTable CreateTable&lt;TTable&gt;(TableInfo tableInfo)
+    where TTable : class, ITable&lt;Record&gt;, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.TableInfo.html">TableInfo</a></td>
+        <td><span class="parametername">tableInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_CreateTableFor_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateTableFor*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateTableFor__1_Data_IO_DBSchema_TableInfo_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateTableFor``1(Data.IO.DBSchema.TableInfo)">CreateTableFor&lt;TRecord&gt;(TableInfo)</h4>
+  <div class="markdown level1 summary"><p>Creates a table for specific record type and adds it to the schema.
+Table must not already exist in schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; CreateTableFor&lt;TRecord&gt;(TableInfo tableInfo)
+    where TRecord : Record, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.TableInfo.html">TableInfo</a></td>
+        <td><span class="parametername">tableInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_DropTable_" data-uid="Data.IO.SODB.ScriptableDatabase.DropTable*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_DropTable_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.DropTable(System.String)">DropTable(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTable(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_DropTable_" data-uid="Data.IO.SODB.ScriptableDatabase.DropTable*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_DropTable__1" data-uid="Data.IO.SODB.ScriptableDatabase.DropTable``1">DropTable&lt;TTable&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTable&lt;TTable&gt;()
+    where TTable : class, ITable&lt;Record&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_DropTableFor_" data-uid="Data.IO.SODB.ScriptableDatabase.DropTableFor*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_DropTableFor__1" data-uid="Data.IO.SODB.ScriptableDatabase.DropTableFor``1">DropTableFor&lt;TRecord&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DropTableFor&lt;TRecord&gt;()
+    where TRecord : Record, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetEnumerator_" data-uid="Data.IO.SODB.ScriptableDatabase.GetEnumerator*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetEnumerator" data-uid="Data.IO.SODB.ScriptableDatabase.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;ITable&lt;Record&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.SODB.Record.html">Record</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetTable_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTable__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable``1">GetTable&lt;TTable&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the specified table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TTable GetTable&lt;TTable&gt;()
+    where TTable : class, ITable&lt;Record&gt;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetTableFor_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTableFor__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor``1">GetTableFor&lt;TRecord&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the table that owns specified types of records.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; GetTableFor&lt;TRecord&gt;()
+    where TRecord : Record, new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_OnAfterDeserialize_" data-uid="Data.IO.SODB.ScriptableDatabase.OnAfterDeserialize*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_OnAfterDeserialize" data-uid="Data.IO.SODB.ScriptableDatabase.OnAfterDeserialize">OnAfterDeserialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
+  </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_OnBeforeSerialize_" data-uid="Data.IO.SODB.ScriptableDatabase.OnBeforeSerialize*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_OnBeforeSerialize" data-uid="Data.IO.SODB.ScriptableDatabase.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_OnInit_" data-uid="Data.IO.SODB.ScriptableDatabase.OnInit*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_OnInit" data-uid="Data.IO.SODB.ScriptableDatabase.OnInit">OnInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInit()</code></pre>
+  </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_Read_" data-uid="Data.IO.SODB.ScriptableDatabase.Read*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Read" data-uid="Data.IO.SODB.ScriptableDatabase.Read">Read()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Read()</code></pre>
+  </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_ToString_" data-uid="Data.IO.SODB.ScriptableDatabase.ToString*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_ToString" data-uid="Data.IO.SODB.ScriptableDatabase.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.Object.ToString()</span></div>
+  <a id="Data_IO_SODB_ScriptableDatabase_Write_" data-uid="Data.IO.SODB.ScriptableDatabase.Write*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Write_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.SODB.ScriptableDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IDatabaseWriter writer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_WriteDirty_" data-uid="Data.IO.SODB.ScriptableDatabase.WriteDirty*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_WriteDirty" data-uid="Data.IO.SODB.ScriptableDatabase.WriteDirty">WriteDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDirty()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">ScriptableDatabase.IInitializable.Init(IDatabaseSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ScriptableDatabase.IInitializable.Init(IDatabaseSchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_Data_IO_SODB_Reader_Interfaces_IDatabaseReader_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init(Data.IO.SODB.Reader.Interfaces.IDatabaseReader,Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)">ScriptableDatabase.IInitializable.Init(IDatabaseReader, IDatabaseWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ScriptableDatabase.IInitializable.Init(IDatabaseReader reader, IDatabaseWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Reader.Interfaces.IDatabaseReader.html">IDatabaseReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_System_Collections_IEnumerable_GetEnumerator_" data-uid="Data.IO.SODB.ScriptableDatabase.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_System_Collections_IEnumerable_GetEnumerator" data-uid="Data.IO.SODB.ScriptableDatabase.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Data.IO.SODB.ScriptableDatabase.IInitializable.html">ScriptableDatabase.IInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Data.IO.SODB.Interfaces.IDatabase.html">IDatabase</a>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
+            
+          </io></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

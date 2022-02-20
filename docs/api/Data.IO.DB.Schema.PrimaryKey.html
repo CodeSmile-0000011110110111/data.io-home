@@ -78,9 +78,9 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a></div>
-    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a>&gt;</div>
-    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a>&gt;</div>
+    <div><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a>&gt;</div>
     <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Data.IO.DB.Schema.PrimaryKey.html">PrimaryKey</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
@@ -96,7 +96,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.DB.Schema.html">Data.IO.DB.Schema</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.DB.Schema.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.SODB.dll</h6>
   <h5 id="Data_IO_DB_Schema_PrimaryKey_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
@@ -301,7 +301,7 @@ public struct PrimaryKey : IPrimaryKey, IComparable&lt;IPrimaryKey&gt;, IEquatab
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_DB_Schema_PrimaryKey_CompareTo_" data-uid="Data.IO.DB.Schema.PrimaryKey.CompareTo*"></a>
-  <h4 id="Data_IO_DB_Schema_PrimaryKey_CompareTo_Data_IO_DB_Schema_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Schema.PrimaryKey.CompareTo(Data.IO.DB.Schema.Interfaces.IPrimaryKey)">CompareTo(IPrimaryKey)</h4>
+  <h4 id="Data_IO_DB_Schema_PrimaryKey_CompareTo_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Schema.PrimaryKey.CompareTo(Data.IO.SODB.Interfaces.IPrimaryKey)">CompareTo(IPrimaryKey)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -319,7 +319,7 @@ public struct PrimaryKey : IPrimaryKey, IComparable&lt;IPrimaryKey&gt;, IEquatab
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
         <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
@@ -336,46 +336,6 @@ public struct PrimaryKey : IPrimaryKey, IComparable&lt;IPrimaryKey&gt;, IEquatab
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_DB_Schema_PrimaryKey_Equals_" data-uid="Data.IO.DB.Schema.PrimaryKey.Equals*"></a>
-  <h4 id="Data_IO_DB_Schema_PrimaryKey_Equals_Data_IO_DB_Schema_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Schema.PrimaryKey.Equals(Data.IO.DB.Schema.Interfaces.IPrimaryKey)">Equals(IPrimaryKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(IPrimaryKey other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -400,6 +360,46 @@ public struct PrimaryKey : IPrimaryKey, IComparable&lt;IPrimaryKey&gt;, IEquatab
     <tbody>
       <tr>
         <td><a class="xref" href="Data.IO.DB.Schema.PrimaryKey.html">PrimaryKey</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_DB_Schema_PrimaryKey_Equals_" data-uid="Data.IO.DB.Schema.PrimaryKey.Equals*"></a>
+  <h4 id="Data_IO_DB_Schema_PrimaryKey_Equals_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.DB.Schema.PrimaryKey.Equals(Data.IO.SODB.Interfaces.IPrimaryKey)">Equals(IPrimaryKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IPrimaryKey other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
         <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
@@ -704,7 +704,7 @@ public struct PrimaryKey : IPrimaryKey, IComparable&lt;IPrimaryKey&gt;, IEquatab
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DB.Schema.Interfaces.IPrimaryKey.html">IPrimaryKey</a>
+      <a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a>
   </div>
   <div>
       <span class="xref">System.IComparable&lt;T&gt;</span>

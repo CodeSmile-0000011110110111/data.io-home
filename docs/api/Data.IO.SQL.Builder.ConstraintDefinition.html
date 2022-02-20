@@ -111,6 +111,31 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor*"></a>
+  <h4 id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_System_String_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor(System.String)">ConstraintDefinition(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConstraintDefinition(string primaryKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor*"></a>
   <h4 id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_System_String_System_String_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor(System.String,System.String)">ConstraintDefinition(String, String)</h4>
   <div class="markdown level1 summary"><p>Create a named constraint using the given primary key column name.</p>
 </div>
@@ -172,30 +197,33 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="Data_IO_SQL_Builder_ConstraintDefinition_Name" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.Name">Name</h4>
+  <a id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor*"></a>
+  <h4 id="Data_IO_SQL_Builder_ConstraintDefinition__ctor_System_String___" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.#ctor(System.String[])">ConstraintDefinition(String[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly string Name</code></pre>
+    <pre><code class="lang-csharp hljs">public ConstraintDefinition(string[] primaryKeys)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">primaryKeys</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="fields">Fields
+  </h3>
   <h4 id="Data_IO_SQL_Builder_ConstraintDefinition_PrimaryKeys" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.PrimaryKeys">PrimaryKeys</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -214,6 +242,31 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Data_IO_SQL_Builder_ConstraintDefinition_Name_" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.Name*"></a>
+  <h4 id="Data_IO_SQL_Builder_ConstraintDefinition_Name" data-uid="Data.IO.SQL.Builder.ConstraintDefinition.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

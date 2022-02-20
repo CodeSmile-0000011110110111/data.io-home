@@ -82,7 +82,9 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></div>
+    <div><a class="xref" href="Data.IO.SODB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -110,12 +112,12 @@
   <h5 id="Data_IO_DB_Schema_DatabaseSchema_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
+public sealed class DatabaseSchema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Data_IO_DB_Schema_DatabaseSchema__ctor_" data-uid="Data.IO.DB.Schema.DatabaseSchema.#ctor*"></a>
-  <h4 id="Data_IO_DB_Schema_DatabaseSchema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_DB_Schema_Interfaces_ITableInfo__" data-uid="Data.IO.DB.Schema.DatabaseSchema.#ctor(System.String,System.Collections.Generic.IEnumerable{Data.IO.DB.Schema.Interfaces.ITableInfo})">DatabaseSchema(String, IEnumerable&lt;ITableInfo&gt;)</h4>
+  <h4 id="Data_IO_DB_Schema_DatabaseSchema__ctor_System_String_System_Collections_Generic_IEnumerable_Data_IO_SODB_Schema_Interfaces_ITableInfo__" data-uid="Data.IO.DB.Schema.DatabaseSchema.#ctor(System.String,System.Collections.Generic.IEnumerable{Data.IO.SODB.Schema.Interfaces.ITableInfo})">DatabaseSchema(String, IEnumerable&lt;ITableInfo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -138,7 +140,7 @@ public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
         <td><span class="parametername">tableInfos</span></td>
         <td></td>
       </tr>
@@ -187,7 +189,7 @@ public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Data.IO.DB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Data.IO.SODB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -195,7 +197,7 @@ public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_DB_Schema_DatabaseSchema_AddTable_" data-uid="Data.IO.DB.Schema.DatabaseSchema.AddTable*"></a>
-  <h4 id="Data_IO_DB_Schema_DatabaseSchema_AddTable_Data_IO_DB_Schema_Interfaces_ITableInfo_" data-uid="Data.IO.DB.Schema.DatabaseSchema.AddTable(Data.IO.DB.Schema.Interfaces.ITableInfo)">AddTable(ITableInfo)</h4>
+  <h4 id="Data_IO_DB_Schema_DatabaseSchema_AddTable_Data_IO_SODB_Schema_Interfaces_ITableInfo_" data-uid="Data.IO.DB.Schema.DatabaseSchema.AddTable(Data.IO.SODB.Schema.Interfaces.ITableInfo)">AddTable(ITableInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -213,8 +215,31 @@ public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DB.Schema.Interfaces.ITableInfo.html">ITableInfo</a></td>
+        <td><a class="xref" href="Data.IO.SODB.Schema.Interfaces.ITableInfo.html">ITableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_DB_Schema_DatabaseSchema_GetEnumerator_" data-uid="Data.IO.DB.Schema.DatabaseSchema.GetEnumerator*"></a>
+  <h4 id="Data_IO_DB_Schema_DatabaseSchema_GetEnumerator" data-uid="Data.IO.DB.Schema.DatabaseSchema.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;ITableInfo&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Data.IO.SODB.Schema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -244,9 +269,40 @@ public sealed class DatabaseSchema : IDatabaseSchema</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="Data_IO_DB_Schema_DatabaseSchema_System_Collections_IEnumerable_GetEnumerator_" data-uid="Data.IO.DB.Schema.DatabaseSchema.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="Data_IO_DB_Schema_DatabaseSchema_System_Collections_IEnumerable_GetEnumerator" data-uid="Data.IO.DB.Schema.DatabaseSchema.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a>
+      <a class="xref" href="Data.IO.SODB.Schema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
   </div>
 </article>
           </div>

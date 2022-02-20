@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,6 +79,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SQLiteCommand</span></div>
+      <div class="level2"><a class="xref" href="SQLite.SQLiterCommand.html">SQLiterCommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,20 +103,40 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SQLite.html">SQLite</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.SQLite.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.SQL.SQLite.dll</h6>
   <h5 id="SQLite_SQLiteCommand_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SQLiteCommand</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="SQLite_SQLiteCommand__ctor_" data-uid="SQLite.SQLiteCommand.#ctor*"></a>
+  <h4 id="SQLite_SQLiteCommand__ctor_SQLite_SQLiteConnection_" data-uid="SQLite.SQLiteCommand.#ctor(SQLite.SQLiteConnection)">SQLiteCommand(SQLiteConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteCommand(SQLiteConnection conn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLiteConnection.html">SQLiteConnection</a></td>
+        <td><span class="parametername">conn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_CommandText.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.CommandText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2060">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_CommandText_" data-uid="SQLite.SQLiteCommand.CommandText*"></a>
   <h4 id="SQLite_SQLiteCommand_CommandText" data-uid="SQLite.SQLiteCommand.CommandText">CommandText</h4>
   <div class="markdown level1 summary"></div>
@@ -141,13 +162,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_Bind_System_Object_.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.Bind(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2202">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_Bind_" data-uid="SQLite.SQLiteCommand.Bind*"></a>
   <h4 id="SQLite_SQLiteCommand_Bind_System_Object_" data-uid="SQLite.SQLiteCommand.Bind(System.Object)">Bind(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -173,13 +187,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_Bind_System_String_System_Object_.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.Bind(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2194">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_Bind_" data-uid="SQLite.SQLiteCommand.Bind*"></a>
   <h4 id="SQLite_SQLiteCommand_Bind_System_String_System_Object_" data-uid="SQLite.SQLiteCommand.Bind(System.String,System.Object)">Bind(String, Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -210,13 +217,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteDeferredQuery__1.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteDeferredQuery%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2097">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_ExecuteDeferredQuery_" data-uid="SQLite.SQLiteCommand.ExecuteDeferredQuery*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteDeferredQuery__1" data-uid="SQLite.SQLiteCommand.ExecuteDeferredQuery``1">ExecuteDeferredQuery&lt;T&gt;()</h4>
   <div class="markdown level1 summary"></div>
@@ -255,13 +255,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteDeferredQuery__1_SQLite_TableMapping_.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteDeferredQuery%60%601(SQLite.TableMapping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2129">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_ExecuteDeferredQuery_" data-uid="SQLite.SQLiteCommand.ExecuteDeferredQuery*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteDeferredQuery__1_SQLite_TableMapping_" data-uid="SQLite.SQLiteCommand.ExecuteDeferredQuery``1(SQLite.TableMapping)">ExecuteDeferredQuery&lt;T&gt;(TableMapping)</h4>
   <div class="markdown level1 summary"></div>
@@ -317,13 +310,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteNonQuery.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteNonQuery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2069">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_ExecuteNonQuery_" data-uid="SQLite.SQLiteCommand.ExecuteNonQuery*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteNonQuery" data-uid="SQLite.SQLiteCommand.ExecuteNonQuery">ExecuteNonQuery()</h4>
   <div class="markdown level1 summary"></div>
@@ -347,13 +333,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteQuery__1.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteQuery%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2102">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_ExecuteQuery_" data-uid="SQLite.SQLiteCommand.ExecuteQuery*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteQuery__1" data-uid="SQLite.SQLiteCommand.ExecuteQuery``1">ExecuteQuery&lt;T&gt;()</h4>
   <div class="markdown level1 summary"></div>
@@ -392,13 +371,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteQuery__1_SQLite_TableMapping_.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteQuery%60%601(SQLite.TableMapping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2107">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_ExecuteQuery_" data-uid="SQLite.SQLiteCommand.ExecuteQuery*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteQuery__1_SQLite_TableMapping_" data-uid="SQLite.SQLiteCommand.ExecuteQuery``1(SQLite.TableMapping)">ExecuteQuery&lt;T&gt;(TableMapping)</h4>
   <div class="markdown level1 summary"></div>
@@ -454,13 +426,44 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ExecuteScalar__1.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ExecuteScalar%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2163">View Source</a>
-  </span>
+  <a id="SQLite_SQLiteCommand_ExecuteQueryScalars_" data-uid="SQLite.SQLiteCommand.ExecuteQueryScalars*"></a>
+  <h4 id="SQLite_SQLiteCommand_ExecuteQueryScalars__1" data-uid="SQLite.SQLiteCommand.ExecuteQueryScalars``1">ExecuteQueryScalars&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; ExecuteQueryScalars&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SQLite_SQLiteCommand_ExecuteScalar_" data-uid="SQLite.SQLiteCommand.ExecuteScalar*"></a>
   <h4 id="SQLite_SQLiteCommand_ExecuteScalar__1" data-uid="SQLite.SQLiteCommand.ExecuteScalar``1">ExecuteScalar&lt;T&gt;()</h4>
   <div class="markdown level1 summary"></div>
@@ -499,13 +502,6 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_OnInstanceCreated_System_Object_.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.OnInstanceCreated(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2124">View Source</a>
-  </span>
   <a id="SQLite_SQLiteCommand_OnInstanceCreated_" data-uid="SQLite.SQLiteCommand.OnInstanceCreated*"></a>
   <h4 id="SQLite_SQLiteCommand_OnInstanceCreated_System_Object_" data-uid="SQLite.SQLiteCommand.OnInstanceCreated(System.Object)">OnInstanceCreated(Object)</h4>
   <div class="markdown level1 summary"><p>Invoked every time an instance is loaded from the database.</p>
@@ -536,15 +532,30 @@
   <h5 id="SQLite_SQLiteCommand_OnInstanceCreated_System_Object__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This can be overridden in combination with the <a class="xref" href="SQLite.SQLiteConnection.html#SQLite_SQLiteConnection_NewCommand">NewCommand()</a>
 method to hook into the life-cycle of objects.</p>
-<p>Type safety is not possible because MonoTouch does not support virtual generic methods.</p>
 </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand_ToString.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2207">View Source</a>
-  </span>
+  <a id="SQLite_SQLiteCommand_Prepare_" data-uid="SQLite.SQLiteCommand.Prepare*"></a>
+  <h4 id="SQLite_SQLiteCommand_Prepare" data-uid="SQLite.SQLiteCommand.Prepare">Prepare()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IntPtr Prepare()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="SQLite_SQLiteCommand_ToString_" data-uid="SQLite.SQLiteCommand.ToString*"></a>
   <h4 id="SQLite_SQLiteCommand_ToString" data-uid="SQLite.SQLiteCommand.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -575,16 +586,6 @@ method to hook into the life-cycle of objects.</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/new/main/apiSpec/new?filename=SQLite_SQLiteCommand.md&amp;value=---%0Auid%3A%20SQLite.SQLiteCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/sitterheim/data.io/blob/main/Assets/Data.IO/Runtime/SQLite/Plugins/SQLite/SQLite.cs/#L2055" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -601,9 +602,9 @@ method to hook into the life-cycle of objects.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
             
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
+          </io></div>
         </div>
       </footer>
     </div>

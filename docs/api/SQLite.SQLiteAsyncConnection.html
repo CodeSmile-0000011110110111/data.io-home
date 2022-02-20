@@ -1,0 +1,3575 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SQLiteAsyncConnection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SQLiteAsyncConnection
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="https://sitterheim.github.io/data.io-home/docs/index.html">
+                <img id="logo" class="png" src="../images/data.io-banner-25m-inverted.png" height="50px" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SQLite.SQLiteAsyncConnection">
+  
+  
+  <h1 id="SQLite_SQLiteAsyncConnection" data-uid="SQLite.SQLiteAsyncConnection" class="text-break">Class SQLiteAsyncConnection
+  </h1>
+  <div class="markdown level0 summary"><p>A pooled asynchronous connection to a SQLite database.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SQLiteAsyncConnection</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SQLite.html">SQLite</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.SQL.SQLite.dll</h6>
+  <h5 id="SQLite_SQLiteAsyncConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SQLiteAsyncConnection</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="SQLite_SQLiteAsyncConnection__ctor_" data-uid="SQLite.SQLiteAsyncConnection.#ctor*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection__ctor_SQLite_SQLiteConnectionString_" data-uid="SQLite.SQLiteAsyncConnection.#ctor(SQLite.SQLiteConnectionString)">SQLiteAsyncConnection(SQLiteConnectionString)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new SQLiteAsyncConnection and opens a pooled SQLite database
+using the given connection string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteAsyncConnection(SQLiteConnectionString connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLiteConnectionString.html">SQLiteConnectionString</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Details on how to find and open the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection__ctor_" data-uid="SQLite.SQLiteAsyncConnection.#ctor*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection__ctor_System_String_SQLite_SQLiteOpenFlags_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.#ctor(System.String,SQLite.SQLiteOpenFlags,System.Boolean)">SQLiteAsyncConnection(String, SQLiteOpenFlags, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new SQLiteAsyncConnection and opens a pooled SQLite database specified by databasePath.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteAsyncConnection(string databasePath, SQLiteOpenFlags openFlags, bool storeDateTimeAsTicks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">databasePath</span></td>
+        <td><p>Specifies the path to the database file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLiteOpenFlags.html">SQLiteOpenFlags</a></td>
+        <td><span class="parametername">openFlags</span></td>
+        <td><p>Flags controlling how the connection should be opened.
+Async connections should have the FullMutex flag set to provide best performance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeDateTimeAsTicks</span></td>
+        <td><p>Specifies whether to store DateTime properties as ticks (true) or strings (false). You
+absolutely do want to store them as Ticks in all new projects. The value of false is
+only here for backwards compatibility. There is a <em>significant</em> speed advantage, with no
+down sides, when setting storeDateTimeAsTicks = true.
+If you use DateTimeOffset properties, it will be always stored as ticks regardingless
+the storeDateTimeAsTicks parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection__ctor_" data-uid="SQLite.SQLiteAsyncConnection.#ctor*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection__ctor_System_String_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.#ctor(System.String,System.Boolean)">SQLiteAsyncConnection(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new SQLiteAsyncConnection and opens a pooled SQLite database specified by databasePath.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteAsyncConnection(string databasePath, bool storeDateTimeAsTicks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">databasePath</span></td>
+        <td><p>Specifies the path to the database file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeDateTimeAsTicks</span></td>
+        <td><p>Specifies whether to store DateTime properties as ticks (true) or strings (false). You
+absolutely do want to store them as Ticks in all new projects. The value of false is
+only here for backwards compatibility. There is a <em>significant</em> speed advantage, with no
+down sides, when setting storeDateTimeAsTicks = true.
+If you use DateTimeOffset properties, it will be always stored as ticks regardingless
+the storeDateTimeAsTicks parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="SQLite_SQLiteAsyncConnection_DatabasePath_" data-uid="SQLite.SQLiteAsyncConnection.DatabasePath*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DatabasePath" data-uid="SQLite.SQLiteAsyncConnection.DatabasePath">DatabasePath</h4>
+  <div class="markdown level1 summary"><p>Gets the database path used by this connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DatabasePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DateTimeStringFormat_" data-uid="SQLite.SQLiteAsyncConnection.DateTimeStringFormat*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DateTimeStringFormat" data-uid="SQLite.SQLiteAsyncConnection.DateTimeStringFormat">DateTimeStringFormat</h4>
+  <div class="markdown level1 summary"><p>The format to use when storing DateTime properties as strings. Ignored if StoreDateTimeAsTicks is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DateTimeStringFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The date time string format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_LibVersionNumber_" data-uid="SQLite.SQLiteAsyncConnection.LibVersionNumber*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_LibVersionNumber" data-uid="SQLite.SQLiteAsyncConnection.LibVersionNumber">LibVersionNumber</h4>
+  <div class="markdown level1 summary"><p>Gets the SQLite library version number. 3007014 would be v3.7.14</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LibVersionNumber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_StoreDateTimeAsTicks_" data-uid="SQLite.SQLiteAsyncConnection.StoreDateTimeAsTicks*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_StoreDateTimeAsTicks" data-uid="SQLite.SQLiteAsyncConnection.StoreDateTimeAsTicks">StoreDateTimeAsTicks</h4>
+  <div class="markdown level1 summary"><p>Whether to store DateTime properties as ticks (true) or strings (false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StoreDateTimeAsTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_StoreTimeSpanAsTicks_" data-uid="SQLite.SQLiteAsyncConnection.StoreTimeSpanAsTicks*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_StoreTimeSpanAsTicks" data-uid="SQLite.SQLiteAsyncConnection.StoreTimeSpanAsTicks">StoreTimeSpanAsTicks</h4>
+  <div class="markdown level1 summary"><p>Whether to store TimeSpan properties as ticks (true) or strings (false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StoreTimeSpanAsTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_TableMappings_" data-uid="SQLite.SQLiteAsyncConnection.TableMappings*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_TableMappings" data-uid="SQLite.SQLiteAsyncConnection.TableMappings">TableMappings</h4>
+  <div class="markdown level1 summary"><p>Returns the mappings from types to tables that the connection
+currently understands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TableMapping&gt; TableMappings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="SQLite.TableMapping.html">TableMapping</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_TimeExecution_" data-uid="SQLite.SQLiteAsyncConnection.TimeExecution*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_TimeExecution" data-uid="SQLite.SQLiteAsyncConnection.TimeExecution">TimeExecution</h4>
+  <div class="markdown level1 summary"><p>Whether Trace lines should be written that show the execution time of queries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TimeExecution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_Trace_" data-uid="SQLite.SQLiteAsyncConnection.Trace*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_Trace" data-uid="SQLite.SQLiteAsyncConnection.Trace">Trace</h4>
+  <div class="markdown level1 summary"><p>Whether to writer queries to <a class="xref" href="SQLite.SQLiteAsyncConnection.html#SQLite_SQLiteAsyncConnection_Tracer">Tracer</a> during execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Trace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The tracer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_Tracer_" data-uid="SQLite.SQLiteAsyncConnection.Tracer*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_Tracer" data-uid="SQLite.SQLiteAsyncConnection.Tracer">Tracer</h4>
+  <div class="markdown level1 summary"><p>The delegate responsible for writing trace lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;string&gt; Tracer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The tracer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="SQLite_SQLiteAsyncConnection_BackupAsync_" data-uid="SQLite.SQLiteAsyncConnection.BackupAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_BackupAsync_System_String_System_String_" data-uid="SQLite.SQLiteAsyncConnection.BackupAsync(System.String,System.String)">BackupAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Backup the entire database to the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BackupAsync(string destinationDatabasePath, string databaseName = &quot;main&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destinationDatabasePath</span></td>
+        <td><p>Path to backup file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">databaseName</span></td>
+        <td><p>The name of the database to backup (usually &quot;main&quot;).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CloseAsync_" data-uid="SQLite.SQLiteAsyncConnection.CloseAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CloseAsync" data-uid="SQLite.SQLiteAsyncConnection.CloseAsync">CloseAsync()</h4>
+  <div class="markdown level1 summary"><p>Closes any pooled connections used by the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_System_String_System_String_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync(System.String,System.String,System.Boolean)">CreateIndexAsync(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an index for the specified table and column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CreateIndexAsync(string tableName, string columnName, bool unique = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Name of the database table</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>Name of the column to index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>Whether the index should be unique</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Zero on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_System_String_System_String_System_String_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync(System.String,System.String,System.String,System.Boolean)">CreateIndexAsync(String, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an index for the specified table and column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CreateIndexAsync(string indexName, string tableName, string columnName, bool unique = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>Name of the index to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Name of the database table</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>Name of the column to index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>Whether the index should be unique</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Zero on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_System_String_System_String_System_String___System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync(System.String,System.String,System.String[],System.Boolean)">CreateIndexAsync(String, String, String[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an index for the specified table and columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CreateIndexAsync(string indexName, string tableName, string[] columnNames, bool unique = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>Name of the index to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Name of the database table</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">columnNames</span></td>
+        <td><p>An array of column names to index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>Whether the index should be unique</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Zero on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_System_String_System_String___System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync(System.String,System.String[],System.Boolean)">CreateIndexAsync(String, String[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an index for the specified table and columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CreateIndexAsync(string tableName, string[] columnNames, bool unique = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Name of the database table</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">columnNames</span></td>
+        <td><p>An array of column names to index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>Whether the index should be unique</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Zero on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateIndexAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateIndexAsync__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.CreateIndexAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">CreateIndexAsync&lt;T&gt;(Expression&lt;Func&lt;T, Object&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates an index for the specified object property.
+e.g. CreateIndex&lt;Client&gt;(c =&gt; c.Name);</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; CreateIndexAsync&lt;T&gt;(Expression&lt;Func&lt;T, object&gt;&gt; property, bool unique = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property to index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>Whether the index should be unique</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Zero on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type to reflect to a database table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTableAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTableAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTableAsync_System_Type_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTableAsync(System.Type,SQLite.CreateFlags)">CreateTableAsync(Type, CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTableResult&gt; CreateTableAsync(Type ty, CreateFlags createFlags = CreateFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">ty</span></td>
+        <td><p>Type to reflect to a database table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td><p>Optional flags allowing implicit PK and indexes based on naming conventions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTableResult.html">CreateTableResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTableAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTableAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTableAsync__1_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTableAsync``1(SQLite.CreateFlags)">CreateTableAsync&lt;T&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTableResult&gt; CreateTableAsync&lt;T&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTableResult.html">CreateTableResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_SQLite_CreateFlags_System_Type___" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync(SQLite.CreateFlags,System.Type[])">CreateTablesAsync(CreateFlags, Type[])</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database for each type. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTablesResult&gt; CreateTablesAsync(CreateFlags createFlags = CreateFlags.None, params Type[] types)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span>[]</td>
+        <td><span class="parametername">types</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated for each type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTablesAsync__2_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync``2(SQLite.CreateFlags)">CreateTablesAsync&lt;T, T2&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database for each type. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTablesResult&gt; CreateTablesAsync&lt;T, T2&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()
+    where T2 : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated for each type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTablesAsync__3_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync``3(SQLite.CreateFlags)">CreateTablesAsync&lt;T, T2, T3&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database for each type. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTablesResult&gt; CreateTablesAsync&lt;T, T2, T3&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()
+    where T2 : new()
+    where T3 : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated for each type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTablesAsync__4_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync``4(SQLite.CreateFlags)">CreateTablesAsync&lt;T, T2, T3, T4&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database for each type. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTablesResult&gt; CreateTablesAsync&lt;T, T2, T3, T4&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()
+    where T2 : new()
+    where T3 : new()
+    where T4 : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated for each type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_CreateTablesAsync_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_CreateTablesAsync__5_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.CreateTablesAsync``5(SQLite.CreateFlags)">CreateTablesAsync&lt;T, T2, T3, T4, T5&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;create table if not exists&quot; on the database for each type. It also
+creates any specified indexes on the columns of the table. It uses
+a schema automatically generated from the specified type. You can
+later access this schema by calling GetMapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CreateTablesResult&gt; CreateTablesAsync&lt;T, T2, T3, T4, T5&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()
+    where T2 : new()
+    where T3 : new()
+    where T4 : new()
+    where T5 : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.CreateTablesResult.html">CreateTablesResult</a>&gt;</td>
+        <td><p>Whether the table was created or migrated for each type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeferredQueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeferredQueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeferredQueryAsync_SQLite_TableMapping_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.DeferredQueryAsync(SQLite.TableMapping,System.String,System.Object[])">DeferredQueryAsync(TableMapping, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+It returns each row of the result using the specified mapping. This function is
+only used by libraries in order to query the database via introspection. It is
+normally not used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;object&gt;&gt; DeferredQueryAsync(TableMapping map, string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>A <a class="xref" href="SQLite.TableMapping.html">TableMapping</a> to use to convert the resulting rows
+into objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><p>An enumerable with one result for each row returned by the query.
+The enumerator will call sqlite3_step on each call to MoveNext, so the database
+connection must remain open for the lifetime of the enumerator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeferredQueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeferredQueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeferredQueryAsync__1_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.DeferredQueryAsync``1(System.String,System.Object[])">DeferredQueryAsync&lt;T&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+It returns each row of the result using the mapping automatically generated for
+the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;T&gt;&gt; DeferredQueryAsync&lt;T&gt;(string query, params object[] args)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td><p>An enumerable with one result for each row returned by the query.
+The enumerator will call sqlite3_step on each call to MoveNext, so the database
+connection must remain open for the lifetime of the enumerator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeleteAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeleteAllAsync_SQLite_TableMapping_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAllAsync(SQLite.TableMapping)">DeleteAllAsync(TableMapping)</h4>
+  <div class="markdown level1 summary"><p>Deletes all the objects from the specified table.
+WARNING WARNING: Let me repeat. It deletes ALL the objects from the
+specified table. Do you really want to do that?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAllAsync(TableMapping map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of objects deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeleteAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeleteAllAsync__1" data-uid="SQLite.SQLiteAsyncConnection.DeleteAllAsync``1">DeleteAllAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Deletes all the objects from the specified table.
+WARNING WARNING: Let me repeat. It deletes ALL the objects from the
+specified table. Do you really want to do that?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAllAsync&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of objects deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of objects to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeleteAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeleteAsync_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync(System.Object)">DeleteAsync(Object)</h4>
+  <div class="markdown level1 summary"><p>Deletes the given object from the database using its primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAsync(object objectToDelete)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">objectToDelete</span></td>
+        <td><p>The object to delete. It must have a primary key designated using the PrimaryKeyAttribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeleteAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeleteAsync_System_Object_SQLite_TableMapping_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync(System.Object,SQLite.TableMapping)">DeleteAsync(Object, TableMapping)</h4>
+  <div class="markdown level1 summary"><p>Deletes the object with the specified primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAsync(object primaryKey, TableMapping map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>The primary key of the object to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of objects deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DeleteAsync_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DeleteAsync__1_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.DeleteAsync``1(System.Object)">DeleteAsync&lt;T&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Deletes the object with the specified primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DeleteAsync&lt;T&gt;(object primaryKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>The primary key of the object to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of objects deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DropTableAsync_" data-uid="SQLite.SQLiteAsyncConnection.DropTableAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DropTableAsync_SQLite_TableMapping_" data-uid="SQLite.SQLiteAsyncConnection.DropTableAsync(SQLite.TableMapping)">DropTableAsync(TableMapping)</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;drop table&quot; on the database.  This is non-recoverable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DropTableAsync(TableMapping map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_DropTableAsync_" data-uid="SQLite.SQLiteAsyncConnection.DropTableAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_DropTableAsync__1" data-uid="SQLite.SQLiteAsyncConnection.DropTableAsync``1">DropTableAsync&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Executes a &quot;drop table&quot; on the database.  This is non-recoverable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; DropTableAsync&lt;T&gt;()
+    where T : new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_EnableLoadExtensionAsync_" data-uid="SQLite.SQLiteAsyncConnection.EnableLoadExtensionAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_EnableLoadExtensionAsync_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.EnableLoadExtensionAsync(System.Boolean)">EnableLoadExtensionAsync(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Enable or disable extension loading.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task EnableLoadExtensionAsync(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_EnableWriteAheadLoggingAsync_" data-uid="SQLite.SQLiteAsyncConnection.EnableWriteAheadLoggingAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_EnableWriteAheadLoggingAsync" data-uid="SQLite.SQLiteAsyncConnection.EnableWriteAheadLoggingAsync">EnableWriteAheadLoggingAsync()</h4>
+  <div class="markdown level1 summary"><p>Enables the write ahead logging. WAL is significantly faster in most scenarios
+by providing better concurrency and better disk IO performance than the normal
+journal mode. You only need to call this function once in the lifetime of the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task EnableWriteAheadLoggingAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_ExecuteAsync_" data-uid="SQLite.SQLiteAsyncConnection.ExecuteAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_ExecuteAsync_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.ExecuteAsync(System.String,System.Object[])">ExecuteAsync(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+Use this method instead of Query when you don't expect rows back. Such cases include
+INSERTs, UPDATEs, and DELETEs.
+You can set the Trace or TimeExecution properties of the connection
+to profile execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; ExecuteAsync(string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows modified in the database as a result of this execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_ExecuteScalarAsync_" data-uid="SQLite.SQLiteAsyncConnection.ExecuteScalarAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_ExecuteScalarAsync__1_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.ExecuteScalarAsync``1(System.String,System.Object[])">ExecuteScalarAsync&lt;T&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+Use this method when return primitive values.
+You can set the Trace or TimeExecution properties of the connection
+to profile execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; ExecuteScalarAsync&lt;T&gt;(string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The number of rows modified in the database as a result of this execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_FindAsync_" data-uid="SQLite.SQLiteAsyncConnection.FindAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_FindAsync_System_Object_SQLite_TableMapping_" data-uid="SQLite.SQLiteAsyncConnection.FindAsync(System.Object,SQLite.TableMapping)">FindAsync(Object, TableMapping)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve an object with the given primary key from the table
+associated with the specified type. Use of this method requires that
+the given type have a designated PrimaryKey (using the PrimaryKeyAttribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; FindAsync(object pk, TableMapping map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pk</span></td>
+        <td><p>The primary key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>The object with the given primary key or null
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_FindAsync_" data-uid="SQLite.SQLiteAsyncConnection.FindAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_FindAsync__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___" data-uid="SQLite.SQLiteAsyncConnection.FindAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">FindAsync&lt;T&gt;(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve the first object that matches the predicate from the table
+associated with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FindAsync&lt;T&gt;(Expression&lt;Func&lt;T, bool&gt;&gt; predicate)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>A predicate for which object to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The object that matches the given predicate or null
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_FindAsync_" data-uid="SQLite.SQLiteAsyncConnection.FindAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_FindAsync__1_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.FindAsync``1(System.Object)">FindAsync&lt;T&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve an object with the given primary key from the table
+associated with the specified type. Use of this method requires that
+the given type have a designated PrimaryKey (using the PrimaryKeyAttribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FindAsync&lt;T&gt;(object pk)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pk</span></td>
+        <td><p>The primary key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The object with the given primary key or null
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_FindWithQueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.FindWithQueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_FindWithQueryAsync_SQLite_TableMapping_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.FindWithQueryAsync(SQLite.TableMapping,System.String,System.Object[])">FindWithQueryAsync(TableMapping, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve the first object that matches the query from the table
+associated with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; FindWithQueryAsync(TableMapping map, string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>The object that matches the given predicate or null
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_FindWithQueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.FindWithQueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_FindWithQueryAsync__1_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.FindWithQueryAsync``1(System.String,System.Object[])">FindWithQueryAsync&lt;T&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve the first object that matches the query from the table
+associated with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; FindWithQueryAsync&lt;T&gt;(string query, params object[] args)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The object that matches the given predicate or null
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetAsync_System_Object_SQLite_TableMapping_" data-uid="SQLite.SQLiteAsyncConnection.GetAsync(System.Object,SQLite.TableMapping)">GetAsync(Object, TableMapping)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve an object with the given primary key from the table
+associated with the specified type. Use of this method requires that
+the given type have a designated PrimaryKey (using the PrimaryKeyAttribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; GetAsync(object pk, TableMapping map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pk</span></td>
+        <td><p>The primary key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The TableMapping used to identify the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>The object with the given primary key. Throws a not found exception
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetAsync__1_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___" data-uid="SQLite.SQLiteAsyncConnection.GetAsync``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">GetAsync&lt;T&gt;(Expression&lt;Func&lt;T, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve the first object that matches the predicate from the table
+associated with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; GetAsync&lt;T&gt;(Expression&lt;Func&lt;T, bool&gt;&gt; predicate)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>A predicate for which object to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The object that matches the given predicate. Throws a not found exception
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetAsync__1_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.GetAsync``1(System.Object)">GetAsync&lt;T&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve an object with the given primary key from the table
+associated with the specified type. Use of this method requires that
+the given type have a designated PrimaryKey (using the PrimaryKeyAttribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; GetAsync&lt;T&gt;(object pk)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pk</span></td>
+        <td><p>The primary key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>The object with the given primary key. Throws a not found exception
+if the object is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetBusyTimeout_" data-uid="SQLite.SQLiteAsyncConnection.GetBusyTimeout*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetBusyTimeout" data-uid="SQLite.SQLiteAsyncConnection.GetBusyTimeout">GetBusyTimeout()</h4>
+  <div class="markdown level1 summary"><p>The amount of time to wait for a table to become unlocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan GetBusyTimeout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetConnection_" data-uid="SQLite.SQLiteAsyncConnection.GetConnection*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetConnection" data-uid="SQLite.SQLiteAsyncConnection.GetConnection">GetConnection()</h4>
+  <div class="markdown level1 summary"><p>Gets the pooled lockable connection used by this async connection.
+You should never need to use this. This is provided only to add additional
+functionality to SQLite-net. If you use this connection, you must use
+the Lock method on it while using it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLiteConnectionWithLock GetConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.SQLiteConnectionWithLock.html">SQLiteConnectionWithLock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetMappingAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetMappingAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetMappingAsync_System_Type_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.GetMappingAsync(System.Type,SQLite.CreateFlags)">GetMappingAsync(Type, CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the mapping that is automatically generated for the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TableMapping&gt; GetMappingAsync(Type type, CreateFlags createFlags = CreateFlags.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type whose mapping to the database is returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td><p>Optional flags allowing implicit PK and indexes based on naming conventions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.TableMapping.html">TableMapping</a>&gt;</td>
+        <td><p>The mapping represents the schema of the columns of the database and contains
+methods to set and get properties of objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetMappingAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetMappingAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetMappingAsync__1_SQLite_CreateFlags_" data-uid="SQLite.SQLiteAsyncConnection.GetMappingAsync``1(SQLite.CreateFlags)">GetMappingAsync&lt;T&gt;(CreateFlags)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the mapping that is automatically generated for the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TableMapping&gt; GetMappingAsync&lt;T&gt;(CreateFlags createFlags = CreateFlags.None)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.CreateFlags.html">CreateFlags</a></td>
+        <td><span class="parametername">createFlags</span></td>
+        <td><p>Optional flags allowing implicit PK and indexes based on naming conventions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="SQLite.TableMapping.html">TableMapping</a>&gt;</td>
+        <td><p>The mapping represents the schema of the columns of the database and contains
+methods to set and get properties of objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_GetTableInfoAsync_" data-uid="SQLite.SQLiteAsyncConnection.GetTableInfoAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_GetTableInfoAsync_System_String_" data-uid="SQLite.SQLiteAsyncConnection.GetTableInfoAsync(System.String)">GetTableInfoAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Query the built-in sqlite table_info table for a specific tables columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;SQLiteConnection.ColumnInfo&gt;&gt; GetTableInfoAsync(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>Table name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="SQLite.SQLiteConnection.ColumnInfo.html">SQLiteConnection.ColumnInfo</a>&gt;&gt;</td>
+        <td><p>The columns contains in the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAllAsync_System_Collections_IEnumerable_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync(System.Collections.IEnumerable,System.Boolean)">InsertAllAsync(IEnumerable, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Inserts all specified objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAllAsync(IEnumerable objects, bool runInTransaction = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerable</span></td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerable</span> of the objects to insert.</p>
+<param name="runInTransaction">
+A boolean indicating if the inserts should be wrapped in a transaction.
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">runInTransaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAllAsync_System_Collections_IEnumerable_System_String_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync(System.Collections.IEnumerable,System.String,System.Boolean)">InsertAllAsync(IEnumerable, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Inserts all specified objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAllAsync(IEnumerable objects, string extra, bool runInTransaction = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerable</span></td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerable</span> of the objects to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>Literal SQL code that gets placed into the command. INSERT {extra} INTO ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">runInTransaction</span></td>
+        <td><p>A boolean indicating if the inserts should be wrapped in a transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAllAsync_System_Collections_IEnumerable_System_Type_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.InsertAllAsync(System.Collections.IEnumerable,System.Type,System.Boolean)">InsertAllAsync(IEnumerable, Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Inserts all specified objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAllAsync(IEnumerable objects, Type objType, bool runInTransaction = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerable</span></td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerable</span> of the objects to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objType</span></td>
+        <td><p>The type of object to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">runInTransaction</span></td>
+        <td><p>A boolean indicating if the inserts should be wrapped in a transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAsync_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync(System.Object)">InsertAsync(Object)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object and (and updates its
+auto incremented primary key if it has one).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAsync(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAsync_System_Object_System_String_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync(System.Object,System.String)">InsertAsync(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object (and updates its
+auto incremented primary key if it has one).
+The return value is the number of rows added to the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAsync(object obj, string extra)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>Literal SQL code that gets placed into the command. INSERT {extra} INTO ...</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAsync_System_Object_System_String_System_Type_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync(System.Object,System.String,System.Type)">InsertAsync(Object, String, Type)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object (and updates its
+auto incremented primary key if it has one).
+The return value is the number of rows added to the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAsync(object obj, string extra, Type objType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>Literal SQL code that gets placed into the command. INSERT {extra} INTO ...</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objType</span></td>
+        <td><p>The type of object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertAsync_System_Object_System_Type_" data-uid="SQLite.SQLiteAsyncConnection.InsertAsync(System.Object,System.Type)">InsertAsync(Object, Type)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object (and updates its
+auto incremented primary key if it has one).
+The return value is the number of rows added to the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertAsync(object obj, Type objType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objType</span></td>
+        <td><p>The type of object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows added to the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertOrReplaceAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertOrReplaceAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertOrReplaceAsync_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.InsertOrReplaceAsync(System.Object)">InsertOrReplaceAsync(Object)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object (and updates its
+auto incremented primary key if it has one).
+The return value is the number of rows added to the table.
+If a UNIQUE constraint violation occurs with
+some pre-existing object, this function deletes
+the old object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertOrReplaceAsync(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_InsertOrReplaceAsync_" data-uid="SQLite.SQLiteAsyncConnection.InsertOrReplaceAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_InsertOrReplaceAsync_System_Object_System_Type_" data-uid="SQLite.SQLiteAsyncConnection.InsertOrReplaceAsync(System.Object,System.Type)">InsertOrReplaceAsync(Object, Type)</h4>
+  <div class="markdown level1 summary"><p>Inserts the given object (and updates its
+auto incremented primary key if it has one).
+The return value is the number of rows added to the table.
+If a UNIQUE constraint violation occurs with
+some pre-existing object, this function deletes
+the old object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; InsertOrReplaceAsync(object obj, Type objType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objType</span></td>
+        <td><p>The type of object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_QueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.QueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_QueryAsync_SQLite_TableMapping_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.QueryAsync(SQLite.TableMapping,System.String,System.Object[])">QueryAsync(TableMapping, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+It returns each row of the result using the specified mapping. This function is
+only used by libraries in order to query the database via introspection. It is
+normally not used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;object&gt;&gt; QueryAsync(TableMapping map, string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.TableMapping.html">TableMapping</a></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>A <a class="xref" href="SQLite.TableMapping.html">TableMapping</a> to use to convert the resulting rows
+into objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><p>An enumerable with one result for each row returned by the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_QueryAsync_" data-uid="SQLite.SQLiteAsyncConnection.QueryAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_QueryAsync__1_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.QueryAsync``1(System.String,System.Object[])">QueryAsync&lt;T&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+It returns each row of the result using the mapping automatically generated for
+the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;T&gt;&gt; QueryAsync&lt;T&gt;(string query, params object[] args)
+    where T : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td><p>A list with one result for each row returned by the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_QueryScalarsAsync_" data-uid="SQLite.SQLiteAsyncConnection.QueryScalarsAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_QueryScalarsAsync__1_System_String_System_Object___" data-uid="SQLite.SQLiteAsyncConnection.QueryScalarsAsync``1(System.String,System.Object[])">QueryScalarsAsync&lt;T&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates a SQLiteCommand given the command text (SQL) with arguments. Place a '?'
+in the command text for each of the arguments and then executes that command.
+It returns the first column of each row of the result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;T&gt;&gt; QueryScalarsAsync&lt;T&gt;(string query, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The fully escaped SQL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Arguments to substitute for the occurences of '?' in the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td><p>A list with one result for the first column of each row returned by the query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_ResetPool_" data-uid="SQLite.SQLiteAsyncConnection.ResetPool*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_ResetPool" data-uid="SQLite.SQLiteAsyncConnection.ResetPool">ResetPool()</h4>
+  <div class="markdown level1 summary"><p>Closes all connections to all async databases.
+You should <em>never</em> need to do this.
+This is a blocking operation that will return when all connections
+have been closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetPool()</code></pre>
+  </div>
+  <a id="SQLite_SQLiteAsyncConnection_RunInTransactionAsync_" data-uid="SQLite.SQLiteAsyncConnection.RunInTransactionAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_RunInTransactionAsync_System_Action_SQLite_SQLiteConnection__" data-uid="SQLite.SQLiteAsyncConnection.RunInTransactionAsync(System.Action{SQLite.SQLiteConnection})">RunInTransactionAsync(Action&lt;SQLiteConnection&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes <code data-dev-comment-type="paramref" class="paramref">action</code> within a (possibly nested) transaction by wrapping it in a SAVEPOINT. If an
+exception occurs the whole transaction is rolled back, not just the current savepoint. The exception
+is rethrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunInTransactionAsync(Action&lt;SQLiteConnection&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="SQLite.SQLiteConnection.html">SQLiteConnection</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The <span class="xref">System.Action</span> to perform within a transaction. <code data-dev-comment-type="paramref" class="paramref">action</code> can contain any number
+of operations on the connection but should never call <a class="xref" href="SQLite.SQLiteConnection.html#SQLite_SQLiteConnection_Commit">Commit()</a> or
+<a class="xref" href="SQLite.SQLiteConnection.html#SQLite_SQLiteConnection_Commit">Commit()</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_SetBusyTimeoutAsync_" data-uid="SQLite.SQLiteAsyncConnection.SetBusyTimeoutAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_SetBusyTimeoutAsync_System_TimeSpan_" data-uid="SQLite.SQLiteAsyncConnection.SetBusyTimeoutAsync(System.TimeSpan)">SetBusyTimeoutAsync(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Sets the amount of time to wait for a table to become unlocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetBusyTimeoutAsync(TimeSpan value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_Table_" data-uid="SQLite.SQLiteAsyncConnection.Table*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_Table__1" data-uid="SQLite.SQLiteAsyncConnection.Table``1">Table&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns a queryable interface to the table represented by the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncTableQuery&lt;T&gt; Table&lt;T&gt;()
+    where T : new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SQLite.AsyncTableQuery-1.html">AsyncTableQuery</a>&lt;T&gt;</td>
+        <td><p>A queryable object that is able to translate Where, OrderBy, and Take
+queries into native SQL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_UpdateAllAsync_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAllAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_UpdateAllAsync_System_Collections_IEnumerable_System_Boolean_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAllAsync(System.Collections.IEnumerable,System.Boolean)">UpdateAllAsync(IEnumerable, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Updates all specified objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; UpdateAllAsync(IEnumerable objects, bool runInTransaction = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerable</span></td>
+        <td><span class="parametername">objects</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerable</span> of the objects to insert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">runInTransaction</span></td>
+        <td><p>A boolean indicating if the inserts should be wrapped in a transaction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_UpdateAsync_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_UpdateAsync_System_Object_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAsync(System.Object)">UpdateAsync(Object)</h4>
+  <div class="markdown level1 summary"><p>Updates all of the columns of a table using the specified object
+except for its primary key.
+The object is required to have a primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; UpdateAsync(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to update. It must have a primary key designated using the PrimaryKeyAttribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows updated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="SQLite_SQLiteAsyncConnection_UpdateAsync_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAsync*"></a>
+  <h4 id="SQLite_SQLiteAsyncConnection_UpdateAsync_System_Object_System_Type_" data-uid="SQLite.SQLiteAsyncConnection.UpdateAsync(System.Object,System.Type)">UpdateAsync(Object, Type)</h4>
+  <div class="markdown level1 summary"><p>Updates all of the columns of a table using the specified object
+except for its primary key.
+The object is required to have a primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; UpdateAsync(object obj, Type objType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to update. It must have a primary key designated using the PrimaryKeyAttribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">objType</span></td>
+        <td><p>The type of object to insert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of rows updated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) - data<io> 2022. All rights reserved.
+            
+          </io></div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
