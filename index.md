@@ -15,8 +15,8 @@ You sweat and shiver as you use ...</p>
 - Looking for something specific? <a href="mailto:fremdspielen@gmail.com">Let me know</a>!
 
 ### Served on the side:
-I just cannot _NOT_ write code the right way ...<br/>
-<pre>if (!CannotNotWriteCodeRight == false) {</pre>
+<pre>// I just cannot _NOT_ write code the right way ...
+if (!CannotNotWriteCodeRight == false) {</pre>
 - **Automation**
   - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
 - **BYOT: Bring your own toolchain!**
