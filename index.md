@@ -12,12 +12,14 @@ You sweat and shiver as you use ...</p>
 </a><br/><br/>
 ###### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. Fast. Flexible. Generic. GSheets. JSON. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity>=2019.4.
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
+
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
 - (SQLover) <=> (No SQL!)
 - (Reflection is evil!) <=> (Wut?)
 - (Programmer) <=> (Designer)
+
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <pre>if (!CannotNotWriteCodeRight == false) {</pre>
@@ -37,8 +39,8 @@ I just cannot _NOT_ write code the right way ...
   - type-safe, quote-escaped SQL query builder
 <br/>
 <pre>}</pre>
-
 Granted, that opening bracket should have been on the next line. ;)
+
 ### When? Where??
 data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
