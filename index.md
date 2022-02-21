@@ -33,6 +33,8 @@ I just cannot _NOT_ write code the right way ...
 <br/>
 <pre>}</pre>
 
+Granted, that opening bracket should have been on the next line. ;)
+
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
 - (Let me handle it) <=> (Wow, it just works)
