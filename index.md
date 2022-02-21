@@ -3,7 +3,7 @@ layout: page
 title: Got data?
 ---
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:20px"><strong>\> north</strong></p>
-<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px">You head north, unexpectedly entering a dark alley due to <i>syntax error at or near ";"</i>. Suddenly, you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique èn codings and flawed-type converters.<br/>
+<p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px">You head north, unexpectedly entering a dark alley due to <i>syntax error at or near ";"</i>. Suddenly, you find yourself exceptionally immersed in woefully escaped delimiters, culture-unique èncodings and flawed-type converters.<br/>
 <br/>
 You sweat and shiver as you use ...</p>
 <!--- <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:20px"><strong>\> use</strong></p><br/> --->
