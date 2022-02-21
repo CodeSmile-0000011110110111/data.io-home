@@ -20,6 +20,8 @@ You sweat and shiver as you use ...</p>
 - (Reflection is evil!) <=> (Wut?)
 - (Programmer) <=> (Designer)
 
+Descriptions are deliberately vague. Consider this a teaser. I should probably have a newsletter sign-up right here. Right? Sure, I'll look into it ...
+
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <pre>if (!CannotNotWriteCodeRight == false) {</pre>
