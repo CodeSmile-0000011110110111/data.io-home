@@ -21,28 +21,7 @@ You sweat and shiver as you use ...</p>
 - (Programmer) <=> (Designer)
 
 Descriptions are deliberately vague. Consider this a teaser. I should probably have a newsletter sign-up right here. Right? Sure, I'll look into it ...
-<!---
-### Served on the side:
-I just cannot _NOT_ write code the right way ...
-<pre>if (!CannotNotWriteCodeRight == false) {</pre>
-  - **Automation**
-    - Classes/sheets to DB schema *AND* DB schema or Sheets to classes.
-  - **BYOT: Bring your own toolchain!**
-    - Modular code, Inspector-ready settings classes, common interfaces
-  - **Complete source code included!**
-    - Interface-driven, documented API with JetBrains Code annotations
-  - **In-Memory SODB** (ScriptableObject Database)
-    - strongly-typed accessible, LINQ queryable, JSON serializable
-  - **Reflection-less SQLite`r´**
-    - `IList<IList<object>> rows = SQLiter.Query("SELECT * FROM table");`
-  - **<a target="_blank" href="docs/api/Data.IO.Script.Builder.ScriptBuilder.html">ScriptBuilder</a>**
-    - C# script generator, only need to fill in names and method bodies
-  - **SQLBuilder**
-    - type-safe, quote-escaped SQL query builder
-<br/>
-<pre>}</pre>
-Granted, that opening bracket should have been on the next line. ;)
---->
+
 ### When? Where??
 data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
