@@ -1308,6 +1308,25 @@ references:
   commentId: N:Data.IO.Extensions
   fullName: Data.IO.Extensions
   nameWithType: Data.IO.Extensions
+- uid: Data.IO.Extensions.ArrayExtensions
+  name: ArrayExtensions
+  href: api/Data.IO.Extensions.ArrayExtensions.html
+  commentId: T:Data.IO.Extensions.ArrayExtensions
+  fullName: Data.IO.Extensions.ArrayExtensions
+  nameWithType: ArrayExtensions
+- uid: Data.IO.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
+  name: CombineHashes(Array, Int32, Int32)
+  href: api/Data.IO.Extensions.ArrayExtensions.html#Data_IO_Extensions_ArrayExtensions_CombineHashes_System_Array_System_Int32_System_Int32_
+  commentId: M:Data.IO.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
+  fullName: Data.IO.Extensions.ArrayExtensions.CombineHashes(System.Array, System.Int32, System.Int32)
+  nameWithType: ArrayExtensions.CombineHashes(Array, Int32, Int32)
+- uid: Data.IO.Extensions.ArrayExtensions.CombineHashes*
+  name: CombineHashes
+  href: api/Data.IO.Extensions.ArrayExtensions.html#Data_IO_Extensions_ArrayExtensions_CombineHashes_
+  commentId: Overload:Data.IO.Extensions.ArrayExtensions.CombineHashes
+  isSpec: "True"
+  fullName: Data.IO.Extensions.ArrayExtensions.CombineHashes
+  nameWithType: ArrayExtensions.CombineHashes
 - uid: Data.IO.Extensions.Editor
   name: Data.IO.Extensions.Editor
   href: api/Data.IO.Extensions.Editor.html
@@ -1554,31 +1573,6 @@ references:
   commentId: T:Data.IO.ReadOnlyFieldAttribute
   fullName: Data.IO.ReadOnlyFieldAttribute
   nameWithType: ReadOnlyFieldAttribute
-- uid: Data.IO.Runtime.Extensions
-  name: Data.IO.Runtime.Extensions
-  href: api/Data.IO.Runtime.Extensions.html
-  commentId: N:Data.IO.Runtime.Extensions
-  fullName: Data.IO.Runtime.Extensions
-  nameWithType: Data.IO.Runtime.Extensions
-- uid: Data.IO.Runtime.Extensions.ArrayExtensions
-  name: ArrayExtensions
-  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html
-  commentId: T:Data.IO.Runtime.Extensions.ArrayExtensions
-  fullName: Data.IO.Runtime.Extensions.ArrayExtensions
-  nameWithType: ArrayExtensions
-- uid: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
-  name: CombineHashes(Array, Int32, Int32)
-  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html#Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_System_Array_System_Int32_System_Int32_
-  commentId: M:Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
-  fullName: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array, System.Int32, System.Int32)
-  nameWithType: ArrayExtensions.CombineHashes(Array, Int32, Int32)
-- uid: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes*
-  name: CombineHashes
-  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html#Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_
-  commentId: Overload:Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes
-  isSpec: "True"
-  fullName: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes
-  nameWithType: ArrayExtensions.CombineHashes
 - uid: Data.IO.Script.Builder
   name: Data.IO.Script.Builder
   href: api/Data.IO.Script.Builder.html
