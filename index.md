@@ -10,7 +10,7 @@ You sweat and shiver as you use ...</p>
 <a href="https://sitterheim.github.io/data.io-home/docs/">
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="725"/>
 </a><br/><br/>
-###### Automated. Bidirectional. C#. Clean. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. Fast. Flexible. Generic. GSheets. JSON. LINQ. Modular. SODB. SQL. SQLite. Supported. Tested. Unity>=2019.4.
+###### Automated. Bidirectional. BYOT. C#. Clean. Configurable. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Excel. Extensible. Fast. Flexible. Generic. GSheets. JSON. LINQ. Modular. ScriptBuilder. SODB. Sourcecode. SQL. SQLBuilder. SQLite. SQLiter. Supported. Tested. Unity>=2019.
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
 
 ### Serves any scenario: 
@@ -21,7 +21,7 @@ You sweat and shiver as you use ...</p>
 - (Programmer) <=> (Designer)
 
 Descriptions are deliberately vague. Consider this a teaser. I should probably have a newsletter sign-up right here. Right? Sure, I'll look into it ...
-
+<!---
 ### Served on the side:
 I just cannot _NOT_ write code the right way ...
 <pre>if (!CannotNotWriteCodeRight == false) {</pre>
@@ -42,7 +42,7 @@ I just cannot _NOT_ write code the right way ...
 <br/>
 <pre>}</pre>
 Granted, that opening bracket should have been on the next line. ;)
-
+--->
 ### When? Where??
 data&lt;io&gt; is coming Q3/Q4 2022 to the Unity Asset Store!
 
