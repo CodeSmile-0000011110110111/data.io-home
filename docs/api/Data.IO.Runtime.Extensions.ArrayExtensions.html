@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IDatabaseWriter
+    <title>Class ArrayExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IDatabaseWriter
+    <meta name="title" content="Class ArrayExtensions
    ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -68,48 +68,57 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter">
+            <article class="content wrap" id="_content" data-uid="Data.IO.Runtime.Extensions.ArrayExtensions">
   
   
-  <h1 id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter" class="text-break">Interface IDatabaseWriter
+  <h1 id="Data_IO_Runtime_Extensions_ArrayExtensions" data-uid="Data.IO.Runtime.Extensions.ArrayExtensions" class="text-break">Class ArrayExtensions
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ArrayExtensions</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Data.IO.SODB.Writer.Interfaces.ITableWriter.html#Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuple_Data_IO_DBSchema_Interfaces_ITableInfo_System_Collections_Generic_IEnumerable_System_Object__">ITableWriter.WriteTuple(ITableInfo, IEnumerable&lt;Object&gt;)</a>
+      <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="Data.IO.SODB.Writer.Interfaces.ITableWriter.html#Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuples_Data_IO_DBSchema_Interfaces_ITableInfo_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Object___">ITableWriter.WriteTuples(ITableInfo, IEnumerable&lt;IEnumerable&lt;Object&gt;&gt;)</a>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
     </div>
     <div>
-      <a class="xref" href="Data.IO.SODB.Writer.Interfaces.ISchemaWriter.html#Data_IO_SODB_Writer_Interfaces_ISchemaWriter_WriteSchema_Data_IO_DBSchema_Interfaces_IDatabaseSchema_">ISchemaWriter.WriteSchema(IDatabaseSchema)</a>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SODB.Writer.Interfaces.html">Data.IO.SODB.Writer.Interfaces</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.SODB.Interfaces.dll</h6>
-  <h5 id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.Runtime.Extensions.html">Data.IO.Runtime.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: Data.IO.dll</h6>
+  <h5 id="Data_IO_Runtime_Extensions_ArrayExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDatabaseWriter : ITableWriter, ISchemaWriter</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ArrayExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_CloseDatabase_" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.CloseDatabase*"></a>
-  <h4 id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_CloseDatabase" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.CloseDatabase">CloseDatabase()</h4>
+  <a id="Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_" data-uid="Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes*"></a>
+  <h4 id="Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_System_Array_System_Int32_System_Int32_" data-uid="Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)">CombineHashes(Array, Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void CloseDatabase()</code></pre>
-  </div>
-  <a id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_OpenDatabase_" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase*"></a>
-  <h4 id="Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_OpenDatabase_Data_IO_SODB_Interfaces_IScriptableDatabase_" data-uid="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IScriptableDatabase)">OpenDatabase(IScriptableDatabase)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OpenDatabase(IScriptableDatabase database)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int CombineHashes(this Array values, int seed = 1009, int factor = 9176)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,8 +131,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IScriptableDatabase.html">IScriptableDatabase</a></td>
-        <td><span class="parametername">database</span></td>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

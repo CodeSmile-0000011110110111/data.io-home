@@ -133,7 +133,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IRecord this[IPrimaryKey pk] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">TRecord this[IPrimaryKey pk] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,7 +162,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -173,7 +173,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IRecord this[int id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">TRecord this[int id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -202,7 +202,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -213,7 +213,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IRecord this[string id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">TRecord this[string id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,7 +242,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -297,13 +297,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SODB_Interfaces_ITable_1_AddRecord_" data-uid="Data.IO.SODB.Interfaces.ITable`1.AddRecord*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_ITable_1_AddRecord_System_Collections_Generic_IReadOnlyList_System_Object__" data-uid="Data.IO.SODB.Interfaces.ITable`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})">AddRecord(IReadOnlyList&lt;Object&gt;)</h4>
+  <a id="Data_IO_SODB_Interfaces_ITable_1_Get_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_ITable_1_Get__1_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)">Get&lt;TRecord&gt;(IPrimaryKey)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddRecord(IReadOnlyList&lt;object&gt; tuple)</code></pre>
+    <pre><code class="lang-csharp hljs">TRecord Get&lt;TRecord&gt;(IPrimaryKey pk)
+    where TRecord : class, IRecord</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -316,8 +317,150 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">tuple</span></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_ITable_1_Get_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_ITable_1_Get__1_System_Int32_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get``1(System.Int32)">Get&lt;TRecord&gt;(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TRecord Get&lt;TRecord&gt;(int id)
+    where TRecord : class, IRecord</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_ITable_1_Get_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_ITable_1_Get__1_System_String_" data-uid="Data.IO.SODB.Interfaces.ITable`1.Get``1(System.String)">Get&lt;TRecord&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TRecord Get&lt;TRecord&gt;(string id)
+    where TRecord : class, IRecord</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -358,6 +501,86 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_ITable_1_InsertRecord_" data-uid="Data.IO.SODB.Interfaces.ITable`1.InsertRecord*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_ITable_1_InsertRecord_System_Object___" data-uid="Data.IO.SODB.Interfaces.ITable`1.InsertRecord(System.Object[])">InsertRecord(Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TRecord InsertRecord(params object[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_ITable_1_InsertTuples_" data-uid="Data.IO.SODB.Interfaces.ITable`1.InsertTuples*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_ITable_1_InsertTuples_Data_IO_SODB_Interfaces_IRowTuple___" data-uid="Data.IO.SODB.Interfaces.ITable`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])">InsertTuples(IRowTuple[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TRecord&gt; InsertTuples(params IRowTuple[] rowTuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>[]</td>
+        <td><span class="parametername">rowTuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>

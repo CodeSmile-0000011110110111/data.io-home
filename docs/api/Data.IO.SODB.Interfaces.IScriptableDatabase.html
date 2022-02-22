@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IPrimaryKey
+    <title>Interface IScriptableDatabase
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IPrimaryKey
+    <meta name="title" content="Interface IScriptableDatabase
    ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -68,37 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey">
+            <article class="content wrap" id="_content" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase">
   
   
-  <h1 id="Data_IO_SODB_Interfaces_IPrimaryKey" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey" class="text-break">Interface IPrimaryKey
+  <h1 id="Data_IO_SODB_Interfaces_IScriptableDatabase" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase" class="text-break">Interface IScriptableDatabase
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.IComparable&lt;Data.IO.SODB.Interfaces.IPrimaryKey&gt;.CompareTo(Data.IO.SODB.Interfaces.IPrimaryKey)</span>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()</span>
     </div>
     <div>
-      <span class="xref">System.IEquatable&lt;Data.IO.SODB.Interfaces.IPrimaryKey&gt;.Equals(Data.IO.SODB.Interfaces.IPrimaryKey)</span>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SODB.Interfaces.html">Data.IO.SODB.Interfaces</a></h6>
   <h6><strong>Assembly</strong>: Data.IO.SODB.Interfaces.dll</h6>
-  <h5 id="Data_IO_SODB_Interfaces_IPrimaryKey_syntax">Syntax</h5>
+  <h5 id="Data_IO_SODB_Interfaces_IScriptableDatabase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IPrimaryKey : IComparable&lt;IPrimaryKey&gt;, IEquatable&lt;IPrimaryKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IScriptableDatabase : ISerializationCallbackReceiver</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_IntValue_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.IntValue*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_IntValue" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.IntValue">IntValue</h4>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_DatabaseSchema_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_DatabaseSchema" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema">DatabaseSchema</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int IntValue { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IDatabaseSchema DatabaseSchema { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -110,64 +110,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_IsStringValue_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.IsStringValue*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_IsStringValue" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.IsStringValue">IsStringValue</h4>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_Name_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Name*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_Name" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Name">Name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsStringValue { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_PrimaryKeys_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_PrimaryKeys" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys">PrimaryKeys</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPrimaryKey[] PrimaryKeys { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_StrValue_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.StrValue*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_StrValue" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.StrValue">StrValue</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string StrValue { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,75 +134,35 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_Value_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.Value*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_Value" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.Value">Value</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">object Value { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_Increment_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.Increment*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_Increment" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.Increment">Increment()</h4>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_OnDatabaseLoaded_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_OnDatabaseLoaded" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded">OnDatabaseLoaded()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Increment()</code></pre>
+    <pre><code class="lang-csharp hljs">void OnDatabaseLoaded()</code></pre>
   </div>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_SetIntValue_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.SetIntValue*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_SetIntValue_System_Int32_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.SetIntValue(System.Int32)">SetIntValue(Int32)</h4>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_Read_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Read*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_Read" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Read">Read()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetIntValue(int value)</code></pre>
+    <pre><code class="lang-csharp hljs">void Read()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SODB_Interfaces_IPrimaryKey_SetStringValue_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.SetStringValue*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_IPrimaryKey_SetStringValue_System_String_" data-uid="Data.IO.SODB.Interfaces.IPrimaryKey.SetStringValue(System.String)">SetStringValue(String)</h4>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_Write_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Write*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_Write_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)">Write(IDatabaseWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetStringValue(string value)</code></pre>
+    <pre><code class="lang-csharp hljs">void Write(IDatabaseWriter writer = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,12 +175,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
+        <td><a class="xref" href="Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html">IDatabaseWriter</a></td>
+        <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <a id="Data_IO_SODB_Interfaces_IScriptableDatabase_WriteDirty_" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_IScriptableDatabase_WriteDirty" data-uid="Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty">WriteDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteDirty()</code></pre>
+  </div>
 </article>
           </div>
           

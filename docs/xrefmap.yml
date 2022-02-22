@@ -295,18 +295,18 @@ references:
   commentId: T:Data.IO.DBSchema.ColumnInfo
   fullName: Data.IO.DBSchema.ColumnInfo
   nameWithType: ColumnInfo
-- uid: Data.IO.DBSchema.ColumnInfo.#ctor(System.Int32,System.String,System.Type,System.Boolean)
-  name: ColumnInfo(Int32, String, Type, Boolean)
-  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo__ctor_System_Int32_System_String_System_Type_System_Boolean_
-  commentId: M:Data.IO.DBSchema.ColumnInfo.#ctor(System.Int32,System.String,System.Type,System.Boolean)
-  fullName: Data.IO.DBSchema.ColumnInfo.ColumnInfo(System.Int32, System.String, System.Type, System.Boolean)
-  nameWithType: ColumnInfo.ColumnInfo(Int32, String, Type, Boolean)
-- uid: Data.IO.DBSchema.ColumnInfo.#ctor(System.Int32,System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)
-  name: ColumnInfo(Int32, String, Type, String, String, Boolean, Boolean)
-  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo__ctor_System_Int32_System_String_System_Type_System_String_System_String_System_Boolean_System_Boolean_
-  commentId: M:Data.IO.DBSchema.ColumnInfo.#ctor(System.Int32,System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)
-  fullName: Data.IO.DBSchema.ColumnInfo.ColumnInfo(System.Int32, System.String, System.Type, System.String, System.String, System.Boolean, System.Boolean)
-  nameWithType: ColumnInfo.ColumnInfo(Int32, String, Type, String, String, Boolean, Boolean)
+- uid: Data.IO.DBSchema.ColumnInfo.#ctor(System.String,System.Type,System.Boolean)
+  name: ColumnInfo(String, Type, Boolean)
+  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo__ctor_System_String_System_Type_System_Boolean_
+  commentId: M:Data.IO.DBSchema.ColumnInfo.#ctor(System.String,System.Type,System.Boolean)
+  fullName: Data.IO.DBSchema.ColumnInfo.ColumnInfo(System.String, System.Type, System.Boolean)
+  nameWithType: ColumnInfo.ColumnInfo(String, Type, Boolean)
+- uid: Data.IO.DBSchema.ColumnInfo.#ctor(System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)
+  name: ColumnInfo(String, Type, String, String, Boolean, Boolean)
+  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo__ctor_System_String_System_Type_System_String_System_String_System_Boolean_System_Boolean_
+  commentId: M:Data.IO.DBSchema.ColumnInfo.#ctor(System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)
+  fullName: Data.IO.DBSchema.ColumnInfo.ColumnInfo(System.String, System.Type, System.String, System.String, System.Boolean, System.Boolean)
+  nameWithType: ColumnInfo.ColumnInfo(String, Type, String, String, Boolean, Boolean)
 - uid: Data.IO.DBSchema.ColumnInfo.#ctor*
   name: ColumnInfo
   href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo__ctor_
@@ -339,19 +339,6 @@ references:
   commentId: F:Data.IO.DBSchema.ColumnInfo.IdStringColumn
   fullName: Data.IO.DBSchema.ColumnInfo.IdStringColumn
   nameWithType: ColumnInfo.IdStringColumn
-- uid: Data.IO.DBSchema.ColumnInfo.Index
-  name: Index
-  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo_Index
-  commentId: P:Data.IO.DBSchema.ColumnInfo.Index
-  fullName: Data.IO.DBSchema.ColumnInfo.Index
-  nameWithType: ColumnInfo.Index
-- uid: Data.IO.DBSchema.ColumnInfo.Index*
-  name: Index
-  href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo_Index_
-  commentId: Overload:Data.IO.DBSchema.ColumnInfo.Index
-  isSpec: "True"
-  fullName: Data.IO.DBSchema.ColumnInfo.Index
-  nameWithType: ColumnInfo.Index
 - uid: Data.IO.DBSchema.ColumnInfo.IsPrimaryKey
   name: IsPrimaryKey
   href: api/Data.IO.DBSchema.ColumnInfo.html#Data_IO_DBSchema_ColumnInfo_IsPrimaryKey
@@ -468,19 +455,6 @@ references:
   isSpec: "True"
   fullName: Data.IO.DBSchema.Interfaces.IColumnInfo.DefaultValue
   nameWithType: IColumnInfo.DefaultValue
-- uid: Data.IO.DBSchema.Interfaces.IColumnInfo.Index
-  name: Index
-  href: api/Data.IO.DBSchema.Interfaces.IColumnInfo.html#Data_IO_DBSchema_Interfaces_IColumnInfo_Index
-  commentId: P:Data.IO.DBSchema.Interfaces.IColumnInfo.Index
-  fullName: Data.IO.DBSchema.Interfaces.IColumnInfo.Index
-  nameWithType: IColumnInfo.Index
-- uid: Data.IO.DBSchema.Interfaces.IColumnInfo.Index*
-  name: Index
-  href: api/Data.IO.DBSchema.Interfaces.IColumnInfo.html#Data_IO_DBSchema_Interfaces_IColumnInfo_Index_
-  commentId: Overload:Data.IO.DBSchema.Interfaces.IColumnInfo.Index
-  isSpec: "True"
-  fullName: Data.IO.DBSchema.Interfaces.IColumnInfo.Index
-  nameWithType: IColumnInfo.Index
 - uid: Data.IO.DBSchema.Interfaces.IColumnInfo.IsPrimaryKey
   name: IsPrimaryKey
   href: api/Data.IO.DBSchema.Interfaces.IColumnInfo.html#Data_IO_DBSchema_Interfaces_IColumnInfo_IsPrimaryKey
@@ -733,6 +707,32 @@ references:
   isSpec: "True"
   fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumn
   nameWithType: ITableInfo.PrimaryKeyColumn
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns
+  name: PrimaryKeyColumns
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyColumns
+  commentId: P:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns
+  nameWithType: ITableInfo.PrimaryKeyColumns
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns*
+  name: PrimaryKeyColumns
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyColumns_
+  commentId: Overload:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns
+  isSpec: "True"
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyColumns
+  nameWithType: ITableInfo.PrimaryKeyColumns
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount
+  name: PrimaryKeyCount
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyCount
+  commentId: P:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount
+  nameWithType: ITableInfo.PrimaryKeyCount
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount*
+  name: PrimaryKeyCount
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyCount_
+  commentId: Overload:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount
+  isSpec: "True"
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyCount
+  nameWithType: ITableInfo.PrimaryKeyCount
 - uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndex
   name: PrimaryKeyIndex
   href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyIndex
@@ -746,6 +746,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndex
   nameWithType: ITableInfo.PrimaryKeyIndex
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes
+  name: PrimaryKeyIndexes
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyIndexes
+  commentId: P:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes
+  nameWithType: ITableInfo.PrimaryKeyIndexes
+- uid: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes*
+  name: PrimaryKeyIndexes
+  href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_PrimaryKeyIndexes_
+  commentId: Overload:Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes
+  isSpec: "True"
+  fullName: Data.IO.DBSchema.Interfaces.ITableInfo.PrimaryKeyIndexes
+  nameWithType: ITableInfo.PrimaryKeyIndexes
 - uid: Data.IO.DBSchema.Interfaces.ITableInfo.RelationInfos
   name: RelationInfos
   href: api/Data.IO.DBSchema.Interfaces.ITableInfo.html#Data_IO_DBSchema_Interfaces_ITableInfo_RelationInfos
@@ -784,12 +797,12 @@ references:
   commentId: M:Data.IO.DBSchema.RelationInfo.#ctor(Data.IO.DBSchema.Interfaces.IRelationInfo)
   fullName: Data.IO.DBSchema.RelationInfo.RelationInfo(Data.IO.DBSchema.Interfaces.IRelationInfo)
   nameWithType: RelationInfo.RelationInfo(IRelationInfo)
-- uid: Data.IO.DBSchema.RelationInfo.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
-  name: RelationInfo(String, String, String, String, Boolean)
-  href: api/Data.IO.DBSchema.RelationInfo.html#Data_IO_DBSchema_RelationInfo__ctor_System_String_System_String_System_String_System_String_System_Boolean_
-  commentId: M:Data.IO.DBSchema.RelationInfo.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
-  fullName: Data.IO.DBSchema.RelationInfo.RelationInfo(System.String, System.String, System.String, System.String, System.Boolean)
-  nameWithType: RelationInfo.RelationInfo(String, String, String, String, Boolean)
+- uid: Data.IO.DBSchema.RelationInfo.#ctor(System.String,System.String,System.Boolean,System.String)
+  name: RelationInfo(String, String, Boolean, String)
+  href: api/Data.IO.DBSchema.RelationInfo.html#Data_IO_DBSchema_RelationInfo__ctor_System_String_System_String_System_Boolean_System_String_
+  commentId: M:Data.IO.DBSchema.RelationInfo.#ctor(System.String,System.String,System.Boolean,System.String)
+  fullName: Data.IO.DBSchema.RelationInfo.RelationInfo(System.String, System.String, System.Boolean, System.String)
+  nameWithType: RelationInfo.RelationInfo(String, String, Boolean, String)
 - uid: Data.IO.DBSchema.RelationInfo.#ctor*
   name: RelationInfo
   href: api/Data.IO.DBSchema.RelationInfo.html#Data_IO_DBSchema_RelationInfo__ctor_
@@ -1062,6 +1075,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyColumn
   nameWithType: TableInfo.PrimaryKeyColumn
+- uid: Data.IO.DBSchema.TableInfo.PrimaryKeyColumns
+  name: PrimaryKeyColumns
+  href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_PrimaryKeyColumns
+  commentId: P:Data.IO.DBSchema.TableInfo.PrimaryKeyColumns
+  fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyColumns
+  nameWithType: TableInfo.PrimaryKeyColumns
+- uid: Data.IO.DBSchema.TableInfo.PrimaryKeyColumns*
+  name: PrimaryKeyColumns
+  href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_PrimaryKeyColumns_
+  commentId: Overload:Data.IO.DBSchema.TableInfo.PrimaryKeyColumns
+  isSpec: "True"
+  fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyColumns
+  nameWithType: TableInfo.PrimaryKeyColumns
 - uid: Data.IO.DBSchema.TableInfo.PrimaryKeyCount
   name: PrimaryKeyCount
   href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_PrimaryKeyCount
@@ -1088,6 +1114,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyIndex
   nameWithType: TableInfo.PrimaryKeyIndex
+- uid: Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes
+  name: PrimaryKeyIndexes
+  href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_PrimaryKeyIndexes
+  commentId: P:Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes
+  fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes
+  nameWithType: TableInfo.PrimaryKeyIndexes
+- uid: Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes*
+  name: PrimaryKeyIndexes
+  href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_PrimaryKeyIndexes_
+  commentId: Overload:Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes
+  isSpec: "True"
+  fullName: Data.IO.DBSchema.TableInfo.PrimaryKeyIndexes
+  nameWithType: TableInfo.PrimaryKeyIndexes
 - uid: Data.IO.DBSchema.TableInfo.RelationInfos
   name: RelationInfos
   href: api/Data.IO.DBSchema.TableInfo.html#Data_IO_DBSchema_TableInfo_RelationInfos
@@ -1515,6 +1554,31 @@ references:
   commentId: T:Data.IO.ReadOnlyFieldAttribute
   fullName: Data.IO.ReadOnlyFieldAttribute
   nameWithType: ReadOnlyFieldAttribute
+- uid: Data.IO.Runtime.Extensions
+  name: Data.IO.Runtime.Extensions
+  href: api/Data.IO.Runtime.Extensions.html
+  commentId: N:Data.IO.Runtime.Extensions
+  fullName: Data.IO.Runtime.Extensions
+  nameWithType: Data.IO.Runtime.Extensions
+- uid: Data.IO.Runtime.Extensions.ArrayExtensions
+  name: ArrayExtensions
+  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html
+  commentId: T:Data.IO.Runtime.Extensions.ArrayExtensions
+  fullName: Data.IO.Runtime.Extensions.ArrayExtensions
+  nameWithType: ArrayExtensions
+- uid: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
+  name: CombineHashes(Array, Int32, Int32)
+  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html#Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_System_Array_System_Int32_System_Int32_
+  commentId: M:Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array,System.Int32,System.Int32)
+  fullName: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes(System.Array, System.Int32, System.Int32)
+  nameWithType: ArrayExtensions.CombineHashes(Array, Int32, Int32)
+- uid: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes*
+  name: CombineHashes
+  href: api/Data.IO.Runtime.Extensions.ArrayExtensions.html#Data_IO_Runtime_Extensions_ArrayExtensions_CombineHashes_
+  commentId: Overload:Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes
+  isSpec: "True"
+  fullName: Data.IO.Runtime.Extensions.ArrayExtensions.CombineHashes
+  nameWithType: ArrayExtensions.CombineHashes
 - uid: Data.IO.Script.Builder
   name: Data.IO.Script.Builder
   href: api/Data.IO.Script.Builder.html
@@ -2866,28 +2930,6 @@ references:
   commentId: T:Data.IO.SODB.GenericRecord
   fullName: Data.IO.SODB.GenericRecord
   nameWithType: GenericRecord
-- uid: Data.IO.SODB.GenericRecord.#ctor
-  name: GenericRecord()
-  href: api/Data.IO.SODB.GenericRecord.html#Data_IO_SODB_GenericRecord__ctor
-  commentId: M:Data.IO.SODB.GenericRecord.#ctor
-  fullName: Data.IO.SODB.GenericRecord.GenericRecord()
-  nameWithType: GenericRecord.GenericRecord()
-- uid: Data.IO.SODB.GenericRecord.#ctor(Data.IO.SODB.Interfaces.ITable{Data.IO.SODB.GenericRecord},System.Collections.Generic.IList{System.Object})
-  name: GenericRecord(ITable<GenericRecord>, IList<Object>)
-  href: api/Data.IO.SODB.GenericRecord.html#Data_IO_SODB_GenericRecord__ctor_Data_IO_SODB_Interfaces_ITable_Data_IO_SODB_GenericRecord__System_Collections_Generic_IList_System_Object__
-  commentId: M:Data.IO.SODB.GenericRecord.#ctor(Data.IO.SODB.Interfaces.ITable{Data.IO.SODB.GenericRecord},System.Collections.Generic.IList{System.Object})
-  name.vb: GenericRecord(ITable(Of GenericRecord), IList(Of Object))
-  fullName: Data.IO.SODB.GenericRecord.GenericRecord(Data.IO.SODB.Interfaces.ITable<Data.IO.SODB.GenericRecord>, System.Collections.Generic.IList<System.Object>)
-  fullName.vb: Data.IO.SODB.GenericRecord.GenericRecord(Data.IO.SODB.Interfaces.ITable(Of Data.IO.SODB.GenericRecord), System.Collections.Generic.IList(Of System.Object))
-  nameWithType: GenericRecord.GenericRecord(ITable<GenericRecord>, IList<Object>)
-  nameWithType.vb: GenericRecord.GenericRecord(ITable(Of GenericRecord), IList(Of Object))
-- uid: Data.IO.SODB.GenericRecord.#ctor*
-  name: GenericRecord
-  href: api/Data.IO.SODB.GenericRecord.html#Data_IO_SODB_GenericRecord__ctor_
-  commentId: Overload:Data.IO.SODB.GenericRecord.#ctor
-  isSpec: "True"
-  fullName: Data.IO.SODB.GenericRecord.GenericRecord
-  nameWithType: GenericRecord.GenericRecord
 - uid: Data.IO.SODB.GenericRecord.Get*
   name: Get
   href: api/Data.IO.SODB.GenericRecord.html#Data_IO_SODB_GenericRecord_Get_
@@ -3048,93 +3090,6 @@ references:
   commentId: N:Data.IO.SODB.Interfaces
   fullName: Data.IO.SODB.Interfaces
   nameWithType: Data.IO.SODB.Interfaces
-- uid: Data.IO.SODB.Interfaces.IDatabase
-  name: IDatabase
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html
-  commentId: T:Data.IO.SODB.Interfaces.IDatabase
-  fullName: Data.IO.SODB.Interfaces.IDatabase
-  nameWithType: IDatabase
-- uid: Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema
-  name: DatabaseSchema
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_DatabaseSchema
-  commentId: P:Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema
-  fullName: Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema
-  nameWithType: IDatabase.DatabaseSchema
-- uid: Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema*
-  name: DatabaseSchema
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_DatabaseSchema_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.DatabaseSchema
-  nameWithType: IDatabase.DatabaseSchema
-- uid: Data.IO.SODB.Interfaces.IDatabase.Item(System.String)
-  name: Item[String]
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Item_System_String_
-  commentId: P:Data.IO.SODB.Interfaces.IDatabase.Item(System.String)
-  name.vb: Item(String)
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Item[System.String]
-  fullName.vb: Data.IO.SODB.Interfaces.IDatabase.Item(System.String)
-  nameWithType: IDatabase.Item[String]
-  nameWithType.vb: IDatabase.Item(String)
-- uid: Data.IO.SODB.Interfaces.IDatabase.Item*
-  name: Item
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Item_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.Item
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Item
-  nameWithType: IDatabase.Item
-- uid: Data.IO.SODB.Interfaces.IDatabase.Name
-  name: Name
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Name
-  commentId: P:Data.IO.SODB.Interfaces.IDatabase.Name
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Name
-  nameWithType: IDatabase.Name
-- uid: Data.IO.SODB.Interfaces.IDatabase.Name*
-  name: Name
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Name_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.Name
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Name
-  nameWithType: IDatabase.Name
-- uid: Data.IO.SODB.Interfaces.IDatabase.Read
-  name: Read()
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Read
-  commentId: M:Data.IO.SODB.Interfaces.IDatabase.Read
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Read()
-  nameWithType: IDatabase.Read()
-- uid: Data.IO.SODB.Interfaces.IDatabase.Read*
-  name: Read
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Read_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.Read
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Read
-  nameWithType: IDatabase.Read
-- uid: Data.IO.SODB.Interfaces.IDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
-  name: Write(IDatabaseWriter)
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Write_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_
-  commentId: M:Data.IO.SODB.Interfaces.IDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
-  nameWithType: IDatabase.Write(IDatabaseWriter)
-- uid: Data.IO.SODB.Interfaces.IDatabase.Write*
-  name: Write
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_Write_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.Write
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.Write
-  nameWithType: IDatabase.Write
-- uid: Data.IO.SODB.Interfaces.IDatabase.WriteDirty
-  name: WriteDirty()
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_WriteDirty
-  commentId: M:Data.IO.SODB.Interfaces.IDatabase.WriteDirty
-  fullName: Data.IO.SODB.Interfaces.IDatabase.WriteDirty()
-  nameWithType: IDatabase.WriteDirty()
-- uid: Data.IO.SODB.Interfaces.IDatabase.WriteDirty*
-  name: WriteDirty
-  href: api/Data.IO.SODB.Interfaces.IDatabase.html#Data_IO_SODB_Interfaces_IDatabase_WriteDirty_
-  commentId: Overload:Data.IO.SODB.Interfaces.IDatabase.WriteDirty
-  isSpec: "True"
-  fullName: Data.IO.SODB.Interfaces.IDatabase.WriteDirty
-  nameWithType: IDatabase.WriteDirty
 - uid: Data.IO.SODB.Interfaces.IGenericRecord
   name: IGenericRecord
   href: api/Data.IO.SODB.Interfaces.IGenericRecord.html
@@ -3268,6 +3223,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Interfaces.IPrimaryKey.IsStringValue
   nameWithType: IPrimaryKey.IsStringValue
+- uid: Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys
+  name: PrimaryKeys
+  href: api/Data.IO.SODB.Interfaces.IPrimaryKey.html#Data_IO_SODB_Interfaces_IPrimaryKey_PrimaryKeys
+  commentId: P:Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys
+  fullName: Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys
+  nameWithType: IPrimaryKey.PrimaryKeys
+- uid: Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys*
+  name: PrimaryKeys
+  href: api/Data.IO.SODB.Interfaces.IPrimaryKey.html#Data_IO_SODB_Interfaces_IPrimaryKey_PrimaryKeys_
+  commentId: Overload:Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IPrimaryKey.PrimaryKeys
+  nameWithType: IPrimaryKey.PrimaryKeys
 - uid: Data.IO.SODB.Interfaces.IPrimaryKey.SetIntValue(System.Int32)
   name: SetIntValue(Int32)
   href: api/Data.IO.SODB.Interfaces.IPrimaryKey.html#Data_IO_SODB_Interfaces_IPrimaryKey_SetIntValue_System_Int32_
@@ -3381,6 +3349,109 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Interfaces.IRecord.SetValues
   nameWithType: IRecord.SetValues
+- uid: Data.IO.SODB.Interfaces.IRowTuple
+  name: IRowTuple
+  href: api/Data.IO.SODB.Interfaces.IRowTuple.html
+  commentId: T:Data.IO.SODB.Interfaces.IRowTuple
+  fullName: Data.IO.SODB.Interfaces.IRowTuple
+  nameWithType: IRowTuple
+- uid: Data.IO.SODB.Interfaces.IRowTuple.Values
+  name: Values
+  href: api/Data.IO.SODB.Interfaces.IRowTuple.html#Data_IO_SODB_Interfaces_IRowTuple_Values
+  commentId: P:Data.IO.SODB.Interfaces.IRowTuple.Values
+  fullName: Data.IO.SODB.Interfaces.IRowTuple.Values
+  nameWithType: IRowTuple.Values
+- uid: Data.IO.SODB.Interfaces.IRowTuple.Values*
+  name: Values
+  href: api/Data.IO.SODB.Interfaces.IRowTuple.html#Data_IO_SODB_Interfaces_IRowTuple_Values_
+  commentId: Overload:Data.IO.SODB.Interfaces.IRowTuple.Values
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IRowTuple.Values
+  nameWithType: IRowTuple.Values
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase
+  name: IScriptableDatabase
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html
+  commentId: T:Data.IO.SODB.Interfaces.IScriptableDatabase
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase
+  nameWithType: IScriptableDatabase
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema
+  name: DatabaseSchema
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_DatabaseSchema
+  commentId: P:Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema
+  nameWithType: IScriptableDatabase.DatabaseSchema
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema*
+  name: DatabaseSchema
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_DatabaseSchema_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.DatabaseSchema
+  nameWithType: IScriptableDatabase.DatabaseSchema
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Name
+  name: Name
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Name
+  commentId: P:Data.IO.SODB.Interfaces.IScriptableDatabase.Name
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Name
+  nameWithType: IScriptableDatabase.Name
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Name*
+  name: Name
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Name_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.Name
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Name
+  nameWithType: IScriptableDatabase.Name
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded
+  name: OnDatabaseLoaded()
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_OnDatabaseLoaded
+  commentId: M:Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded()
+  nameWithType: IScriptableDatabase.OnDatabaseLoaded()
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded*
+  name: OnDatabaseLoaded
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_OnDatabaseLoaded_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.OnDatabaseLoaded
+  nameWithType: IScriptableDatabase.OnDatabaseLoaded
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Read
+  name: Read()
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Read
+  commentId: M:Data.IO.SODB.Interfaces.IScriptableDatabase.Read
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Read()
+  nameWithType: IScriptableDatabase.Read()
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Read*
+  name: Read
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Read_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.Read
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Read
+  nameWithType: IScriptableDatabase.Read
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
+  name: Write(IDatabaseWriter)
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Write_Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_
+  commentId: M:Data.IO.SODB.Interfaces.IScriptableDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Write(Data.IO.SODB.Writer.Interfaces.IDatabaseWriter)
+  nameWithType: IScriptableDatabase.Write(IDatabaseWriter)
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.Write*
+  name: Write
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_Write_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.Write
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.Write
+  nameWithType: IScriptableDatabase.Write
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty
+  name: WriteDirty()
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_WriteDirty
+  commentId: M:Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty()
+  nameWithType: IScriptableDatabase.WriteDirty()
+- uid: Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty*
+  name: WriteDirty
+  href: api/Data.IO.SODB.Interfaces.IScriptableDatabase.html#Data_IO_SODB_Interfaces_IScriptableDatabase_WriteDirty_
+  commentId: Overload:Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.IScriptableDatabase.WriteDirty
+  nameWithType: IScriptableDatabase.WriteDirty
 - uid: Data.IO.SODB.Interfaces.ITable`1
   name: ITable<TRecord>
   href: api/Data.IO.SODB.Interfaces.ITable-1.html
@@ -3398,15 +3469,6 @@ references:
   fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).AddRecord(Data.IO.SODB.Interfaces.IRecord)
   nameWithType: ITable<TRecord>.AddRecord(IRecord)
   nameWithType.vb: ITable(Of TRecord).AddRecord(IRecord)
-- uid: Data.IO.SODB.Interfaces.ITable`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})
-  name: AddRecord(IReadOnlyList<Object>)
-  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_AddRecord_System_Collections_Generic_IReadOnlyList_System_Object__
-  commentId: M:Data.IO.SODB.Interfaces.ITable`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})
-  name.vb: AddRecord(IReadOnlyList(Of Object))
-  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.AddRecord(System.Collections.Generic.IReadOnlyList<System.Object>)
-  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).AddRecord(System.Collections.Generic.IReadOnlyList(Of System.Object))
-  nameWithType: ITable<TRecord>.AddRecord(IReadOnlyList<Object>)
-  nameWithType.vb: ITable(Of TRecord).AddRecord(IReadOnlyList(Of Object))
 - uid: Data.IO.SODB.Interfaces.ITable`1.AddRecord*
   name: AddRecord
   href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_AddRecord_
@@ -3416,6 +3478,42 @@ references:
   fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).AddRecord
   nameWithType: ITable<TRecord>.AddRecord
   nameWithType.vb: ITable(Of TRecord).AddRecord
+- uid: Data.IO.SODB.Interfaces.ITable`1.Get*
+  name: Get
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_Get_
+  commentId: Overload:Data.IO.SODB.Interfaces.ITable`1.Get
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.Get
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).Get
+  nameWithType: ITable<TRecord>.Get
+  nameWithType.vb: ITable(Of TRecord).Get
+- uid: Data.IO.SODB.Interfaces.ITable`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)
+  name: Get<TRecord>(IPrimaryKey)
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_Get__1_Data_IO_SODB_Interfaces_IPrimaryKey_
+  commentId: M:Data.IO.SODB.Interfaces.ITable`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)
+  name.vb: Get(Of TRecord)(IPrimaryKey)
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.Get<TRecord>(Data.IO.SODB.Interfaces.IPrimaryKey)
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).Get(Of TRecord)(Data.IO.SODB.Interfaces.IPrimaryKey)
+  nameWithType: ITable<TRecord>.Get<TRecord>(IPrimaryKey)
+  nameWithType.vb: ITable(Of TRecord).Get(Of TRecord)(IPrimaryKey)
+- uid: Data.IO.SODB.Interfaces.ITable`1.Get``1(System.Int32)
+  name: Get<TRecord>(Int32)
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_Get__1_System_Int32_
+  commentId: M:Data.IO.SODB.Interfaces.ITable`1.Get``1(System.Int32)
+  name.vb: Get(Of TRecord)(Int32)
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.Get<TRecord>(System.Int32)
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).Get(Of TRecord)(System.Int32)
+  nameWithType: ITable<TRecord>.Get<TRecord>(Int32)
+  nameWithType.vb: ITable(Of TRecord).Get(Of TRecord)(Int32)
+- uid: Data.IO.SODB.Interfaces.ITable`1.Get``1(System.String)
+  name: Get<TRecord>(String)
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_Get__1_System_String_
+  commentId: M:Data.IO.SODB.Interfaces.ITable`1.Get``1(System.String)
+  name.vb: Get(Of TRecord)(String)
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.Get<TRecord>(System.String)
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).Get(Of TRecord)(System.String)
+  nameWithType: ITable<TRecord>.Get<TRecord>(String)
+  nameWithType.vb: ITable(Of TRecord).Get(Of TRecord)(String)
 - uid: Data.IO.SODB.Interfaces.ITable`1.GetColumnIndex(System.String)
   name: GetColumnIndex(String)
   href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_GetColumnIndex_System_String_
@@ -3450,6 +3548,42 @@ references:
   fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).Info
   nameWithType: ITable<TRecord>.Info
   nameWithType.vb: ITable(Of TRecord).Info
+- uid: Data.IO.SODB.Interfaces.ITable`1.InsertRecord(System.Object[])
+  name: InsertRecord(Object[])
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_InsertRecord_System_Object___
+  commentId: M:Data.IO.SODB.Interfaces.ITable`1.InsertRecord(System.Object[])
+  name.vb: InsertRecord(Object())
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.InsertRecord(System.Object[])
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).InsertRecord(System.Object())
+  nameWithType: ITable<TRecord>.InsertRecord(Object[])
+  nameWithType.vb: ITable(Of TRecord).InsertRecord(Object())
+- uid: Data.IO.SODB.Interfaces.ITable`1.InsertRecord*
+  name: InsertRecord
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_InsertRecord_
+  commentId: Overload:Data.IO.SODB.Interfaces.ITable`1.InsertRecord
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.InsertRecord
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).InsertRecord
+  nameWithType: ITable<TRecord>.InsertRecord
+  nameWithType.vb: ITable(Of TRecord).InsertRecord
+- uid: Data.IO.SODB.Interfaces.ITable`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  name: InsertTuples(IRowTuple[])
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_InsertTuples_Data_IO_SODB_Interfaces_IRowTuple___
+  commentId: M:Data.IO.SODB.Interfaces.ITable`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  name.vb: InsertTuples(IRowTuple())
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).InsertTuples(Data.IO.SODB.Interfaces.IRowTuple())
+  nameWithType: ITable<TRecord>.InsertTuples(IRowTuple[])
+  nameWithType.vb: ITable(Of TRecord).InsertTuples(IRowTuple())
+- uid: Data.IO.SODB.Interfaces.ITable`1.InsertTuples*
+  name: InsertTuples
+  href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_InsertTuples_
+  commentId: Overload:Data.IO.SODB.Interfaces.ITable`1.InsertTuples
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.ITable<TRecord>.InsertTuples
+  fullName.vb: Data.IO.SODB.Interfaces.ITable(Of TRecord).InsertTuples
+  nameWithType: ITable<TRecord>.InsertTuples
+  nameWithType.vb: ITable(Of TRecord).InsertTuples
 - uid: Data.IO.SODB.Interfaces.ITable`1.Item(Data.IO.SODB.Interfaces.IPrimaryKey)
   name: Item[IPrimaryKey]
   href: api/Data.IO.SODB.Interfaces.ITable-1.html#Data_IO_SODB_Interfaces_ITable_1_Item_Data_IO_SODB_Interfaces_IPrimaryKey_
@@ -3585,18 +3719,31 @@ references:
   commentId: T:Data.IO.SODB.Interfaces.TableBase
   fullName: Data.IO.SODB.Interfaces.TableBase
   nameWithType: TableBase
+- uid: Data.IO.SODB.Interfaces.TableBase.AddRecord(Data.IO.SODB.Interfaces.IRecord)
+  name: AddRecord(IRecord)
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_AddRecord_Data_IO_SODB_Interfaces_IRecord_
+  commentId: M:Data.IO.SODB.Interfaces.TableBase.AddRecord(Data.IO.SODB.Interfaces.IRecord)
+  fullName: Data.IO.SODB.Interfaces.TableBase.AddRecord(Data.IO.SODB.Interfaces.IRecord)
+  nameWithType: TableBase.AddRecord(IRecord)
+- uid: Data.IO.SODB.Interfaces.TableBase.AddRecord*
+  name: AddRecord
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_AddRecord_
+  commentId: Overload:Data.IO.SODB.Interfaces.TableBase.AddRecord
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.TableBase.AddRecord
+  nameWithType: TableBase.AddRecord
 - uid: Data.IO.SODB.Interfaces.TableBase.IInitializable
   name: TableBase.IInitializable
   href: api/Data.IO.SODB.Interfaces.TableBase.IInitializable.html
   commentId: T:Data.IO.SODB.Interfaces.TableBase.IInitializable
   fullName: Data.IO.SODB.Interfaces.TableBase.IInitializable
   nameWithType: TableBase.IInitializable
-- uid: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  name: Init(ITableInfo)
-  href: api/Data.IO.SODB.Interfaces.TableBase.IInitializable.html#Data_IO_SODB_Interfaces_TableBase_IInitializable_Init_Data_IO_DBSchema_Interfaces_ITableInfo_
-  commentId: M:Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  fullName: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  nameWithType: TableBase.IInitializable.Init(ITableInfo)
+- uid: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  name: Init(IScriptableDatabase, ITableInfo)
+  href: api/Data.IO.SODB.Interfaces.TableBase.IInitializable.html#Data_IO_SODB_Interfaces_TableBase_IInitializable_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_
+  commentId: M:Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  fullName: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init(Data.IO.SODB.Interfaces.IScriptableDatabase, Data.IO.DBSchema.Interfaces.ITableInfo)
+  nameWithType: TableBase.IInitializable.Init(IScriptableDatabase, ITableInfo)
 - uid: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init*
   name: Init
   href: api/Data.IO.SODB.Interfaces.TableBase.IInitializable.html#Data_IO_SODB_Interfaces_TableBase_IInitializable_Init_
@@ -3604,12 +3751,12 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Interfaces.TableBase.IInitializable.Init
   nameWithType: TableBase.IInitializable.Init
-- uid: Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  name: Init(ITableInfo)
-  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_DBSchema_Interfaces_ITableInfo_
-  commentId: M:Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  fullName: Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  nameWithType: TableBase.Init(ITableInfo)
+- uid: Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  name: Init(IScriptableDatabase, ITableInfo)
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_
+  commentId: M:Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  fullName: Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.SODB.Interfaces.IScriptableDatabase, Data.IO.DBSchema.Interfaces.ITableInfo)
+  nameWithType: TableBase.Init(IScriptableDatabase, ITableInfo)
 - uid: Data.IO.SODB.Interfaces.TableBase.Init*
   name: Init
   href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Init_
@@ -3617,6 +3764,25 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Interfaces.TableBase.Init
   nameWithType: TableBase.Init
+- uid: Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IPrimaryKey)
+  name: RemoveRecord(IPrimaryKey)
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IPrimaryKey_
+  commentId: M:Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IPrimaryKey)
+  fullName: Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IPrimaryKey)
+  nameWithType: TableBase.RemoveRecord(IPrimaryKey)
+- uid: Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IRecord)
+  name: RemoveRecord(IRecord)
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IRecord_
+  commentId: M:Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IRecord)
+  fullName: Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IRecord)
+  nameWithType: TableBase.RemoveRecord(IRecord)
+- uid: Data.IO.SODB.Interfaces.TableBase.RemoveRecord*
+  name: RemoveRecord
+  href: api/Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_RemoveRecord_
+  commentId: Overload:Data.IO.SODB.Interfaces.TableBase.RemoveRecord
+  isSpec: "True"
+  fullName: Data.IO.SODB.Interfaces.TableBase.RemoveRecord
+  nameWithType: TableBase.RemoveRecord
 - uid: Data.IO.SODB.PrimaryKey
   name: PrimaryKey
   href: api/Data.IO.SODB.PrimaryKey.html
@@ -3641,6 +3807,15 @@ references:
   commentId: M:Data.IO.SODB.PrimaryKey.#ctor(System.Object)
   fullName: Data.IO.SODB.PrimaryKey.PrimaryKey(System.Object)
   nameWithType: PrimaryKey.PrimaryKey(Object)
+- uid: Data.IO.SODB.PrimaryKey.#ctor(System.Object[])
+  name: PrimaryKey(Object[])
+  href: api/Data.IO.SODB.PrimaryKey.html#Data_IO_SODB_PrimaryKey__ctor_System_Object___
+  commentId: M:Data.IO.SODB.PrimaryKey.#ctor(System.Object[])
+  name.vb: PrimaryKey(Object())
+  fullName: Data.IO.SODB.PrimaryKey.PrimaryKey(System.Object[])
+  fullName.vb: Data.IO.SODB.PrimaryKey.PrimaryKey(System.Object())
+  nameWithType: PrimaryKey.PrimaryKey(Object[])
+  nameWithType.vb: PrimaryKey.PrimaryKey(Object())
 - uid: Data.IO.SODB.PrimaryKey.#ctor(System.String)
   name: PrimaryKey(String)
   href: api/Data.IO.SODB.PrimaryKey.html#Data_IO_SODB_PrimaryKey__ctor_System_String_
@@ -3783,6 +3958,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.PrimaryKey.Inequality
   nameWithType: PrimaryKey.Inequality
+- uid: Data.IO.SODB.PrimaryKey.PrimaryKeys
+  name: PrimaryKeys
+  href: api/Data.IO.SODB.PrimaryKey.html#Data_IO_SODB_PrimaryKey_PrimaryKeys
+  commentId: P:Data.IO.SODB.PrimaryKey.PrimaryKeys
+  fullName: Data.IO.SODB.PrimaryKey.PrimaryKeys
+  nameWithType: PrimaryKey.PrimaryKeys
+- uid: Data.IO.SODB.PrimaryKey.PrimaryKeys*
+  name: PrimaryKeys
+  href: api/Data.IO.SODB.PrimaryKey.html#Data_IO_SODB_PrimaryKey_PrimaryKeys_
+  commentId: Overload:Data.IO.SODB.PrimaryKey.PrimaryKeys
+  isSpec: "True"
+  fullName: Data.IO.SODB.PrimaryKey.PrimaryKeys
+  nameWithType: PrimaryKey.PrimaryKeys
 - uid: Data.IO.SODB.PrimaryKey.SetIntValue(System.Int32)
   name: SetIntValue(Int32)
   href: api/Data.IO.SODB.PrimaryKey.html#Data_IO_SODB_PrimaryKey_SetIntValue_System_Int32_
@@ -4013,6 +4201,71 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Record.SetValues
   nameWithType: Record.SetValues
+- uid: Data.IO.SODB.RowTuple
+  name: RowTuple
+  href: api/Data.IO.SODB.RowTuple.html
+  commentId: T:Data.IO.SODB.RowTuple
+  fullName: Data.IO.SODB.RowTuple
+  nameWithType: RowTuple
+- uid: Data.IO.SODB.RowTuple.#ctor(System.Object[])
+  name: RowTuple(Object[])
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple__ctor_System_Object___
+  commentId: M:Data.IO.SODB.RowTuple.#ctor(System.Object[])
+  name.vb: RowTuple(Object())
+  fullName: Data.IO.SODB.RowTuple.RowTuple(System.Object[])
+  fullName.vb: Data.IO.SODB.RowTuple.RowTuple(System.Object())
+  nameWithType: RowTuple.RowTuple(Object[])
+  nameWithType.vb: RowTuple.RowTuple(Object())
+- uid: Data.IO.SODB.RowTuple.#ctor*
+  name: RowTuple
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple__ctor_
+  commentId: Overload:Data.IO.SODB.RowTuple.#ctor
+  isSpec: "True"
+  fullName: Data.IO.SODB.RowTuple.RowTuple
+  nameWithType: RowTuple.RowTuple
+- uid: Data.IO.SODB.RowTuple.GetEnumerator
+  name: GetEnumerator()
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_GetEnumerator
+  commentId: M:Data.IO.SODB.RowTuple.GetEnumerator
+  fullName: Data.IO.SODB.RowTuple.GetEnumerator()
+  nameWithType: RowTuple.GetEnumerator()
+- uid: Data.IO.SODB.RowTuple.GetEnumerator*
+  name: GetEnumerator
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_GetEnumerator_
+  commentId: Overload:Data.IO.SODB.RowTuple.GetEnumerator
+  isSpec: "True"
+  fullName: Data.IO.SODB.RowTuple.GetEnumerator
+  nameWithType: RowTuple.GetEnumerator
+- uid: Data.IO.SODB.RowTuple.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Data.IO.SODB.RowTuple.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Data.IO.SODB.RowTuple.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: RowTuple.IEnumerable.GetEnumerator()
+  nameWithType.vb: RowTuple.System.Collections.IEnumerable.GetEnumerator()
+- uid: Data.IO.SODB.RowTuple.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Data.IO.SODB.RowTuple.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Data.IO.SODB.RowTuple.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: RowTuple.IEnumerable.GetEnumerator
+  nameWithType.vb: RowTuple.System.Collections.IEnumerable.GetEnumerator
+- uid: Data.IO.SODB.RowTuple.Values
+  name: Values
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_Values
+  commentId: P:Data.IO.SODB.RowTuple.Values
+  fullName: Data.IO.SODB.RowTuple.Values
+  nameWithType: RowTuple.Values
+- uid: Data.IO.SODB.RowTuple.Values*
+  name: Values
+  href: api/Data.IO.SODB.RowTuple.html#Data_IO_SODB_RowTuple_Values_
+  commentId: Overload:Data.IO.SODB.RowTuple.Values
+  isSpec: "True"
+  fullName: Data.IO.SODB.RowTuple.Values
+  nameWithType: RowTuple.Values
 - uid: Data.IO.SODB.ScriptableDatabase
   name: ScriptableDatabase
   href: api/Data.IO.SODB.ScriptableDatabase.html
@@ -4192,6 +4445,12 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.ScriptableDatabase.GetEnumerator
   nameWithType: ScriptableDatabase.GetEnumerator
+- uid: Data.IO.SODB.ScriptableDatabase.GetTable(System.String)
+  name: GetTable(String)
+  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTable_System_String_
+  commentId: M:Data.IO.SODB.ScriptableDatabase.GetTable(System.String)
+  fullName: Data.IO.SODB.ScriptableDatabase.GetTable(System.String)
+  nameWithType: ScriptableDatabase.GetTable(String)
 - uid: Data.IO.SODB.ScriptableDatabase.GetTable*
   name: GetTable
   href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTable_
@@ -4208,22 +4467,22 @@ references:
   fullName.vb: Data.IO.SODB.ScriptableDatabase.GetTable(Of TTable)()
   nameWithType: ScriptableDatabase.GetTable<TTable>()
   nameWithType.vb: ScriptableDatabase.GetTable(Of TTable)()
-- uid: Data.IO.SODB.ScriptableDatabase.GetTableFor*
-  name: GetTableFor
-  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTableFor_
-  commentId: Overload:Data.IO.SODB.ScriptableDatabase.GetTableFor
+- uid: Data.IO.SODB.ScriptableDatabase.GetTableOf*
+  name: GetTableOf
+  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTableOf_
+  commentId: Overload:Data.IO.SODB.ScriptableDatabase.GetTableOf
   isSpec: "True"
-  fullName: Data.IO.SODB.ScriptableDatabase.GetTableFor
-  nameWithType: ScriptableDatabase.GetTableFor
-- uid: Data.IO.SODB.ScriptableDatabase.GetTableFor``1
-  name: GetTableFor<TRecord>()
-  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTableFor__1
-  commentId: M:Data.IO.SODB.ScriptableDatabase.GetTableFor``1
-  name.vb: GetTableFor(Of TRecord)()
-  fullName: Data.IO.SODB.ScriptableDatabase.GetTableFor<TRecord>()
-  fullName.vb: Data.IO.SODB.ScriptableDatabase.GetTableFor(Of TRecord)()
-  nameWithType: ScriptableDatabase.GetTableFor<TRecord>()
-  nameWithType.vb: ScriptableDatabase.GetTableFor(Of TRecord)()
+  fullName: Data.IO.SODB.ScriptableDatabase.GetTableOf
+  nameWithType: ScriptableDatabase.GetTableOf
+- uid: Data.IO.SODB.ScriptableDatabase.GetTableOf``1
+  name: GetTableOf<TRecord>()
+  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_GetTableOf__1
+  commentId: M:Data.IO.SODB.ScriptableDatabase.GetTableOf``1
+  name.vb: GetTableOf(Of TRecord)()
+  fullName: Data.IO.SODB.ScriptableDatabase.GetTableOf<TRecord>()
+  fullName.vb: Data.IO.SODB.ScriptableDatabase.GetTableOf(Of TRecord)()
+  nameWithType: ScriptableDatabase.GetTableOf<TRecord>()
+  nameWithType.vb: ScriptableDatabase.GetTableOf(Of TRecord)()
 - uid: Data.IO.SODB.ScriptableDatabase.IInitializable
   name: ScriptableDatabase.IInitializable
   href: api/Data.IO.SODB.ScriptableDatabase.IInitializable.html
@@ -4304,6 +4563,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.ScriptableDatabase.OnBeforeSerialize
   nameWithType: ScriptableDatabase.OnBeforeSerialize
+- uid: Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded
+  name: OnDatabaseLoaded()
+  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_OnDatabaseLoaded
+  commentId: M:Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded
+  fullName: Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded()
+  nameWithType: ScriptableDatabase.OnDatabaseLoaded()
+- uid: Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded*
+  name: OnDatabaseLoaded
+  href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_OnDatabaseLoaded_
+  commentId: Overload:Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded
+  isSpec: "True"
+  fullName: Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded
+  nameWithType: ScriptableDatabase.OnDatabaseLoaded
 - uid: Data.IO.SODB.ScriptableDatabase.OnInit
   name: OnInit()
   href: api/Data.IO.SODB.ScriptableDatabase.html#Data_IO_SODB_ScriptableDatabase_OnInit
@@ -4429,15 +4701,6 @@ references:
   fullName.vb: Data.IO.SODB.Table(Of TRecord).AddRecord(Data.IO.SODB.Interfaces.IRecord)
   nameWithType: Table<TRecord>.AddRecord(IRecord)
   nameWithType.vb: Table(Of TRecord).AddRecord(IRecord)
-- uid: Data.IO.SODB.Table`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})
-  name: AddRecord(IReadOnlyList<Object>)
-  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_AddRecord_System_Collections_Generic_IReadOnlyList_System_Object__
-  commentId: M:Data.IO.SODB.Table`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})
-  name.vb: AddRecord(IReadOnlyList(Of Object))
-  fullName: Data.IO.SODB.Table<TRecord>.AddRecord(System.Collections.Generic.IReadOnlyList<System.Object>)
-  fullName.vb: Data.IO.SODB.Table(Of TRecord).AddRecord(System.Collections.Generic.IReadOnlyList(Of System.Object))
-  nameWithType: Table<TRecord>.AddRecord(IReadOnlyList<Object>)
-  nameWithType.vb: Table(Of TRecord).AddRecord(IReadOnlyList(Of Object))
 - uid: Data.IO.SODB.Table`1.AddRecord*
   name: AddRecord
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_AddRecord_
@@ -4447,6 +4710,23 @@ references:
   fullName.vb: Data.IO.SODB.Table(Of TRecord).AddRecord
   nameWithType: Table<TRecord>.AddRecord
   nameWithType.vb: Table(Of TRecord).AddRecord
+- uid: Data.IO.SODB.Table`1.Database
+  name: Database
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Database
+  commentId: P:Data.IO.SODB.Table`1.Database
+  fullName: Data.IO.SODB.Table<TRecord>.Database
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Database
+  nameWithType: Table<TRecord>.Database
+  nameWithType.vb: Table(Of TRecord).Database
+- uid: Data.IO.SODB.Table`1.Database*
+  name: Database
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Database_
+  commentId: Overload:Data.IO.SODB.Table`1.Database
+  isSpec: "True"
+  fullName: Data.IO.SODB.Table<TRecord>.Database
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Database
+  nameWithType: Table<TRecord>.Database
+  nameWithType.vb: Table(Of TRecord).Database
 - uid: Data.IO.SODB.Table`1.Get*
   name: Get
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Get_
@@ -4457,32 +4737,32 @@ references:
   nameWithType: Table<TRecord>.Get
   nameWithType.vb: Table(Of TRecord).Get
 - uid: Data.IO.SODB.Table`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)
-  name: Get<TAnyRecord>(IPrimaryKey)
+  name: Get<TRecord>(IPrimaryKey)
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Get__1_Data_IO_SODB_Interfaces_IPrimaryKey_
   commentId: M:Data.IO.SODB.Table`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)
-  name.vb: Get(Of TAnyRecord)(IPrimaryKey)
-  fullName: Data.IO.SODB.Table<TRecord>.Get<TAnyRecord>(Data.IO.SODB.Interfaces.IPrimaryKey)
-  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TAnyRecord)(Data.IO.SODB.Interfaces.IPrimaryKey)
-  nameWithType: Table<TRecord>.Get<TAnyRecord>(IPrimaryKey)
-  nameWithType.vb: Table(Of TRecord).Get(Of TAnyRecord)(IPrimaryKey)
+  name.vb: Get(Of TRecord)(IPrimaryKey)
+  fullName: Data.IO.SODB.Table<TRecord>.Get<TRecord>(Data.IO.SODB.Interfaces.IPrimaryKey)
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TRecord)(Data.IO.SODB.Interfaces.IPrimaryKey)
+  nameWithType: Table<TRecord>.Get<TRecord>(IPrimaryKey)
+  nameWithType.vb: Table(Of TRecord).Get(Of TRecord)(IPrimaryKey)
 - uid: Data.IO.SODB.Table`1.Get``1(System.Int32)
-  name: Get<TAnyRecord>(Int32)
+  name: Get<TRecord>(Int32)
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Get__1_System_Int32_
   commentId: M:Data.IO.SODB.Table`1.Get``1(System.Int32)
-  name.vb: Get(Of TAnyRecord)(Int32)
-  fullName: Data.IO.SODB.Table<TRecord>.Get<TAnyRecord>(System.Int32)
-  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TAnyRecord)(System.Int32)
-  nameWithType: Table<TRecord>.Get<TAnyRecord>(Int32)
-  nameWithType.vb: Table(Of TRecord).Get(Of TAnyRecord)(Int32)
+  name.vb: Get(Of TRecord)(Int32)
+  fullName: Data.IO.SODB.Table<TRecord>.Get<TRecord>(System.Int32)
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TRecord)(System.Int32)
+  nameWithType: Table<TRecord>.Get<TRecord>(Int32)
+  nameWithType.vb: Table(Of TRecord).Get(Of TRecord)(Int32)
 - uid: Data.IO.SODB.Table`1.Get``1(System.String)
-  name: Get<TAnyRecord>(String)
+  name: Get<TRecord>(String)
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Get__1_System_String_
   commentId: M:Data.IO.SODB.Table`1.Get``1(System.String)
-  name.vb: Get(Of TAnyRecord)(String)
-  fullName: Data.IO.SODB.Table<TRecord>.Get<TAnyRecord>(System.String)
-  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TAnyRecord)(System.String)
-  nameWithType: Table<TRecord>.Get<TAnyRecord>(String)
-  nameWithType.vb: Table(Of TRecord).Get(Of TAnyRecord)(String)
+  name.vb: Get(Of TRecord)(String)
+  fullName: Data.IO.SODB.Table<TRecord>.Get<TRecord>(System.String)
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Get(Of TRecord)(System.String)
+  nameWithType: Table<TRecord>.Get<TRecord>(String)
+  nameWithType.vb: Table(Of TRecord).Get(Of TRecord)(String)
 - uid: Data.IO.SODB.Table`1.GetColumnIndex(System.String)
   name: GetColumnIndex(String)
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_GetColumnIndex_System_String_
@@ -4551,14 +4831,14 @@ references:
   fullName.vb: Data.IO.SODB.Table(Of TRecord).Info
   nameWithType: Table<TRecord>.Info
   nameWithType.vb: Table(Of TRecord).Info
-- uid: Data.IO.SODB.Table`1.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  name: Init(ITableInfo)
-  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Init_Data_IO_DBSchema_Interfaces_ITableInfo_
-  commentId: M:Data.IO.SODB.Table`1.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  fullName: Data.IO.SODB.Table<TRecord>.Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  fullName.vb: Data.IO.SODB.Table(Of TRecord).Init(Data.IO.DBSchema.Interfaces.ITableInfo)
-  nameWithType: Table<TRecord>.Init(ITableInfo)
-  nameWithType.vb: Table(Of TRecord).Init(ITableInfo)
+- uid: Data.IO.SODB.Table`1.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  name: Init(IScriptableDatabase, ITableInfo)
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_
+  commentId: M:Data.IO.SODB.Table`1.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)
+  fullName: Data.IO.SODB.Table<TRecord>.Init(Data.IO.SODB.Interfaces.IScriptableDatabase, Data.IO.DBSchema.Interfaces.ITableInfo)
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).Init(Data.IO.SODB.Interfaces.IScriptableDatabase, Data.IO.DBSchema.Interfaces.ITableInfo)
+  nameWithType: Table<TRecord>.Init(IScriptableDatabase, ITableInfo)
+  nameWithType.vb: Table(Of TRecord).Init(IScriptableDatabase, ITableInfo)
 - uid: Data.IO.SODB.Table`1.Init*
   name: Init
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Init_
@@ -4568,6 +4848,42 @@ references:
   fullName.vb: Data.IO.SODB.Table(Of TRecord).Init
   nameWithType: Table<TRecord>.Init
   nameWithType.vb: Table(Of TRecord).Init
+- uid: Data.IO.SODB.Table`1.InsertRecord(System.Object[])
+  name: InsertRecord(Object[])
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_InsertRecord_System_Object___
+  commentId: M:Data.IO.SODB.Table`1.InsertRecord(System.Object[])
+  name.vb: InsertRecord(Object())
+  fullName: Data.IO.SODB.Table<TRecord>.InsertRecord(System.Object[])
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).InsertRecord(System.Object())
+  nameWithType: Table<TRecord>.InsertRecord(Object[])
+  nameWithType.vb: Table(Of TRecord).InsertRecord(Object())
+- uid: Data.IO.SODB.Table`1.InsertRecord*
+  name: InsertRecord
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_InsertRecord_
+  commentId: Overload:Data.IO.SODB.Table`1.InsertRecord
+  isSpec: "True"
+  fullName: Data.IO.SODB.Table<TRecord>.InsertRecord
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).InsertRecord
+  nameWithType: Table<TRecord>.InsertRecord
+  nameWithType.vb: Table(Of TRecord).InsertRecord
+- uid: Data.IO.SODB.Table`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  name: InsertTuples(IRowTuple[])
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_InsertTuples_Data_IO_SODB_Interfaces_IRowTuple___
+  commentId: M:Data.IO.SODB.Table`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  name.vb: InsertTuples(IRowTuple())
+  fullName: Data.IO.SODB.Table<TRecord>.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).InsertTuples(Data.IO.SODB.Interfaces.IRowTuple())
+  nameWithType: Table<TRecord>.InsertTuples(IRowTuple[])
+  nameWithType.vb: Table(Of TRecord).InsertTuples(IRowTuple())
+- uid: Data.IO.SODB.Table`1.InsertTuples*
+  name: InsertTuples
+  href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_InsertTuples_
+  commentId: Overload:Data.IO.SODB.Table`1.InsertTuples
+  isSpec: "True"
+  fullName: Data.IO.SODB.Table<TRecord>.InsertTuples
+  fullName.vb: Data.IO.SODB.Table(Of TRecord).InsertTuples
+  nameWithType: Table<TRecord>.InsertTuples
+  nameWithType.vb: Table(Of TRecord).InsertTuples
 - uid: Data.IO.SODB.Table`1.Item(Data.IO.SODB.Interfaces.IPrimaryKey)
   name: Item[IPrimaryKey]
   href: api/Data.IO.SODB.Table-1.html#Data_IO_SODB_Table_1_Item_Data_IO_SODB_Interfaces_IPrimaryKey_
@@ -4758,12 +5074,12 @@ references:
   isSpec: "True"
   fullName: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.CloseDatabase
   nameWithType: IDatabaseWriter.CloseDatabase
-- uid: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IDatabase)
-  name: OpenDatabase(IDatabase)
-  href: api/Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html#Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_OpenDatabase_Data_IO_SODB_Interfaces_IDatabase_
-  commentId: M:Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IDatabase)
-  fullName: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IDatabase)
-  nameWithType: IDatabaseWriter.OpenDatabase(IDatabase)
+- uid: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IScriptableDatabase)
+  name: OpenDatabase(IScriptableDatabase)
+  href: api/Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html#Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_OpenDatabase_Data_IO_SODB_Interfaces_IScriptableDatabase_
+  commentId: M:Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IScriptableDatabase)
+  fullName: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase(Data.IO.SODB.Interfaces.IScriptableDatabase)
+  nameWithType: IDatabaseWriter.OpenDatabase(IScriptableDatabase)
 - uid: Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.OpenDatabase*
   name: OpenDatabase
   href: api/Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html#Data_IO_SODB_Writer_Interfaces_IDatabaseWriter_OpenDatabase_
@@ -5081,22 +5397,31 @@ references:
   isSpec: "True"
   fullName: Data.IO.SQL.Builder.SQLBuilder.CreateTables
   nameWithType: SQLBuilder.CreateTables
-- uid: Data.IO.SQL.Builder.SQLBuilder.InsertRows(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})
-  name: InsertRows(String, IEnumerable<IEnumerable<Object>>)
-  href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertRows_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Object___
-  commentId: M:Data.IO.SQL.Builder.SQLBuilder.InsertRows(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})
-  name.vb: InsertRows(String, IEnumerable(Of IEnumerable(Of Object)))
-  fullName: Data.IO.SQL.Builder.SQLBuilder.InsertRows(System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>)
-  fullName.vb: Data.IO.SQL.Builder.SQLBuilder.InsertRows(System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of System.Object)))
-  nameWithType: SQLBuilder.InsertRows(String, IEnumerable<IEnumerable<Object>>)
-  nameWithType.vb: SQLBuilder.InsertRows(String, IEnumerable(Of IEnumerable(Of Object)))
-- uid: Data.IO.SQL.Builder.SQLBuilder.InsertRows*
-  name: InsertRows
-  href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertRows_
-  commentId: Overload:Data.IO.SQL.Builder.SQLBuilder.InsertRows
+- uid: Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String,Data.IO.SODB.RowTuple[])
+  name: InsertTuples(String, RowTuple[])
+  href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertTuples_System_String_Data_IO_SODB_RowTuple___
+  commentId: M:Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String,Data.IO.SODB.RowTuple[])
+  name.vb: InsertTuples(String, RowTuple())
+  fullName: Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String, Data.IO.SODB.RowTuple[])
+  fullName.vb: Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String, Data.IO.SODB.RowTuple())
+  nameWithType: SQLBuilder.InsertTuples(String, RowTuple[])
+  nameWithType.vb: SQLBuilder.InsertTuples(String, RowTuple())
+- uid: Data.IO.SQL.Builder.SQLBuilder.InsertTuples*
+  name: InsertTuples
+  href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertTuples_
+  commentId: Overload:Data.IO.SQL.Builder.SQLBuilder.InsertTuples
   isSpec: "True"
-  fullName: Data.IO.SQL.Builder.SQLBuilder.InsertRows
-  nameWithType: SQLBuilder.InsertRows
+  fullName: Data.IO.SQL.Builder.SQLBuilder.InsertTuples
+  nameWithType: SQLBuilder.InsertTuples
+- uid: Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})
+  name: InsertValues(String, IEnumerable<IEnumerable<Object>>)
+  href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertValues_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Object___
+  commentId: M:Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})
+  name.vb: InsertValues(String, IEnumerable(Of IEnumerable(Of Object)))
+  fullName: Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>)
+  fullName.vb: Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.IEnumerable(Of System.Object)))
+  nameWithType: SQLBuilder.InsertValues(String, IEnumerable<IEnumerable<Object>>)
+  nameWithType.vb: SQLBuilder.InsertValues(String, IEnumerable(Of IEnumerable(Of Object)))
 - uid: Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String,System.Collections.Generic.IEnumerable{System.Object})
   name: InsertValues(String, IEnumerable<Object>)
   href: api/Data.IO.SQL.Builder.SQLBuilder.html#Data_IO_SQL_Builder_SQLBuilder_InsertValues_System_String_System_Collections_Generic_IEnumerable_System_Object__
@@ -5628,6 +5953,19 @@ references:
   isSpec: "True"
   fullName: Data.IO.Tools.ConvertValue.TryParse
   nameWithType: ConvertValue.TryParse
+- uid: Data.IO.Tools.ConvertValue.TryParseBruteForce(System.String,System.Globalization.CultureInfo)
+  name: TryParseBruteForce(String, CultureInfo)
+  href: api/Data.IO.Tools.ConvertValue.html#Data_IO_Tools_ConvertValue_TryParseBruteForce_System_String_System_Globalization_CultureInfo_
+  commentId: M:Data.IO.Tools.ConvertValue.TryParseBruteForce(System.String,System.Globalization.CultureInfo)
+  fullName: Data.IO.Tools.ConvertValue.TryParseBruteForce(System.String, System.Globalization.CultureInfo)
+  nameWithType: ConvertValue.TryParseBruteForce(String, CultureInfo)
+- uid: Data.IO.Tools.ConvertValue.TryParseBruteForce*
+  name: TryParseBruteForce
+  href: api/Data.IO.Tools.ConvertValue.html#Data_IO_Tools_ConvertValue_TryParseBruteForce_
+  commentId: Overload:Data.IO.Tools.ConvertValue.TryParseBruteForce
+  isSpec: "True"
+  fullName: Data.IO.Tools.ConvertValue.TryParseBruteForce
+  nameWithType: ConvertValue.TryParseBruteForce
 - uid: Data.IO.Tools.IndentStringBuilder
   name: IndentStringBuilder
   href: api/Data.IO.Tools.IndentStringBuilder.html

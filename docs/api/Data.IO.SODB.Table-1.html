@@ -133,6 +133,29 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   </table>
   <h3 id="properties">Properties
   </h3>
+  <a id="Data_IO_SODB_Table_1_Database_" data-uid="Data.IO.SODB.Table`1.Database*"></a>
+  <h4 id="Data_IO_SODB_Table_1_Database" data-uid="Data.IO.SODB.Table`1.Database">Database</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptableDatabase Database { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.ScriptableDatabase.html">ScriptableDatabase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_SODB_Table_1_Info_" data-uid="Data.IO.SODB.Table`1.Info*"></a>
   <h4 id="Data_IO_SODB_Table_1_Info" data-uid="Data.IO.SODB.Table`1.Info">Info</h4>
   <div class="markdown level1 summary"></div>
@@ -162,7 +185,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IRecord this[IPrimaryKey pk] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord this[IPrimaryKey pk] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,7 +214,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -202,7 +225,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IRecord this[int id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord this[int id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,7 +254,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -242,7 +265,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IRecord this[string id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord this[string id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,7 +294,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -307,7 +330,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddRecord(IRecord record)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void AddRecord(IRecord record)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -326,39 +349,16 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SODB_Table_1_AddRecord_" data-uid="Data.IO.SODB.Table`1.AddRecord*"></a>
-  <h4 id="Data_IO_SODB_Table_1_AddRecord_System_Collections_Generic_IReadOnlyList_System_Object__" data-uid="Data.IO.SODB.Table`1.AddRecord(System.Collections.Generic.IReadOnlyList{System.Object})">AddRecord(IReadOnlyList&lt;Object&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddRecord(IReadOnlyList&lt;object&gt; tuple)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">tuple</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_AddRecord_Data_IO_SODB_Interfaces_IRecord_">TableBase.AddRecord(IRecord)</a></div>
   <a id="Data_IO_SODB_Table_1_Get_" data-uid="Data.IO.SODB.Table`1.Get*"></a>
-  <h4 id="Data_IO_SODB_Table_1_Get__1_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Table`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)">Get&lt;TAnyRecord&gt;(IPrimaryKey)</h4>
+  <h4 id="Data_IO_SODB_Table_1_Get__1_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Table`1.Get``1(Data.IO.SODB.Interfaces.IPrimaryKey)">Get&lt;TRecord&gt;(IPrimaryKey)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TAnyRecord Get&lt;TAnyRecord&gt;(IPrimaryKey pk)
-    where TAnyRecord : class, IRecord</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord Get&lt;TRecord&gt;(IPrimaryKey pk)
+    where TRecord : class, IRecord</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +387,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TAnyRecord</span></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -402,19 +402,19 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TAnyRecord</span></td>
+        <td><span class="parametername">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_SODB_Table_1_Get_" data-uid="Data.IO.SODB.Table`1.Get*"></a>
-  <h4 id="Data_IO_SODB_Table_1_Get__1_System_Int32_" data-uid="Data.IO.SODB.Table`1.Get``1(System.Int32)">Get&lt;TAnyRecord&gt;(Int32)</h4>
+  <h4 id="Data_IO_SODB_Table_1_Get__1_System_Int32_" data-uid="Data.IO.SODB.Table`1.Get``1(System.Int32)">Get&lt;TRecord&gt;(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TAnyRecord Get&lt;TAnyRecord&gt;(int id)
-    where TAnyRecord : class, IRecord</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord Get&lt;TRecord&gt;(int id)
+    where TRecord : class, IRecord</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -443,7 +443,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TAnyRecord</span></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -458,19 +458,19 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TAnyRecord</span></td>
+        <td><span class="parametername">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_SODB_Table_1_Get_" data-uid="Data.IO.SODB.Table`1.Get*"></a>
-  <h4 id="Data_IO_SODB_Table_1_Get__1_System_String_" data-uid="Data.IO.SODB.Table`1.Get``1(System.String)">Get&lt;TAnyRecord&gt;(String)</h4>
+  <h4 id="Data_IO_SODB_Table_1_Get__1_System_String_" data-uid="Data.IO.SODB.Table`1.Get``1(System.String)">Get&lt;TRecord&gt;(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TAnyRecord Get&lt;TAnyRecord&gt;(string id)
-    where TAnyRecord : class, IRecord</code></pre>
+    <pre><code class="lang-csharp hljs">public TRecord Get&lt;TRecord&gt;(string id)
+    where TRecord : class, IRecord</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -499,7 +499,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TAnyRecord</span></td>
+        <td><span class="xref">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -514,7 +514,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TAnyRecord</span></td>
+        <td><span class="parametername">TRecord</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -606,12 +606,12 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </tbody>
   </table>
   <a id="Data_IO_SODB_Table_1_Init_" data-uid="Data.IO.SODB.Table`1.Init*"></a>
-  <h4 id="Data_IO_SODB_Table_1_Init_Data_IO_DBSchema_Interfaces_ITableInfo_" data-uid="Data.IO.SODB.Table`1.Init(Data.IO.DBSchema.Interfaces.ITableInfo)">Init(ITableInfo)</h4>
+  <h4 id="Data_IO_SODB_Table_1_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_" data-uid="Data.IO.SODB.Table`1.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)">Init(IScriptableDatabase, ITableInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Init(ITableInfo tableInfo)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Init(IScriptableDatabase database, ITableInfo tableInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -624,6 +624,11 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IScriptableDatabase.html">IScriptableDatabase</a></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
         <td></td>
@@ -631,7 +636,87 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_DBSchema_Interfaces_ITableInfo_">TableBase.Init(ITableInfo)</a></div>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_">TableBase.Init(IScriptableDatabase, ITableInfo)</a></div>
+  <a id="Data_IO_SODB_Table_1_InsertRecord_" data-uid="Data.IO.SODB.Table`1.InsertRecord*"></a>
+  <h4 id="Data_IO_SODB_Table_1_InsertRecord_System_Object___" data-uid="Data.IO.SODB.Table`1.InsertRecord(System.Object[])">InsertRecord(Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRecord InsertRecord(params object[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Table_1_InsertTuples_" data-uid="Data.IO.SODB.Table`1.InsertTuples*"></a>
+  <h4 id="Data_IO_SODB_Table_1_InsertTuples_Data_IO_SODB_Interfaces_IRowTuple___" data-uid="Data.IO.SODB.Table`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])">InsertTuples(IRowTuple[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TRecord&gt; InsertTuples(params IRowTuple[] rowTuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>[]</td>
+        <td><span class="parametername">rowTuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_SODB_Table_1_Read_" data-uid="Data.IO.SODB.Table`1.Read*"></a>
   <h4 id="Data_IO_SODB_Table_1_Read_Data_IO_SODB_Reader_Interfaces_ITableReader_" data-uid="Data.IO.SODB.Table`1.Read(Data.IO.SODB.Reader.Interfaces.ITableReader)">Read(ITableReader)</h4>
   <div class="markdown level1 summary"></div>
@@ -663,7 +748,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IRecord RemoveRecord(IPrimaryKey pk)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IRecord RemoveRecord(IPrimaryKey pk)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -697,13 +782,15 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IPrimaryKey_">TableBase.RemoveRecord(IPrimaryKey)</a></div>
   <a id="Data_IO_SODB_Table_1_RemoveRecord_" data-uid="Data.IO.SODB.Table`1.RemoveRecord*"></a>
   <h4 id="Data_IO_SODB_Table_1_RemoveRecord_Data_IO_SODB_Interfaces_IRecord_" data-uid="Data.IO.SODB.Table`1.RemoveRecord(Data.IO.SODB.Interfaces.IRecord)">RemoveRecord(IRecord)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveRecord(IRecord record)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void RemoveRecord(IRecord record)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -722,6 +809,8 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IRecord_">TableBase.RemoveRecord(IRecord)</a></div>
   <a id="Data_IO_SODB_Table_1_ToString_" data-uid="Data.IO.SODB.Table`1.ToString*"></a>
   <h4 id="Data_IO_SODB_Table_1_ToString" data-uid="Data.IO.SODB.Table`1.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>

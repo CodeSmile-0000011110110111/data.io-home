@@ -118,13 +118,13 @@ public abstract class TableBase : TableBase.IInitializable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Data_IO_SODB_Interfaces_TableBase_Init_" data-uid="Data.IO.SODB.Interfaces.TableBase.Init*"></a>
-  <h4 id="Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_DBSchema_Interfaces_ITableInfo_" data-uid="Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.DBSchema.Interfaces.ITableInfo)">Init(ITableInfo)</h4>
+  <a id="Data_IO_SODB_Interfaces_TableBase_AddRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.AddRecord*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_AddRecord_Data_IO_SODB_Interfaces_IRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.AddRecord(Data.IO.SODB.Interfaces.IRecord)">AddRecord(IRecord)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Init(ITableInfo tableInfo)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void AddRecord(IRecord record)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,8 +137,103 @@ public abstract class TableBase : TableBase.IInitializable</code></pre>
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Init_" data-uid="Data.IO.SODB.Interfaces.TableBase.Init*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Init_Data_IO_SODB_Interfaces_IScriptableDatabase_Data_IO_DBSchema_Interfaces_ITableInfo_" data-uid="Data.IO.SODB.Interfaces.TableBase.Init(Data.IO.SODB.Interfaces.IScriptableDatabase,Data.IO.DBSchema.Interfaces.ITableInfo)">Init(IScriptableDatabase, ITableInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Init(IScriptableDatabase database, ITableInfo tableInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IScriptableDatabase.html">IScriptableDatabase</a></td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a></td>
         <td><span class="parametername">tableInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_RemoveRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.RemoveRecord*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IPrimaryKey)">RemoveRecord(IPrimaryKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IRecord RemoveRecord(IPrimaryKey pk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_RemoveRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.RemoveRecord*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_RemoveRecord_Data_IO_SODB_Interfaces_IRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.RemoveRecord(Data.IO.SODB.Interfaces.IRecord)">RemoveRecord(IRecord)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void RemoveRecord(IRecord record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td><span class="parametername">record</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -85,7 +85,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Data.IO.SODB.ScriptableDatabase.IInitializable.html">ScriptableDatabase.IInitializable</a></div>
-    <div><a class="xref" href="Data.IO.SODB.Interfaces.IDatabase.html">IDatabase</a></div>
+    <div><a class="xref" href="Data.IO.SODB.Interfaces.IScriptableDatabase.html">IScriptableDatabase</a></div>
     <div><span class="xref">UnityEngine.ISerializationCallbackReceiver</span></div>
     <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.SODB.Record.html">Record</a>&gt;&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
@@ -206,7 +206,7 @@
   <h5 id="Data_IO_SODB_ScriptableDatabase_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitializable, IDatabase, ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
+public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitializable, IScriptableDatabase, ISerializationCallbackReceiver, IEnumerable&lt;ITable&lt;Record&gt;&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -240,7 +240,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TableBase this[string tableName] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITable&lt;Record&gt; this[string tableName] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,7 +269,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html">TableBase</a></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.SODB.Record.html">Record</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -477,7 +477,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseSchema schema)
-    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+    where TDatabase : ScriptableObject, IScriptableDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,7 +533,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseReader reader, IDatabaseWriter writer = null)
-    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+    where TDatabase : ScriptableObject, IScriptableDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -594,7 +594,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(string name)
-    where TDatabase : ScriptableObject, IDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
+    where TDatabase : ScriptableObject, IScriptableDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -856,6 +856,47 @@ Table must not already exist in schema.</p>
     </tbody>
   </table>
   <a id="Data_IO_SODB_ScriptableDatabase_GetTable_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTable_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable(System.String)">GetTable(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a table by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable&lt;Record&gt; GetTable(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;<a class="xref" href="Data.IO.SODB.Record.html">Record</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetTable_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable*"></a>
   <h4 id="Data_IO_SODB_ScriptableDatabase_GetTable__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTable``1">GetTable&lt;TTable&gt;()</h4>
   <div class="markdown level1 summary"><p>Gets the specified table.</p>
 </div>
@@ -914,14 +955,14 @@ Table must not already exist in schema.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SODB_ScriptableDatabase_GetTableFor_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTableFor__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor``1">GetTableFor&lt;TRecord&gt;()</h4>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetTableOf_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableOf*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTableOf__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableOf``1">GetTableOf&lt;TRecord&gt;()</h4>
   <div class="markdown level1 summary"><p>Gets the table that owns specified types of records.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; GetTableFor&lt;TRecord&gt;()
+    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; GetTableOf&lt;TRecord&gt;()
     where TRecord : Record, new()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -988,6 +1029,14 @@ Table must not already exist in schema.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_OnDatabaseLoaded_" data-uid="Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_OnDatabaseLoaded" data-uid="Data.IO.SODB.ScriptableDatabase.OnDatabaseLoaded">OnDatabaseLoaded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDatabaseLoaded()</code></pre>
   </div>
   <a id="Data_IO_SODB_ScriptableDatabase_OnInit_" data-uid="Data.IO.SODB.ScriptableDatabase.OnInit*"></a>
   <h4 id="Data_IO_SODB_ScriptableDatabase_OnInit" data-uid="Data.IO.SODB.ScriptableDatabase.OnInit">OnInit()</h4>
@@ -1148,7 +1197,7 @@ Table must not already exist in schema.</p>
       <a class="xref" href="Data.IO.SODB.ScriptableDatabase.IInitializable.html">ScriptableDatabase.IInitializable</a>
   </div>
   <div>
-      <a class="xref" href="Data.IO.SODB.Interfaces.IDatabase.html">IDatabase</a>
+      <a class="xref" href="Data.IO.SODB.Interfaces.IScriptableDatabase.html">IScriptableDatabase</a>
   </div>
   <div>
       <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
