@@ -83,6 +83,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Data.IO.SODB.Interfaces.ITableBase.html">ITableBase</a></div>
     <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.IInitializable.html">TableBase.IInitializable</a></div>
   </div>
   <div class="inheritedMembers">
@@ -110,12 +111,203 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SODB.Interfaces.html">Data.IO.SODB.Interfaces</a></h6>
-  <h6><strong>Assembly</strong>: Data.IO.SODB.Interfaces.dll</h6>
+  <h6><strong>Assembly</strong>: Data.IO.SODB.dll</h6>
   <h5 id="Data_IO_SODB_Interfaces_TableBase_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public abstract class TableBase : TableBase.IInitializable</code></pre>
+public abstract class TableBase : ITableBase, TableBase.IInitializable</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Database_" data-uid="Data.IO.SODB.Interfaces.TableBase.Database*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Database" data-uid="Data.IO.SODB.Interfaces.TableBase.Database">Database</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ScriptableDatabase Database { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.ScriptableDatabase.html">ScriptableDatabase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Info_" data-uid="Data.IO.SODB.Interfaces.TableBase.Info*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Info" data-uid="Data.IO.SODB.Interfaces.TableBase.Info">Info</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ITableInfo Info { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Item_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Item_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item(Data.IO.SODB.Interfaces.IPrimaryKey)">Item[IPrimaryKey]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IRecord this[IPrimaryKey pk] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IPrimaryKey.html">IPrimaryKey</a></td>
+        <td><span class="parametername">pk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Item_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Item_System_Int32_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IRecord this[int id] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Item_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Item_System_String_" data-uid="Data.IO.SODB.Interfaces.TableBase.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IRecord this[string id] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SODB_Interfaces_TableBase_Name_" data-uid="Data.IO.SODB.Interfaces.TableBase.Name*"></a>
+  <h4 id="Data_IO_SODB_Interfaces_TableBase_Name" data-uid="Data.IO.SODB.Interfaces.TableBase.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string Name { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_SODB_Interfaces_TableBase_AddRecord_" data-uid="Data.IO.SODB.Interfaces.TableBase.AddRecord*"></a>
@@ -239,6 +431,9 @@ public abstract class TableBase : TableBase.IInitializable</code></pre>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Data.IO.SODB.Interfaces.ITableBase.html">ITableBase</a>
+  </div>
   <div>
       <a class="xref" href="Data.IO.SODB.Interfaces.TableBase.IInitializable.html">TableBase.IInitializable</a>
   </div>

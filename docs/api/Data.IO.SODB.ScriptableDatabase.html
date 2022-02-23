@@ -210,29 +210,6 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Data_IO_SODB_ScriptableDatabase_DatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.DatabaseSchema*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_DatabaseSchema" data-uid="Data.IO.SODB.ScriptableDatabase.DatabaseSchema">DatabaseSchema</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDatabaseSchema DatabaseSchema { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Data_IO_SODB_ScriptableDatabase_Item_" data-uid="Data.IO.SODB.ScriptableDatabase.Item*"></a>
   <h4 id="Data_IO_SODB_ScriptableDatabase_Item_System_String_" data-uid="Data.IO.SODB.ScriptableDatabase.Item(System.String)">Item[String]</h4>
   <div class="markdown level1 summary"><p>Gets a table by name. Returns null if the table couldn't be found.</p>
@@ -320,6 +297,29 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
       </tr>
     </tbody>
   </table>
+  <a id="Data_IO_SODB_ScriptableDatabase_Schema_" data-uid="Data.IO.SODB.ScriptableDatabase.Schema*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Schema" data-uid="Data.IO.SODB.ScriptableDatabase.Schema">Schema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchema Schema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_SODB_ScriptableDatabase_Writer_" data-uid="Data.IO.SODB.ScriptableDatabase.Writer*"></a>
   <h4 id="Data_IO_SODB_ScriptableDatabase_Writer" data-uid="Data.IO.SODB.ScriptableDatabase.Writer">Writer</h4>
   <div class="markdown level1 summary"></div>
@@ -346,12 +346,12 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">CreateInstance(IDatabaseSchema)</h4>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance_Data_IO_DBSchema_Interfaces_ISchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance(Data.IO.DBSchema.Interfaces.ISchema)">CreateInstance(ISchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ScriptableDatabase CreateInstance(IDatabaseSchema schema)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ScriptableDatabase CreateInstance(ISchema schema)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +364,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>
@@ -471,12 +471,12 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
     </tbody>
   </table>
   <a id="Data_IO_SODB_ScriptableDatabase_CreateInstance_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance__1_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance``1(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">CreateInstance&lt;TDatabase&gt;(IDatabaseSchema)</h4>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_CreateInstance__1_Data_IO_DBSchema_Interfaces_ISchema_" data-uid="Data.IO.SODB.ScriptableDatabase.CreateInstance``1(Data.IO.DBSchema.Interfaces.ISchema)">CreateInstance&lt;TDatabase&gt;(ISchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(IDatabaseSchema schema)
+    <pre><code class="lang-csharp hljs">public static TDatabase CreateInstance&lt;TDatabase&gt;(ISchema schema)
     where TDatabase : ScriptableObject, IScriptableDatabase, ScriptableDatabase.IInitializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -490,7 +490,7 @@ public class ScriptableDatabase : ScriptableObject, ScriptableDatabase.IInitiali
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>
@@ -955,14 +955,14 @@ Table must not already exist in schema.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SODB_ScriptableDatabase_GetTableOf_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableOf*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTableOf__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableOf``1">GetTableOf&lt;TRecord&gt;()</h4>
+  <a id="Data_IO_SODB_ScriptableDatabase_GetTableFor_" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_GetTableFor__1" data-uid="Data.IO.SODB.ScriptableDatabase.GetTableFor``1">GetTableFor&lt;TRecord&gt;()</h4>
   <div class="markdown level1 summary"><p>Gets the table that owns specified types of records.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITable&lt;TRecord&gt; GetTableOf&lt;TRecord&gt;()
+    <pre><code class="lang-csharp hljs">public Table&lt;TRecord&gt; GetTableFor&lt;TRecord&gt;()
     where TRecord : Record, new()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -975,7 +975,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</td>
+        <td><a class="xref" href="Data.IO.SODB.Table-1.html">Table</a>&lt;TRecord&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1046,6 +1046,36 @@ Table must not already exist in schema.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnInit()</code></pre>
   </div>
+  <a id="Data_IO_SODB_ScriptableDatabase_OnTableLoaded_" data-uid="Data.IO.SODB.ScriptableDatabase.OnTableLoaded*"></a>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_OnTableLoaded_System_String_System_Collections_ObjectModel_Collection_Data_IO_SODB_Interfaces_IRowTuple__" data-uid="Data.IO.SODB.ScriptableDatabase.OnTableLoaded(System.String,System.Collections.ObjectModel.Collection{Data.IO.SODB.Interfaces.IRowTuple})">OnTableLoaded(String, Collection&lt;IRowTuple&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnTableLoaded(string tableName, Collection&lt;IRowTuple&gt; tuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>&gt;</td>
+        <td><span class="parametername">tuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_SODB_ScriptableDatabase_Read_" data-uid="Data.IO.SODB.ScriptableDatabase.Read*"></a>
   <h4 id="Data_IO_SODB_ScriptableDatabase_Read" data-uid="Data.IO.SODB.ScriptableDatabase.Read">Read()</h4>
   <div class="markdown level1 summary"></div>
@@ -1115,12 +1145,12 @@ Table must not already exist in schema.</p>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <a id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init*"></a>
-  <h4 id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_Data_IO_DBSchema_Interfaces_IDatabaseSchema_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init(Data.IO.DBSchema.Interfaces.IDatabaseSchema)">ScriptableDatabase.IInitializable.Init(IDatabaseSchema)</h4>
+  <h4 id="Data_IO_SODB_ScriptableDatabase_Data_IO_SODB_ScriptableDatabase_IInitializable_Init_Data_IO_DBSchema_Interfaces_ISchema_" data-uid="Data.IO.SODB.ScriptableDatabase.Data#IO#SODB#ScriptableDatabase#IInitializable#Init(Data.IO.DBSchema.Interfaces.ISchema)">ScriptableDatabase.IInitializable.Init(ISchema)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ScriptableDatabase.IInitializable.Init(IDatabaseSchema schema)</code></pre>
+    <pre><code class="lang-csharp hljs">void ScriptableDatabase.IInitializable.Init(ISchema schema)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1133,7 +1163,7 @@ Table must not already exist in schema.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></td>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a></td>
         <td><span class="parametername">schema</span></td>
         <td></td>
       </tr>

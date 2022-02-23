@@ -149,18 +149,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Data.IO.DBSchema.Interfaces.IDatabaseSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Data.IO.DBSchema.Interfaces.IDatabaseSchema.html",
-          "hash": "HDczuovW53c2eGl4JV0zVpWPiNqMX0iOwladmLc6Pzw="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Data.IO.DBSchema.Interfaces.IRelationInfo.yml",
       "output": {
         ".html": {
@@ -173,11 +161,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Data.IO.DBSchema.Interfaces.ISchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.IO.DBSchema.Interfaces.ISchema.html",
+          "hash": "4GLSf+eWprZ6S37ceY5aP+Sdhu5HMrSUwLFtlGgbW3c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Data.IO.DBSchema.Interfaces.ITableInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DBSchema.Interfaces.ITableInfo.html",
-          "hash": "6VY1utfMnkx3J7g6oOyvbW3x7etbZXsCbWRlnI5CmmA="
+          "hash": "pUbD4WvT/yVwFCzcpKsad/a/xKh9IodmABHN8YMUYgo="
         }
       },
       "is_incremental": true,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DBSchema.Interfaces.html",
-          "hash": "RUj3ajUMUbH4NlD48Yt6Nd7IaTgRjHJe4eKG/C5QBbM="
+          "hash": "lJfDJs6HOPd0jdFoRZbYiTMuGwRIkOrQEmyjcZWu7ow="
         }
       },
       "is_incremental": true,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DBSchema.Schema.html",
-          "hash": "Fkdlhu8Is2p3TCLNUvbPkeM5RyveMQhQwA87wRTUmXU="
+          "hash": "GvfO6Xfnwk+WgjpBBv1X5aFss/XF2At9yqf1jezaHsY="
         }
       },
       "is_incremental": true,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.DBSchema.TableInfo.html",
-          "hash": "z0PwiD4Gn1Zh2A0gQRkeLnvyI3wRQXdfGooD7ODL4T4="
+          "hash": "A5Q7fMeuN/HWjxMTEtYH4kEraZfT1bpjEm9MJoirJ+k="
         }
       },
       "is_incremental": true,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.Extensions.ArrayExtensions.html",
-          "hash": "rVWefePvuhrtd43jF1yt1QIa7fqbgOgcErIejGRybSI="
+          "hash": "mSWapNa0thtkSBodbTy84TB1ctoJ3jWRMw1dmfHSyMU="
         }
       },
       "is_incremental": true,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.GenericRecord.html",
-          "hash": "RitOJiUWYok8naMFajD6sIlNHDjzqpASHz6hWAaqV7I="
+          "hash": "BfBL1e62Om1eu+KjX7H1SGyKCOQkNB77eHbEWtx0qkk="
         }
       },
       "is_incremental": true,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.IGenericRecord.html",
-          "hash": "FP3cn95qLoq/WTV/hJ099N3AwcSGBRSWk0ljgIoipXo="
+          "hash": "H0Y8JYbsqkzHVUomXNuHINrkg5PIx1cp1BfxuJ2bQJQ="
         }
       },
       "is_incremental": true,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.IRecord.html",
-          "hash": "GyG07u+iDxtRH0oaYSiedI2NMRYBE2mhr50Oij1NAz8="
+          "hash": "7qvlEVt1YIYYAS0A2HBAY84SdWFVT2SD0/e7tVEbQf8="
         }
       },
       "is_incremental": true,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.IRowTuple.html",
-          "hash": "4cHX+hGEl+VGHvcuMynwAfr0FdupYW1rapHnWy0YD+M="
+          "hash": "FE4Fq39UHnX9I4XKnTB7kXZgM76T0DFxUsxYqR+iAWs="
         }
       },
       "is_incremental": true,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.IScriptableDatabase.html",
-          "hash": "RVbF2aAjVJaExyQC0Qq8/h55pHVjUdejcqM91g9xbB8="
+          "hash": "hT3YAUFeo+LGFfw8mgwmMzFoDbjOlPsRi4ZbeiIFQj8="
         }
       },
       "is_incremental": true,
@@ -513,7 +513,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.ITable-1.html",
-          "hash": "QVa2BMN4LV+bVpZ1SdM6wIG/MalKEn9cU3yEc76KuNU="
+          "hash": "hnS3+6CRK+/jin2Z1FlSD4b11BnvEnKVSmShL2z6iLE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.IO.SODB.Interfaces.ITableBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.IO.SODB.Interfaces.ITableBase.html",
+          "hash": "BGDXQFVdnKpJmq4ZCIp3CPH3fF2f27UlLySu2S4yCN0="
         }
       },
       "is_incremental": true,
@@ -525,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.TableBase.IInitializable.html",
-          "hash": "W6yPPlgGK8jRl80V7MHeHvgsoIMSFtn2Pll1hB5nZyg="
+          "hash": "bZMwz30T4fl0uX5vnKLmUI1ucvP5vSD4+fB8k89sg+M="
         }
       },
       "is_incremental": true,
@@ -537,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.TableBase.html",
-          "hash": "ScCwDPoE66Mcfqz7uu171dPcSE/xMpYJfc0+0cJHnYY="
+          "hash": "I/PVGGnf8Zw6qSKRayN6pSAjiIBf7Ld2xLnZKMHWp7c="
         }
       },
       "is_incremental": true,
@@ -549,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Interfaces.html",
-          "hash": "SnC7kzoGRkQgfjcSwNr4g1BD+dAtfypSWtqKExp47ro="
+          "hash": "8zda48E0cKhBjBcwLAXCd++ovPAj5ez/C4n1S7tpQDw="
         }
       },
       "is_incremental": true,
@@ -561,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.PrimaryKey.html",
-          "hash": "Axc17WMQkSnVJdt6doWSFDLRlfB4OnLprD7e6vjsAkc="
+          "hash": "FQ7rw7dYNz4HiGNtwM3OAp/ALwDpX064HmjZYpoBT/M="
         }
       },
       "is_incremental": true,
@@ -585,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Reader.Interfaces.ISchemaReader.html",
-          "hash": "gz7ZPdgdC29OJG76gmfUtPm0lHQDtJ67dm8L9+g40Mw="
+          "hash": "SyOhVERRTU/BUvjVCVNuj0gvlHnABSAGb4KoiETBIcU="
         }
       },
       "is_incremental": true,
@@ -597,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Reader.Interfaces.ITableReader.html",
-          "hash": "pGsrCTbciCEVXYAEQldz4C9DcTaf2Jh08z3V/NET+mg="
+          "hash": "JaXfrjDi7m7OUYmDlLRwc+aex7ZTCwAbDivHfAfK++w="
         }
       },
       "is_incremental": true,
@@ -621,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Record.html",
-          "hash": "fcXyD1K+qLp4S6ipty+QlQNjFY/6GrBasQW82ZUPlL8="
+          "hash": "yUbdFC48PlmxhBmIjSTC7vV63IS626tKP0vux1mgmfk="
         }
       },
       "is_incremental": true,
@@ -633,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.RowTuple.html",
-          "hash": "YWeTsUDoBmLUSUTS1FbmGd8R0Ryu+/ucYlqD3GRhYbo="
+          "hash": "0GxOqJuJLk5Z8i30LzMDrV5CIEgXL394/e7jC6QX+8k="
         }
       },
       "is_incremental": true,
@@ -645,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.ScriptableDatabase.IInitializable.html",
-          "hash": "zLn1vyp2WkMMeYRLla3/8E6aRss9Avj2FSdQ14attiI="
+          "hash": "IBoKLcWHu1X4dNSIi+E6h+DFClPPlnXH/bJJ7TZtMno="
         }
       },
       "is_incremental": true,
@@ -657,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.ScriptableDatabase.html",
-          "hash": "For8NGpEf5oa8+NwQ5E8UE0kHF5AzDsMi+R66ohZkUY="
+          "hash": "HtQ7fp+l2bMxHHOjtqbFhdTiRoZ91hRkcta1i0w63yM="
         }
       },
       "is_incremental": true,
@@ -669,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Table-1.html",
-          "hash": "GddvbD+5TOGLB8vDf7wUxivSZRfd5tyN+FhQkQhawjI="
+          "hash": "100Q43wYk6vvFOl3T2koUHob7Ce/rmixeezY/vNdJlw="
         }
       },
       "is_incremental": true,
@@ -681,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Writer.Interfaces.IDatabaseWriter.html",
-          "hash": "lPuW8mYRUxdzouUQeqYqUPd3UmS9/sfLooIsHnYWdLw="
+          "hash": "oj3wM1gN1RfjHR9uxcYmcShfrXYpIopbEFBE7lGAZcU="
         }
       },
       "is_incremental": true,
@@ -693,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Writer.Interfaces.ISchemaWriter.html",
-          "hash": "i6bSYKw3mLzEe18B0USvyp1HuD+V6tm0nRkyi9Cl0Ok="
+          "hash": "AIAondWH9LC7PIgKk+8ckN9acQvB4mQDwYVChPg+w+Q="
         }
       },
       "is_incremental": true,
@@ -705,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SODB.Writer.Interfaces.ITableWriter.html",
-          "hash": "H3FIwhDXQ7olQaAj1ZLTUbzmrfHORV/IZooEw5acHTY="
+          "hash": "HRCTe4/XkQGbkdg7F5UMm86w0PSz1icNeSHmocNcwNw="
         }
       },
       "is_incremental": true,
@@ -765,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.Builder.SQLBuilder.html",
-          "hash": "9mHNHQysoKEDbrASvPmLUDYJpvWIbGnGAQzOWvejdOo="
+          "hash": "FrLucHTpzZCLhMnAZBexllQBIGlutCQI+rRmsYazG+o="
         }
       },
       "is_incremental": true,
@@ -837,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLiter.html",
-          "hash": "F7ClZ5L6xDlv3E8ZnXmrfrPv1H/e4fGfoMcOQmOZkjk="
+          "hash": "+Frb3vozBiCuzEjfC291dXf+XGK8Zz27F+qv2aDq0gQ="
         }
       },
       "is_incremental": true,
@@ -849,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Data.IO.SQL.SQLiterCommand.html",
-          "hash": "9a7XcI/5uLn8u33TgStanatrce0GKVlMeWjOELyZMxQ="
+          "hash": "mP3nI0XqIqWILLQ8AOCI/2CpsqBI6o775vESCtZjYtk="
         }
       },
       "is_incremental": true,
@@ -1212,7 +1224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "p28gNMN3T+GxhrfP30OVsQfiAX/eUg5Z8VvL9J5YoSQ="
+          "hash": "YxKmq1X7De7+RrhoB8UnOhksHQYHn50Sj+8LsxusVRg="
         }
       },
       "is_incremental": false,
@@ -1398,8 +1410,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 99,
-          "skipped_file_count": 99
+          "total_file_count": 100,
+          "skipped_file_count": 100
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

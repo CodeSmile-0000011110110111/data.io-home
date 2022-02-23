@@ -78,7 +78,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Data.IO.SODB.Writer.Interfaces.ISchemaWriter.html#Data_IO_SODB_Writer_Interfaces_ISchemaWriter_WriteSchema_Data_IO_DBSchema_Interfaces_IDatabaseSchema_">ISchemaWriter.WriteSchema(IDatabaseSchema)</a>
+      <a class="xref" href="Data.IO.SODB.Writer.Interfaces.ISchemaWriter.html#Data_IO_SODB_Writer_Interfaces_ISchemaWriter_WriteSchema_Data_IO_DBSchema_Interfaces_ISchema_">ISchemaWriter.WriteSchema(ISchema)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Data.IO.SODB.Writer.Interfaces.html">Data.IO.SODB.Writer.Interfaces</a></h6>
@@ -90,12 +90,12 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuple_" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuple*"></a>
-  <h4 id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuple_Data_IO_DBSchema_Interfaces_ITableInfo_System_Collections_Generic_IEnumerable_System_Object__" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuple(Data.IO.DBSchema.Interfaces.ITableInfo,System.Collections.Generic.IEnumerable{System.Object})">WriteTuple(ITableInfo, IEnumerable&lt;Object&gt;)</h4>
+  <h4 id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuple_Data_IO_DBSchema_Interfaces_ITableInfo_Data_IO_SODB_Interfaces_IRowTuple_" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuple(Data.IO.DBSchema.Interfaces.ITableInfo,Data.IO.SODB.Interfaces.IRowTuple)">WriteTuple(ITableInfo, IRowTuple)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void WriteTuple(ITableInfo table, IEnumerable&lt;object&gt; tuple)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteTuple(ITableInfo table, IRowTuple tuple)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,19 +113,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a></td>
         <td><span class="parametername">tuple</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuples_" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuples*"></a>
-  <h4 id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuples_Data_IO_DBSchema_Interfaces_ITableInfo_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Object___" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuples(Data.IO.DBSchema.Interfaces.ITableInfo,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})">WriteTuples(ITableInfo, IEnumerable&lt;IEnumerable&lt;Object&gt;&gt;)</h4>
+  <h4 id="Data_IO_SODB_Writer_Interfaces_ITableWriter_WriteTuples_Data_IO_DBSchema_Interfaces_ITableInfo_System_Collections_Generic_IEnumerable_Data_IO_SODB_Interfaces_IRowTuple__" data-uid="Data.IO.SODB.Writer.Interfaces.ITableWriter.WriteTuples(Data.IO.DBSchema.Interfaces.ITableInfo,System.Collections.Generic.IEnumerable{Data.IO.SODB.Interfaces.IRowTuple})">WriteTuples(ITableInfo, IEnumerable&lt;IRowTuple&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void WriteTuples(ITableInfo table, IEnumerable&lt;IEnumerable&lt;object&gt;&gt; tuples)</code></pre>
+    <pre><code class="lang-csharp hljs">void WriteTuples(ITableInfo table, IEnumerable&lt;IRowTuple&gt; tuples)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +143,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>&gt;</td>
         <td><span class="parametername">tuples</span></td>
         <td></td>
       </tr>

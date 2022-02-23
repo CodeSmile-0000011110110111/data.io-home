@@ -82,7 +82,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a></div>
+    <div><a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a></div>
     <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</div>
     <div><span class="xref">System.Collections.IEnumerable</span></div>
   </div>
@@ -112,7 +112,7 @@
   <h5 id="Data_IO_DBSchema_Schema_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class Schema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEnumerable</code></pre>
+public sealed class Schema : ISchema, IEnumerable&lt;ITableInfo&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -148,6 +148,46 @@ public sealed class Schema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEn
   </table>
   <h3 id="properties">Properties
   </h3>
+  <a id="Data_IO_DBSchema_Schema_Item_" data-uid="Data.IO.DBSchema.Schema.Item*"></a>
+  <h4 id="Data_IO_DBSchema_Schema_Item_System_String_" data-uid="Data.IO.DBSchema.Schema.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITableInfo this[string tableName] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_DBSchema_Schema_Name_" data-uid="Data.IO.DBSchema.Schema.Name*"></a>
   <h4 id="Data_IO_DBSchema_Schema_Name" data-uid="Data.IO.DBSchema.Schema.Name">Name</h4>
   <div class="markdown level1 summary"></div>
@@ -171,13 +211,13 @@ public sealed class Schema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEn
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_DBSchema_Schema_TableInfos_" data-uid="Data.IO.DBSchema.Schema.TableInfos*"></a>
-  <h4 id="Data_IO_DBSchema_Schema_TableInfos" data-uid="Data.IO.DBSchema.Schema.TableInfos">TableInfos</h4>
+  <a id="Data_IO_DBSchema_Schema_TableCount_" data-uid="Data.IO.DBSchema.Schema.TableCount*"></a>
+  <h4 id="Data_IO_DBSchema_Schema_TableCount" data-uid="Data.IO.DBSchema.Schema.TableCount">TableCount</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, ITableInfo&gt; TableInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int TableCount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,7 +229,7 @@ public sealed class Schema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEn
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Data.IO.DBSchema.Interfaces.ITableInfo.html">ITableInfo</a>&gt;</td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -296,7 +336,7 @@ public sealed class Schema : IDatabaseSchema, IEnumerable&lt;ITableInfo&gt;, IEn
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Data.IO.DBSchema.Interfaces.IDatabaseSchema.html">IDatabaseSchema</a>
+      <a class="xref" href="Data.IO.DBSchema.Interfaces.ISchema.html">ISchema</a>
   </div>
   <div>
       <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>

@@ -195,106 +195,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples*"></a>
-  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_System_String_Data_IO_SODB_RowTuple___" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String,Data.IO.SODB.RowTuple[])">InsertTuples(String, RowTuple[])</h4>
-  <div class="markdown level1 summary"><p>Returns INSERT OR REPLACE command strings for the given values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; InsertTuples(string tableName, params RowTuple[] rowValues)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tableName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Data.IO.SODB.RowTuple.html">RowTuple</a>[]</td>
-        <td><span class="parametername">rowValues</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertValues_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertValues*"></a>
-  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertValues_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_System_Object___" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{System.Object}})">InsertValues(String, IEnumerable&lt;IEnumerable&lt;Object&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Returns INSERT OR REPLACE command strings for the given values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; InsertValues(string tableName, IEnumerable&lt;IEnumerable&lt;object&gt;&gt; rowValues)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tableName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td><span class="parametername">rowValues</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertValues_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertValues*"></a>
-  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertValues_System_String_System_Collections_Generic_IEnumerable_System_Object__" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertValues(System.String,System.Collections.Generic.IEnumerable{System.Object})">InsertValues(String, IEnumerable&lt;Object&gt;)</h4>
+  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertRowValues_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertRowValues*"></a>
+  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertRowValues_System_String_System_Object___" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertRowValues(System.String,System.Object[])">InsertRowValues(String, Object[])</h4>
   <div class="markdown level1 summary"><p>Returns a INSERT OR REPLACE command string for the given values. Values are assumed to be in order of table's columns.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string InsertValues(string tableName, IEnumerable&lt;object&gt; values)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string InsertRowValues(string tableName, params object[] rowValues)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -312,8 +220,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">values</span></td>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">rowValues</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -329,6 +237,143 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertTuple_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuple*"></a>
+  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertTuple_System_String_Data_IO_SODB_Interfaces_IRowTuple_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuple(System.String,Data.IO.SODB.Interfaces.IRowTuple)">InsertTuple(String, IRowTuple)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InsertTuple(string tableName, IRowTuple tuple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a></td>
+        <td><span class="parametername">tuple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples*"></a>
+  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_System_String_Data_IO_SODB_Interfaces_IRowTuple___" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String,Data.IO.SODB.Interfaces.IRowTuple[])">InsertTuples(String, IRowTuple[])</h4>
+  <div class="markdown level1 summary"><p>Returns INSERT OR REPLACE command strings for the given values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; InsertTuples(string tableName, params IRowTuple[] tuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>[]</td>
+        <td><span class="parametername">tuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples*"></a>
+  <h4 id="Data_IO_SQL_Builder_SQLBuilder_InsertTuples_System_String_System_Collections_Generic_IEnumerable_Data_IO_SODB_Interfaces_IRowTuple__" data-uid="Data.IO.SQL.Builder.SQLBuilder.InsertTuples(System.String,System.Collections.Generic.IEnumerable{Data.IO.SODB.Interfaces.IRowTuple})">InsertTuples(String, IEnumerable&lt;IRowTuple&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns INSERT OR REPLACE command strings for the given values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; InsertTuples(string tableName, IEnumerable&lt;IRowTuple&gt; tuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>&gt;</td>
+        <td><span class="parametername">tuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

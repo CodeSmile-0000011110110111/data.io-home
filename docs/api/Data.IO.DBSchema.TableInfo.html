@@ -115,12 +115,12 @@ public sealed class TableInfo : ITableInfo</code></pre>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Data_IO_DBSchema_TableInfo__ctor_" data-uid="Data.IO.DBSchema.TableInfo.#ctor*"></a>
-  <h4 id="Data_IO_DBSchema_TableInfo__ctor_System_String_System_Collections_Generic_IReadOnlyList_Data_IO_DBSchema_Interfaces_IColumnInfo__System_Collections_Generic_IReadOnlyList_Data_IO_DBSchema_Interfaces_IRelationInfo__" data-uid="Data.IO.DBSchema.TableInfo.#ctor(System.String,System.Collections.Generic.IReadOnlyList{Data.IO.DBSchema.Interfaces.IColumnInfo},System.Collections.Generic.IReadOnlyList{Data.IO.DBSchema.Interfaces.IRelationInfo})">TableInfo(String, IReadOnlyList&lt;IColumnInfo&gt;, IReadOnlyList&lt;IRelationInfo&gt;)</h4>
+  <h4 id="Data_IO_DBSchema_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DBSchema_Interfaces_IColumnInfo__System_Collections_Generic_IList_Data_IO_DBSchema_Interfaces_IRelationInfo__" data-uid="Data.IO.DBSchema.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DBSchema.Interfaces.IColumnInfo},System.Collections.Generic.IList{Data.IO.DBSchema.Interfaces.IRelationInfo})">TableInfo(String, IList&lt;IColumnInfo&gt;, IList&lt;IRelationInfo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TableInfo(string name, IReadOnlyList&lt;IColumnInfo&gt; columnInfos, IReadOnlyList&lt;IRelationInfo&gt; relationInfos = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;IColumnInfo&gt; columnInfos, IList&lt;IRelationInfo&gt; relationInfos = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,24 +138,24 @@ public sealed class TableInfo : ITableInfo</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
         <td><span class="parametername">columnInfos</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IRelationInfo.html">IRelationInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IRelationInfo.html">IRelationInfo</a>&gt;</td>
         <td><span class="parametername">relationInfos</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Data_IO_DBSchema_TableInfo__ctor_" data-uid="Data.IO.DBSchema.TableInfo.#ctor*"></a>
-  <h4 id="Data_IO_DBSchema_TableInfo__ctor_System_String_System_Collections_Generic_IReadOnlyList_Data_IO_DBSchema_Interfaces_IColumnInfo__System_String_" data-uid="Data.IO.DBSchema.TableInfo.#ctor(System.String,System.Collections.Generic.IReadOnlyList{Data.IO.DBSchema.Interfaces.IColumnInfo},System.String)">TableInfo(String, IReadOnlyList&lt;IColumnInfo&gt;, String)</h4>
+  <h4 id="Data_IO_DBSchema_TableInfo__ctor_System_String_System_Collections_Generic_IList_Data_IO_DBSchema_Interfaces_IColumnInfo__System_String_" data-uid="Data.IO.DBSchema.TableInfo.#ctor(System.String,System.Collections.Generic.IList{Data.IO.DBSchema.Interfaces.IColumnInfo},System.String)">TableInfo(String, IList&lt;IColumnInfo&gt;, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TableInfo(string name, IReadOnlyList&lt;IColumnInfo&gt; columnInfos, string sqlCreateCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public TableInfo(string name, IList&lt;IColumnInfo&gt; columnInfos, string sqlCreateCommand)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,7 +173,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
         <td><span class="parametername">columnInfos</span></td>
         <td></td>
       </tr>
@@ -192,7 +192,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IColumnInfo&gt; ColumnInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Collection&lt;IColumnInfo&gt; ColumnInfos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,7 +204,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -284,7 +284,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IColumnInfo&gt; PrimaryKeyColumns { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Collection&lt;IColumnInfo&gt; PrimaryKeyColumns { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -296,7 +296,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IColumnInfo.html">IColumnInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -353,7 +353,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;int&gt; PrimaryKeyIndexes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Collection&lt;int&gt; PrimaryKeyIndexes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,7 +365,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -376,7 +376,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IRelationInfo&gt; RelationInfos { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Collection&lt;IRelationInfo&gt; RelationInfos { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -388,7 +388,7 @@ public sealed class TableInfo : ITableInfo</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IRelationInfo.html">IRelationInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Data.IO.DBSchema.Interfaces.IRelationInfo.html">IRelationInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

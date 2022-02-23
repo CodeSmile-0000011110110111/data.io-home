@@ -83,6 +83,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Data.IO.SODB.Interfaces.ITableBase.html">ITableBase</a></div>
     <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.IInitializable.html">TableBase.IInitializable</a></div>
     <div><a class="xref" href="Data.IO.SODB.Interfaces.ITable-1.html">ITable</a>&lt;TRecord&gt;</div>
     <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a>&gt;</div>
@@ -114,7 +115,7 @@
   <h5 id="Data_IO_SODB_Table_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&lt;TRecord&gt;, IEnumerable&lt;IRecord&gt;, IEnumerable where TRecord : class, IRecord, new()</code></pre>
+public class Table&lt;TRecord&gt; : TableBase, ITableBase, TableBase.IInitializable, ITable&lt;TRecord&gt;, IEnumerable&lt;IRecord&gt;, IEnumerable where TRecord : class, IRecord, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,7 +140,7 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptableDatabase Database { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ScriptableDatabase Database { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,13 +157,15 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Database">TableBase.Database</a></div>
   <a id="Data_IO_SODB_Table_1_Info_" data-uid="Data.IO.SODB.Table`1.Info*"></a>
   <h4 id="Data_IO_SODB_Table_1_Info" data-uid="Data.IO.SODB.Table`1.Info">Info</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITableInfo Info { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ITableInfo Info { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,13 +182,15 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Info">TableBase.Info</a></div>
   <a id="Data_IO_SODB_Table_1_Item_" data-uid="Data.IO.SODB.Table`1.Item*"></a>
   <h4 id="Data_IO_SODB_Table_1_Item_Data_IO_SODB_Interfaces_IPrimaryKey_" data-uid="Data.IO.SODB.Table`1.Item(Data.IO.SODB.Interfaces.IPrimaryKey)">Item[IPrimaryKey]</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TRecord this[IPrimaryKey pk] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IRecord this[IPrimaryKey pk] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,18 +219,20 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TRecord</span></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Item_Data_IO_SODB_Interfaces_IPrimaryKey_">TableBase.Item[IPrimaryKey]</a></div>
   <a id="Data_IO_SODB_Table_1_Item_" data-uid="Data.IO.SODB.Table`1.Item*"></a>
   <h4 id="Data_IO_SODB_Table_1_Item_System_Int32_" data-uid="Data.IO.SODB.Table`1.Item(System.Int32)">Item[Int32]</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TRecord this[int id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IRecord this[int id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,18 +261,20 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TRecord</span></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Item_System_Int32_">TableBase.Item[Int32]</a></div>
   <a id="Data_IO_SODB_Table_1_Item_" data-uid="Data.IO.SODB.Table`1.Item*"></a>
   <h4 id="Data_IO_SODB_Table_1_Item_System_String_" data-uid="Data.IO.SODB.Table`1.Item(System.String)">Item[String]</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TRecord this[string id] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IRecord this[string id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -294,18 +303,20 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TRecord</span></td>
+        <td><a class="xref" href="Data.IO.SODB.Interfaces.IRecord.html">IRecord</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Item_System_String_">TableBase.Item[String]</a></div>
   <a id="Data_IO_SODB_Table_1_Name_" data-uid="Data.IO.SODB.Table`1.Name*"></a>
   <h4 id="Data_IO_SODB_Table_1_Name" data-uid="Data.IO.SODB.Table`1.Name">Name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string Name { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -322,6 +333,8 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Data.IO.SODB.Interfaces.TableBase.html#Data_IO_SODB_Interfaces_TableBase_Name">TableBase.Name</a></div>
   <h3 id="methods">Methods
   </h3>
   <a id="Data_IO_SODB_Table_1_AddRecord_" data-uid="Data.IO.SODB.Table`1.AddRecord*"></a>
@@ -679,7 +692,8 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
   </table>
   <a id="Data_IO_SODB_Table_1_InsertTuples_" data-uid="Data.IO.SODB.Table`1.InsertTuples*"></a>
   <h4 id="Data_IO_SODB_Table_1_InsertTuples_Data_IO_SODB_Interfaces_IRowTuple___" data-uid="Data.IO.SODB.Table`1.InsertTuples(Data.IO.SODB.Interfaces.IRowTuple[])">InsertTuples(IRowTuple[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new TRecord instance and calls SetTuple() on it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -717,13 +731,54 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       </tr>
     </tbody>
   </table>
+  <a id="Data_IO_SODB_Table_1_InsertTuples_" data-uid="Data.IO.SODB.Table`1.InsertTuples*"></a>
+  <h4 id="Data_IO_SODB_Table_1_InsertTuples_System_Collections_Generic_IEnumerable_Data_IO_SODB_Interfaces_IRowTuple__" data-uid="Data.IO.SODB.Table`1.InsertTuples(System.Collections.Generic.IEnumerable{Data.IO.SODB.Interfaces.IRowTuple})">InsertTuples(IEnumerable&lt;IRowTuple&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new TRecord instance and calls SetTuple() on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TRecord&gt; InsertTuples(IEnumerable&lt;IRowTuple&gt; rowTuples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>&gt;</td>
+        <td><span class="parametername">rowTuples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Data_IO_SODB_Table_1_Read_" data-uid="Data.IO.SODB.Table`1.Read*"></a>
   <h4 id="Data_IO_SODB_Table_1_Read_Data_IO_SODB_Reader_Interfaces_ITableReader_" data-uid="Data.IO.SODB.Table`1.Read(Data.IO.SODB.Reader.Interfaces.ITableReader)">Read(ITableReader)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Read(ITableReader reader)</code></pre>
+    <pre><code class="lang-csharp hljs">public Collection&lt;IRowTuple&gt; Read(ITableReader reader)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -738,6 +793,21 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
       <tr>
         <td><a class="xref" href="Data.IO.SODB.Reader.Interfaces.ITableReader.html">ITableReader</a></td>
         <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="Data.IO.SODB.Interfaces.IRowTuple.html">IRowTuple</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -912,6 +982,9 @@ public class Table&lt;TRecord&gt; : TableBase, TableBase.IInitializable, ITable&
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Data.IO.SODB.Interfaces.ITableBase.html">ITableBase</a>
+  </div>
   <div>
       <a class="xref" href="Data.IO.SODB.Interfaces.TableBase.IInitializable.html">TableBase.IInitializable</a>
   </div>
