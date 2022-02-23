@@ -10,8 +10,9 @@ You sweat and shiver as you use ...</p>
 <a href="https://sitterheim.github.io/data.io-home/docs/">
 <img src="/data.io-home/assets/data.io-banner-transparent-cropped.png" alt="data.io logo" width="725"/>
 </a><br/><br/>
-###### Automated. Bidirectional. BYOT. C#. Clean. Configurable. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Easy. Excel. Extensible. Fast. Flexible. Generic. GoogleSheets. JSON. LINQ. Modular. Reliable. ScriptBuilder. SODB. Sourcecode. SQL. SQLBuilder. SQLite. SQLiter. Supported. Tested. Transformative. Unity>=2019.
 <p style="font-family:Consolas, Monaco, 'Andale Mono', monospace; font-size:14px; padding-left:34px"><b>Congratulations!</b> You safely bypass all nuisances and continue your journey.</p>
+###### Automated. Bidirectional. BYOT. C#. Clean. Configurable. Correct. <a target="_blank" href="docs/api/Data.IO.CSV.Reader.CSVReader.html">CSV</a>. Documented. Easy. Excel. Extensible. Fast. Flexible. Generic. GoogleSheets. JSON. LINQ. Modular. Reliable. ScriptBuilder. SODB. Sourcecode. SQL. SQLBuilder. SQLite. SQLiter. Supported. Tested. Transformative. Unity>=2019.
+
 
 ### Serves any scenario: 
 - (turn Code into Data) <=> (turn Data into Code)
